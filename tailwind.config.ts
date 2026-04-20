@@ -15,9 +15,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
-        serif: ['"Instrument Serif"', ...defaultTheme.fontFamily.serif],
-        display: ['"Instrument Serif"', ...defaultTheme.fontFamily.serif],
+        sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+        serif: ['Roboto', ...defaultTheme.fontFamily.sans],
+        display: ['Roboto', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         ink: {
@@ -42,10 +42,10 @@ export default {
           300: '#e7e7e0',
         },
         accent: {
-          DEFAULT: '#ff4a1c',
-          50: '#fff3ef',
-          500: '#ff4a1c',
-          600: '#e53a11',
+          DEFAULT: '#39FF14',
+          50: '#f0ffe8',
+          500: '#39FF14',
+          600: '#2db30d',
         },
       },
       fontSize: {

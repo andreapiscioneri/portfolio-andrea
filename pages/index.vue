@@ -70,7 +70,7 @@ const marqueeItems = [
       <div class="container-x grid gap-12 md:grid-cols-[1fr_1.3fr] md:items-center">
         <Reveal>
           <div class="relative aspect-[4/5] overflow-hidden rounded-3xl bg-gradient-to-br from-ink-800 to-ink-950 p-8 text-paper md:p-12">
-            <div class="absolute inset-0 opacity-40 mix-blend-overlay bg-[radial-gradient(circle_at_30%_20%,rgba(255,74,28,0.35),transparent_60%)]" />
+            <div class="absolute inset-0 opacity-40 mix-blend-overlay bg-[radial-gradient(circle_at_30%_20%,rgba(57,255,20,0.35),transparent_60%)]" />
             <div class="relative flex h-full flex-col justify-between">
               <div class="flex items-center justify-between text-xs uppercase tracking-[0.3em] text-white/60">
                 <span>Andrea</span>

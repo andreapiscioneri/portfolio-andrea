@@ -32,7 +32,7 @@ onMounted(() => {
       class="fixed inset-0 z-[999] flex items-center justify-center bg-ink text-paper overflow-hidden"
       aria-hidden="true"
     >
-      <div class="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_50%_50%,rgba(255,74,28,0.14),transparent_65%)]" />
+      <div class="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_50%_50%,rgba(57,255,20,0.14),transparent_65%)]" />
 
       <div class="relative w-full max-w-4xl px-8">
         <div class="flex items-end justify-between text-xs uppercase tracking-[0.3em] text-paper/60">
