@@ -1,0 +1,140 @@
+{
+  "site": {
+    "title": "Andrea Piscioneri — UX/UI Designer & Developer",
+    "description": "Portfolio di Andrea Piscioneri. UX/UI designer, web designer & developer, graphic designer con base in Lombardia. Progetti di design digitale, brand identity e sviluppo web.",
+    "tagline": "Design che pensa, codice che ascolta."
+  },
+  "nav": {
+    "home": "Home",
+    "work": "Lavori",
+    "about": "Chi sono",
+    "contact": "Contatti",
+    "menu": "Menu",
+    "close": "Chiudi"
+  },
+  "theme": {
+    "light": "Chiaro",
+    "dark": "Scuro",
+    "system": "Sistema",
+    "toggle": "Cambia tema"
+  },
+  "loader": {
+    "hello": "Ciao, sono Andrea",
+    "loading": "Carico l'esperienza..."
+  },
+  "home": {
+    "heroEyebrow": "Portfolio · 2026",
+    "heroLine1": "UX/UI designer",
+    "heroLine2": "& developer che",
+    "heroLine3": "disegna esperienze",
+    "heroLine4": "che contano.",
+    "heroDescription": "Progetto interfacce, siti e brand digitali. Lavoro in Denani S.R.L. come UX/UI designer, costruisco prodotti con Nuxt, Next e Vue. Laureato con lode in Graphic Design (Santa Giulia) e Magistrale in Digital Design & Communication (LABA) 110/110 con Lode.",
+    "ctaWork": "Vedi i miei lavori",
+    "ctaContact": "Parliamone",
+    "scroll": "Scorri",
+    "featuredTitle": "Progetti in evidenza",
+    "featuredSubtitle": "Una selezione di lavori recenti tra design, sviluppo e brand digitale.",
+    "allWork": "Tutti i lavori",
+    "aboutSectionTitle": "Costruisco esperienze digitali complete.",
+    "aboutSectionBody": "Dal primo stage grafico in MBE al ruolo di UX/UI designer in Denani, ho attraversato ogni livello del design visivo e dello sviluppo. Oggi unisco ricerca, UI, motion e codice per realizzare prodotti che funzionano davvero.",
+    "servicesTitle": "Cosa faccio",
+    "services": [
+      { "title": "UX/UI Design", "body": "Research, wireframe, prototipi e design system completi." },
+      { "title": "Web Development", "body": "Nuxt, Next, Vue, React. Siti fast, accessibili, SEO-ready." },
+      { "title": "Brand Identity", "body": "Naming, logo, sistema visivo, linee guida, collateral." },
+      { "title": "3D & Motion", "body": "Cinema 4D, Blender, motion graphics, product rendering." },
+      { "title": "Fotografia & Drone", "body": "Shooting, post-produzione, riprese con drone certificate." },
+      { "title": "Odoo & App", "body": "Moduli custom Odoo e applicazioni native mobile." }
+    ],
+    "statsTitle": "In numeri",
+    "stats": [
+      { "value": "110", "label": "Lode × 2", "suffix": "L" },
+      { "value": "9+", "label": "Anni nel design", "suffix": "" },
+      { "value": "20+", "label": "Progetti consegnati", "suffix": "" },
+      { "value": "4", "label": "Lingue del sito", "suffix": "" }
+    ]
+  },
+  "work": {
+    "title": "Lavori",
+    "subtitle": "Tutti i progetti: design digitale, sviluppo, brand e grafica.",
+    "all": "Tutti",
+    "filter": "Filtra per",
+    "viewProject": "Vedi progetto",
+    "year": "Anno",
+    "client": "Cliente",
+    "role": "Ruolo",
+    "stack": "Stack",
+    "category": "Categoria"
+  },
+  "project": {
+    "overview": "Panoramica",
+    "highlights": "Punti chiave",
+    "gallery": "Galleria",
+    "credits": "Crediti",
+    "next": "Progetto successivo",
+    "prev": "Progetto precedente",
+    "backToWork": "Torna ai lavori",
+    "visitLive": "Visita il sito live",
+    "year": "Anno",
+    "client": "Cliente",
+    "role": "Ruolo",
+    "stack": "Stack tecnico",
+    "category": "Categoria",
+    "services": "Servizi"
+  },
+  "about": {
+    "title": "Chi sono",
+    "subtitle": "Designer, sviluppatore, fotografo. Da Albino (BG), con ambizione europea.",
+    "bioTitle": "Profilo professionale",
+    "experienceTitle": "Esperienze lavorative",
+    "educationTitle": "Formazione",
+    "skillsTitle": "Competenze",
+    "strengthsTitle": "Punti di forza",
+    "softTitle": "Soft skills",
+    "softwareTitle": "Software",
+    "developmentTitle": "Sviluppo",
+    "languagesTitle": "Lingue",
+    "licensesTitle": "Patenti",
+    "certsTitle": "Certificazioni",
+    "thesisLabel": "Tesi",
+    "gradeLabel": "Giudizio finale",
+    "technicalLabel": "Competenze tecniche",
+    "professionalLabel": "Competenze professionali",
+    "activitiesLabel": "Attività formative",
+    "downloadCv": "Scarica il CV",
+    "socialTitle": "Social & Portfolio",
+    "current": "Attuale"
+  },
+  "contact": {
+    "title": "Parliamone.",
+    "subtitle": "Se hai un progetto, una proposta o anche solo una domanda: scrivimi.",
+    "emailLabel": "Email",
+    "phoneLabel": "Telefono",
+    "locationLabel": "Dove",
+    "availableTitle": "Disponibile per",
+    "hoursLabel": "Orario indicativo",
+    "hoursValue": "Lun—Ven · 9:00–19:00 (CET)",
+    "formName": "Il tuo nome",
+    "formEmail": "La tua email",
+    "formMessage": "Il tuo messaggio",
+    "formSend": "Invia messaggio",
+    "formSent": "Messaggio pronto",
+    "mailCta": "Scrivimi una email",
+    "copiedEmail": "Email copiata",
+    "copyEmail": "Copia email"
+  },
+  "footer": {
+    "tagline": "Design che pensa, codice che ascolta.",
+    "copyright": "© {year} Andrea Piscioneri. Tutti i diritti riservati.",
+    "madeIn": "Fatto a mano in Lombardia, Italia.",
+    "colophon": "Sito costruito in Nuxt 3, TypeScript, Tailwind, GSAP & Lenis.",
+    "backToTop": "Torna su"
+  },
+  "common": {
+    "viewMore": "Vedi tutto",
+    "readMore": "Continua a leggere",
+    "getInTouch": "Contattami",
+    "selectedWorks": "Lavori selezionati",
+    "languageSwitcher": "Cambia lingua"
+  }
+}

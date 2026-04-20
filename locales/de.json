@@ -1,0 +1,140 @@
+{
+  "site": {
+    "title": "Andrea Piscioneri — UX/UI-Designer & Entwickler",
+    "description": "Portfolio von Andrea Piscioneri. UX/UI-Designer, Webdesigner & Entwickler, Grafikdesigner mit Sitz in der Lombardei, Italien. Digitales Design, Markenidentität und Webentwicklung.",
+    "tagline": "Design, das denkt. Code, der zuhört."
+  },
+  "nav": {
+    "home": "Start",
+    "work": "Arbeiten",
+    "about": "Über mich",
+    "contact": "Kontakt",
+    "menu": "Menü",
+    "close": "Schließen"
+  },
+  "theme": {
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System",
+    "toggle": "Theme wechseln"
+  },
+  "loader": {
+    "hello": "Hallo, ich bin Andrea",
+    "loading": "Lade die Erfahrung..."
+  },
+  "home": {
+    "heroEyebrow": "Portfolio · 2026",
+    "heroLine1": "UX/UI-Designer",
+    "heroLine2": "& Entwickler, der",
+    "heroLine3": "Erfahrungen baut,",
+    "heroLine4": "die wirken.",
+    "heroDescription": "Ich gestalte Interfaces, Webseiten und digitale Marken. Ich arbeite bei Denani S.R.L. als UX/UI-Designer und baue Produkte mit Nuxt, Next und Vue. Mit Auszeichnung abgeschlossen im Grafikdesign (Santa Giulia) und Master in Digital Design & Communication (LABA) 110/110 cum laude.",
+    "ctaWork": "Meine Arbeiten sehen",
+    "ctaContact": "Lass uns reden",
+    "scroll": "Scrollen",
+    "featuredTitle": "Ausgewählte Projekte",
+    "featuredSubtitle": "Eine Auswahl aktueller Arbeiten aus Design, Entwicklung und digitalem Branding.",
+    "allWork": "Alle Arbeiten",
+    "aboutSectionTitle": "Ich baue vollständige digitale Erlebnisse.",
+    "aboutSectionBody": "Vom ersten Grafik-Praktikum bei MBE bis zu meiner heutigen Rolle als UX/UI-Designer bei Denani habe ich jede Ebene des visuellen Designs und der Entwicklung durchlaufen. Heute verbinde ich Research, UI, Motion und Code, um Produkte zu liefern, die wirklich funktionieren.",
+    "servicesTitle": "Was ich mache",
+    "services": [
+      { "title": "UX/UI-Design", "body": "Research, Wireframes, Prototypen und vollständige Design-Systeme." },
+      { "title": "Web-Entwicklung", "body": "Nuxt, Next, Vue, React. Schnelle, zugängliche und SEO-ready Websites." },
+      { "title": "Markenidentität", "body": "Naming, Logo, visuelles System, Richtlinien und Collateral." },
+      { "title": "3D & Motion", "body": "Cinema 4D, Blender, Motion Graphics, Produkt-Rendering." },
+      { "title": "Fotografie & Drohne", "body": "Shooting, Postproduktion, zertifizierte Drohnenaufnahmen." },
+      { "title": "Odoo & Apps", "body": "Custom Odoo-Module und native Mobile-Apps." }
+    ],
+    "statsTitle": "In Zahlen",
+    "stats": [
+      { "value": "110", "label": "Cum Laude × 2", "suffix": "L" },
+      { "value": "9+", "label": "Jahre im Design", "suffix": "" },
+      { "value": "20+", "label": "Gelieferte Projekte", "suffix": "" },
+      { "value": "4", "label": "Sprachen", "suffix": "" }
+    ]
+  },
+  "work": {
+    "title": "Arbeiten",
+    "subtitle": "Alle Projekte: digitales Design, Entwicklung, Branding und Grafik.",
+    "all": "Alle",
+    "filter": "Filtern nach",
+    "viewProject": "Projekt ansehen",
+    "year": "Jahr",
+    "client": "Kunde",
+    "role": "Rolle",
+    "stack": "Stack",
+    "category": "Kategorie"
+  },
+  "project": {
+    "overview": "Übersicht",
+    "highlights": "Schlüsselpunkte",
+    "gallery": "Galerie",
+    "credits": "Credits",
+    "next": "Nächstes Projekt",
+    "prev": "Vorheriges Projekt",
+    "backToWork": "Zurück zu Arbeiten",
+    "visitLive": "Live-Website besuchen",
+    "year": "Jahr",
+    "client": "Kunde",
+    "role": "Rolle",
+    "stack": "Tech-Stack",
+    "category": "Kategorie",
+    "services": "Services"
+  },
+  "about": {
+    "title": "Über mich",
+    "subtitle": "Designer, Entwickler, Fotograf. Aus Albino (BG), Italien — mit europäischem Anspruch.",
+    "bioTitle": "Berufliches Profil",
+    "experienceTitle": "Berufserfahrung",
+    "educationTitle": "Ausbildung",
+    "skillsTitle": "Fähigkeiten",
+    "strengthsTitle": "Stärken",
+    "softTitle": "Soft Skills",
+    "softwareTitle": "Software",
+    "developmentTitle": "Entwicklung",
+    "languagesTitle": "Sprachen",
+    "licensesTitle": "Führerscheine",
+    "certsTitle": "Zertifizierungen",
+    "thesisLabel": "Abschlussarbeit",
+    "gradeLabel": "Abschlussnote",
+    "technicalLabel": "Technische Kompetenzen",
+    "professionalLabel": "Berufliche Kompetenzen",
+    "activitiesLabel": "Bildungsaktivitäten",
+    "downloadCv": "CV herunterladen",
+    "socialTitle": "Social & Portfolio",
+    "current": "Aktuell"
+  },
+  "contact": {
+    "title": "Lass uns reden.",
+    "subtitle": "Wenn du ein Projekt, eine Idee oder einfach eine Frage hast — schreib mir.",
+    "emailLabel": "E-Mail",
+    "phoneLabel": "Telefon",
+    "locationLabel": "Standort",
+    "availableTitle": "Verfügbar für",
+    "hoursLabel": "Arbeitszeiten",
+    "hoursValue": "Mo–Fr · 9:00–19:00 MEZ",
+    "formName": "Dein Name",
+    "formEmail": "Deine E-Mail",
+    "formMessage": "Deine Nachricht",
+    "formSend": "Nachricht senden",
+    "formSent": "Nachricht bereit",
+    "mailCta": "Schreib mir eine E-Mail",
+    "copiedEmail": "E-Mail kopiert",
+    "copyEmail": "E-Mail kopieren"
+  },
+  "footer": {
+    "tagline": "Design, das denkt. Code, der zuhört.",
+    "copyright": "© {year} Andrea Piscioneri. Alle Rechte vorbehalten.",
+    "madeIn": "Handgemacht in der Lombardei, Italien.",
+    "colophon": "Gebaut mit Nuxt 3, TypeScript, Tailwind, GSAP & Lenis.",
+    "backToTop": "Nach oben"
+  },
+  "common": {
+    "viewMore": "Alles ansehen",
+    "readMore": "Weiterlesen",
+    "getInTouch": "Kontakt aufnehmen",
+    "selectedWorks": "Ausgewählte Arbeiten",
+    "languageSwitcher": "Sprache wechseln"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "site": {
+    "title": "Andrea Piscioneri — UX/UI Designer & Developer",
+    "description": "Portfolio of Andrea Piscioneri. UX/UI designer, web designer & developer, graphic designer based in Lombardy, Italy. Digital design, brand identity and web development projects.",
+    "tagline": "Design that thinks, code that listens."
+  },
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "toggle": "Switch theme"
+  },
+  "loader": {
+    "hello": "Hi, I'm Andrea",
+    "loading": "Loading the experience..."
+  },
+  "home": {
+    "heroEyebrow": "Portfolio · 2026",
+    "heroLine1": "UX/UI designer",
+    "heroLine2": "& developer who",
+    "heroLine3": "crafts experiences",
+    "heroLine4": "that matter.",
+    "heroDescription": "I design interfaces, websites and digital brands. I currently work at Denani S.R.L. as UX/UI designer, and I build products with Nuxt, Next and Vue. Graduated with honors in Graphic Design (Santa Giulia) and Master's in Digital Design & Communication (LABA) 110/110 cum laude.",
+    "ctaWork": "See my work",
+    "ctaContact": "Let's talk",
+    "scroll": "Scroll",
+    "featuredTitle": "Featured projects",
+    "featuredSubtitle": "A selection of recent work across design, development and digital branding.",
+    "allWork": "All work",
+    "aboutSectionTitle": "I build complete digital experiences.",
+    "aboutSectionBody": "From my first graphic internship at MBE to my current role as UX/UI designer at Denani, I've moved across every layer of visual design and development. Today I blend research, UI, motion and code to ship products that really work.",
+    "servicesTitle": "What I do",
+    "services": [
+      { "title": "UX/UI Design", "body": "Research, wireframes, prototypes and complete design systems." },
+      { "title": "Web Development", "body": "Nuxt, Next, Vue, React. Fast, accessible, SEO-ready websites." },
+      { "title": "Brand Identity", "body": "Naming, logo, visual system, guidelines and collateral." },
+      { "title": "3D & Motion", "body": "Cinema 4D, Blender, motion graphics, product rendering." },
+      { "title": "Photography & Drone", "body": "Shooting, post-production, certified drone footage." },
+      { "title": "Odoo & Apps", "body": "Custom Odoo modules and native mobile applications." }
+    ],
+    "statsTitle": "By the numbers",
+    "stats": [
+      { "value": "110", "label": "Cum Laude × 2", "suffix": "L" },
+      { "value": "9+", "label": "Years in design", "suffix": "" },
+      { "value": "20+", "label": "Projects shipped", "suffix": "" },
+      { "value": "4", "label": "Languages", "suffix": "" }
+    ]
+  },
+  "work": {
+    "title": "Work",
+    "subtitle": "All projects: digital design, development, brand and graphics.",
+    "all": "All",
+    "filter": "Filter by",
+    "viewProject": "View project",
+    "year": "Year",
+    "client": "Client",
+    "role": "Role",
+    "stack": "Stack",
+    "category": "Category"
+  },
+  "project": {
+    "overview": "Overview",
+    "highlights": "Key highlights",
+    "gallery": "Gallery",
+    "credits": "Credits",
+    "next": "Next project",
+    "prev": "Previous project",
+    "backToWork": "Back to work",
+    "visitLive": "Visit live site",
+    "year": "Year",
+    "client": "Client",
+    "role": "Role",
+    "stack": "Tech stack",
+    "category": "Category",
+    "services": "Services"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Designer, developer, photographer. From Albino (BG), Italy — with European ambition.",
+    "bioTitle": "Professional profile",
+    "experienceTitle": "Work experience",
+    "educationTitle": "Education",
+    "skillsTitle": "Skills",
+    "strengthsTitle": "Strengths",
+    "softTitle": "Soft skills",
+    "softwareTitle": "Software",
+    "developmentTitle": "Development",
+    "languagesTitle": "Languages",
+    "licensesTitle": "Driving licenses",
+    "certsTitle": "Certifications",
+    "thesisLabel": "Thesis",
+    "gradeLabel": "Final grade",
+    "technicalLabel": "Technical skills",
+    "professionalLabel": "Professional skills",
+    "activitiesLabel": "Educational activities",
+    "downloadCv": "Download CV",
+    "socialTitle": "Social & Portfolio",
+    "current": "Current"
+  },
+  "contact": {
+    "title": "Let's talk.",
+    "subtitle": "If you have a project, an idea or just a question — drop me a line.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Based in",
+    "availableTitle": "Available for",
+    "hoursLabel": "Working hours",
+    "hoursValue": "Mon–Fri · 9:00–19:00 CET",
+    "formName": "Your name",
+    "formEmail": "Your email",
+    "formMessage": "Your message",
+    "formSend": "Send message",
+    "formSent": "Message ready",
+    "mailCta": "Email me",
+    "copiedEmail": "Email copied",
+    "copyEmail": "Copy email"
+  },
+  "footer": {
+    "tagline": "Design that thinks, code that listens.",
+    "copyright": "© {year} Andrea Piscioneri. All rights reserved.",
+    "madeIn": "Handmade in Lombardy, Italy.",
+    "colophon": "Built with Nuxt 3, TypeScript, Tailwind, GSAP & Lenis.",
+    "backToTop": "Back to top"
+  },
+  "common": {
+    "viewMore": "View all",
+    "readMore": "Read more",
+    "getInTouch": "Get in touch",
+    "selectedWorks": "Selected work",
+    "languageSwitcher": "Switch language"
+  }
+}

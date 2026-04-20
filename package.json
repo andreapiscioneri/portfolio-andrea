@@ -1,0 +1,45 @@
+{
+  "name": "portfolio-andrea",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Andrea Piscioneri — UX/UI Designer, Web Designer & Developer. Premium portfolio built with Nuxt 3.",
+  "author": "Andrea Piscioneri <andrypiscioneri@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --port 3000",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@nuxt/image": "^1.8.1",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxtjs/i18n": "^9.1.1",
+    "@nuxtjs/seo": "^2.0.2",
+    "@pinia/nuxt": "^0.9.0",
+    "@studio-freight/lenis": "^1.0.42",
+    "@vueuse/nuxt": "^12.3.0",
+    "gsap": "^3.12.5",
+    "nuxt": "^3.15.0",
+    "pinia": "^2.3.0",
+    "split-type": "^0.3.4",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.13.1",
+    "@types/node": "^22.10.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2",
+    "vue-tsc": "^2.1.10"
+  },
+  "packageManager": "yarn@1.22.22",
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}

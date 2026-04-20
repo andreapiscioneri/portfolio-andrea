@@ -1,0 +1,23 @@
+# Nuxt / Node
+node_modules
+.nuxt
+.output
+.data
+.env
+.env.*
+!.env.example
+dist
+.nitro
+.cache
+.DS_Store
+*.log
+.vercel
+.netlify
+
+# Editor
+.vscode
+.idea
+*.swp
+
+# TS
+*.tsbuildinfo
