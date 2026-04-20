@@ -77,7 +77,7 @@ export default defineNuxtConfig({
   image: {
     format: ['webp', 'avif'],
     quality: 85,
-    domains: ['images.unsplash.com', 'images.pexels.com'],
+    domains: ['images.unsplash.com', 'images.pexels.com', 'apdesign.altervista.org', 'reteye.altervista.org', 'mir-s3-cdn-cf.behance.net'],
     screens: {
       xs: 320,
       sm: 640,

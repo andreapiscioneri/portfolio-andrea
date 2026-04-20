@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import { personal, bio, experiences, educations, skills, links } from '~/content/about'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
+
+const profileImageSrc = computed(() => (locale.value === 'it' ? '/profilo.PNG' : '/1.PNG'))
+const cvDownload = computed(() => (locale.value === 'it' ? '/Andrea_Piscioneri_CV.pdf' : '/Andrea_Piscioneri_CV_english.pdf'))
+const cvLabel = computed(() => (locale.value === 'it' ? 'Scarica CV — Italiano ↓' : 'Download CV — English ↓'))
+const cvAltDownload = computed(() => (locale.value === 'it' ? '/Andrea_Piscioneri_CV_english.pdf' : '/Andrea_Piscioneri_CV.pdf'))
+const cvAltLabel = computed(() => (locale.value === 'it' ? 'English version ↓' : 'Versione italiana ↓'))
 
 useSeoPerson()
 
@@ -19,9 +25,20 @@ useSeoMeta({
     <section class="container-x pt-40 md:pt-48 lg:pt-56">
       <div class="eyebrow mb-4"><span>/ {{ t('nav.about') }}</span></div>
       <div class="grid gap-12 md:grid-cols-[1fr_1.2fr] md:items-end">
-        <AnimatedText as="h1" split="lines" class="font-display text-display-xl leading-[0.88] tracking-[-0.04em] text-balance">
-          {{ personal.firstName }}<br><span class="italic">{{ personal.lastName }}</span>
-        </AnimatedText>
+        <div>
+          <Reveal :delay="0.1">
+            <div class="mb-8 h-48 w-48 overflow-hidden rounded-full border-2 border-black/10 dark:border-white/10">
+              <img
+                :src="profileImageSrc"
+                alt="Andrea Piscioneri"
+                class="h-full w-full object-cover object-top grayscale contrast-125 brightness-110 saturate-0"
+              />
+            </div>
+          </Reveal>
+          <AnimatedText as="h1" split="lines" class="font-display text-display-xl leading-[0.88] tracking-[-0.04em] text-balance">
+            {{ personal.firstName }}<br><span class="italic">{{ personal.lastName }}</span>
+          </AnimatedText>
+        </div>
         <Reveal :delay="0.3">
           <p class="text-base text-ink-600 text-pretty dark:text-white/70 md:text-lg">
             {{ t('about.subtitle') }}
@@ -285,6 +302,33 @@ useSeoMeta({
             </a>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <!-- Download CV -->
+    <section class="container-x py-16">
+      <div class="grid gap-10 md:grid-cols-[1fr_2fr]">
+        <div class="eyebrow self-start"><span>Curriculum Vitae</span></div>
+        <Reveal>
+          <div class="flex flex-wrap gap-4">
+            <a
+              :href="cvDownload"
+              download
+              class="btn btn-primary"
+              data-cursor="link"
+            >
+              {{ cvLabel }}
+            </a>
+            <a
+              :href="cvAltDownload"
+              download
+              class="btn btn-ghost"
+              data-cursor="link"
+            >
+              {{ cvAltLabel }}
+            </a>
+          </div>
+        </Reveal>
       </div>
     </section>
   </div>

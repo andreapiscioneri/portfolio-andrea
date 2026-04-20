@@ -6,6 +6,9 @@
   "author": "Andrea Piscioneri <andrypiscioneri@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "imports": {
+    "#internal/nuxt/paths": "./.nuxt/paths.mjs"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --port 3000",

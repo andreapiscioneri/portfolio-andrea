@@ -4,9 +4,15 @@
     "description": "Portafolio de Andrea Piscioneri. Diseñador UX/UI, web designer & developer, diseñador gráfico con base en Lombardía, Italia. Diseño digital, identidad de marca y desarrollo web.",
     "tagline": "Diseño que piensa, código que escucha."
   },
+    "dataProcessing": "Tratamiento de datos",
   "nav": {
     "home": "Inicio",
     "work": "Trabajos",
+  "dataProcessing": {
+    "title": "Tratamiento de datos",
+    "subtitle": "Información sobre el tratamiento de datos personales de conformidad con el Reglamento UE 2016/679 (RGPD).",
+    "lastUpdate": "Última actualización: abril de 2026"
+  },
     "about": "Sobre mí",
     "contact": "Contacto",
     "menu": "Menú",
@@ -127,8 +133,86 @@
     "tagline": "Diseño que piensa, código que escucha.",
     "copyright": "© {year} Andrea Piscioneri. Todos los derechos reservados.",
     "madeIn": "Hecho a mano en Lombardía, Italia.",
-    "colophon": "Sitio construido con Nuxt 3, TypeScript, Tailwind, GSAP & Lenis.",
-    "backToTop": "Volver arriba"
+    "backToTop": "Volver arriba",
+    "privacy": "Política de privacidad",
+    "cookie": "Política de cookies"
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "subtitle": "Información sobre el tratamiento de datos personales según el Reglamento UE 2016/679 (RGPD).",
+    "lastUpdate": "Última actualización: abril 2026",
+    "ownerTitle": "Responsable del tratamiento",
+    "ownerText": "Andrea Piscioneri — andrypiscioneri{'@'}gmail.com — Albino (BG), Italia",
+    "dataTitle": "Datos recopilados",
+    "dataText": "El sitio recopila únicamente los datos facilitados voluntariamente por el usuario a través del formulario de contacto: nombre, correo electrónico y mensaje. No se recopilan otros datos sin consentimiento explícito.",
+    "purposeTitle": "Finalidad del tratamiento",
+    "purposeText": "Los datos se tratan con el único fin de responder a las solicitudes de contacto. No se utilizan con fines comerciales, no se ceden a terceros ni se emplean para perfiles.",
+    "basisTitle": "Base jurídica",
+    "basisText": "El tratamiento se basa en el consentimiento expreso del interesado (art. 6, ap. 1, letra a, RGPD) manifestado al enviar el formulario de contacto.",
+    "retentionTitle": "Período de conservación",
+    "retentionText": "Los datos se conservan el tiempo estrictamente necesario para gestionar la comunicación y, en todo caso, no más de 12 meses desde el último contacto.",
+    "rightsTitle": "Derechos del interesado",
+    "rightsIntro": "Como interesado tienes derecho a:",
+    "rights": [
+      "Acceder a tus datos personales",
+      "Obtener su rectificación o supresión",
+      "Solicitar la limitación del tratamiento",
+      "Oponerte al tratamiento",
+      "Solicitar la portabilidad de los datos",
+      "Retirar el consentimiento en cualquier momento sin afectar a la licitud del tratamiento anterior"
+    ],
+    "rightsText": "Para ejercer tus derechos escribe a: andrypiscioneri{'@'}gmail.com",
+    "complaintText": "También tienes derecho a presentar una reclamación ante la autoridad de control competente.",
+    "transferTitle": "Transferencia de datos",
+    "transferText": "Los datos no se transfieren a terceros países fuera de la Unión Europea.",
+    "thirdPartyTitle": "Terceros",
+    "thirdPartyText": "Este sitio no integra servicios de seguimiento, análisis o publicidad de terceros. El único dato transmitido a sistemas externos es la correspondencia por correo electrónico para responder a las solicitudes de contacto.",
+    "cookieLinkText": "Para información sobre cookies consulta la",
+    "cookieLinkLabel": "Política de cookies"
+  },
+  "cookie": {
+    "title": "Política de cookies",
+    "subtitle": "Información sobre el uso de cookies conforme a la normativa de privacidad aplicable.",
+    "lastUpdate": "Última actualización: abril 2026",
+    "introTitle": "¿Qué son las cookies?",
+    "introText": "Las cookies son pequeños archivos de texto guardados en el navegador del usuario al visitar un sitio web. Pueden ser de sesión (eliminadas al cerrar el navegador) o persistentes (conservadas durante un período definido).",
+    "usageTitle": "Cómo utilizamos las cookies",
+    "usageText": "Este sitio utiliza exclusivamente cookies técnicas esenciales para el correcto funcionamiento. No se instalan cookies de perfilado, seguimiento conductual ni publicidad.",
+    "technicalTitle": "Cookies técnicas (necesarias)",
+    "technicalText": "Las cookies técnicas no requieren el consentimiento del usuario ya que son estrictamente necesarias para el servicio solicitado.",
+    "tableNameHeader": "Nombre",
+    "tablePurposeHeader": "Finalidad",
+    "tableDurationHeader": "Duración",
+    "cookies": [
+      { "name": "ap-color-mode", "purpose": "Guarda la preferencia de tema (claro / oscuro / sistema)", "duration": "12 meses" },
+      { "name": "i18n_redirected", "purpose": "Guarda el idioma seleccionado por el usuario", "duration": "Sesión" }
+    ],
+    "noTrackingTitle": "Sin cookies de perfilado",
+    "noTrackingText": "Este sitio no instala cookies de perfilado propias ni de terceros. No se utilizan servicios de analítica, publicidad ni seguimiento social.",
+    "thirdPartyTitle": "Cookies de terceros",
+    "thirdPartyText": "El sitio no integra servicios que instalen cookies de terceros. Las imágenes de los proyectos se cargan desde CDN externas (Behance, Altervista) sin funciones de seguimiento.",
+    "manageTitle": "Gestión de cookies",
+    "manageText": "Puedes controlar y eliminar las cookies desde la configuración de tu navegador. Deshabilitar las cookies técnicas puede afectar al correcto funcionamiento del sitio.",
+    "browsers": [
+      { "name": "Chrome", "url": "https://support.google.com/chrome/answer/95647" },
+      { "name": "Firefox", "url": "https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web" },
+      { "name": "Safari", "url": "https://support.apple.com/es-es/guide/safari/sfri11471/mac" },
+      { "name": "Edge", "url": "https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge" }
+    ],
+    "contactTitle": "Contacto",
+    "contactText": "Para más información escribe a: andrypiscioneri{'@'}gmail.com",
+    "privacyLinkText": "Para el tratamiento de datos personales consulta la",
+    "privacyLinkLabel": "Política de privacidad"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o ha sido movida. Volvamos a la página de inicio.",
+    "cta": "Volver al inicio"
+  },
+  "serverError": {
+    "title": "Algo salió mal",
+    "description": "Se produjo un error inesperado. Vuelve a intentarlo en unos momentos.",
+    "cta": "Volver al inicio"
   },
   "common": {
     "viewMore": "Ver todo",

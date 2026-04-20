@@ -16,6 +16,21 @@ if (!project.value) {
 const { next, prev } = getNextPrev(slug.value)
 
 const site = useRuntimeConfig().public.siteUrl as string
+const detailGallery = computed(() => {
+  if (!project.value) return []
+
+  if (project.value.gallery.length > 1) return project.value.gallery
+
+  const firstImage = project.value.gallery[0] ?? { src: project.value.cover, alt: project.value.title }
+
+  return [
+    firstImage,
+    {
+      ...firstImage,
+      alt: `${firstImage.alt} — dettaglio`,
+    },
+  ]
+})
 
 useSeoMeta({
   title: `${project.value!.title} — Andrea Piscioneri`,
@@ -159,10 +174,10 @@ useHead({
     </section>
 
     <!-- Gallery -->
-    <section v-if="project.gallery.length" class="container-x pb-20 md:pb-28">
+    <section v-if="detailGallery.length" class="container-x pb-20 md:pb-28">
       <div class="eyebrow mb-6"><span>{{ t('project.gallery') }}</span></div>
       <div class="grid gap-4 md:grid-cols-2">
-        <Reveal v-for="(img, i) in project.gallery" :key="i" :delay="i * 0.04">
+        <Reveal v-for="(img, i) in detailGallery" :key="i" :delay="i * 0.04">
           <figure class="relative aspect-[4/3] overflow-hidden rounded-3xl bg-ink-100 dark:bg-ink-900">
             <NuxtImg
               :src="img.src"

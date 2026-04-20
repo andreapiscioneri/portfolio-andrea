@@ -66,9 +66,13 @@ const scrollTop = () => {
         </div>
       </div>
 
-      <div class="flex flex-col gap-6 border-t border-black/5 py-8 text-xs text-ink-500 md:flex-row md:items-center md:justify-between dark:border-white/10 dark:text-white/60">
+      <div class="flex flex-col gap-4 border-t border-black/5 py-8 text-xs text-ink-500 md:flex-row md:items-center md:justify-between dark:border-white/10 dark:text-white/60">
         <p>{{ t('footer.copyright', { year }) }}</p>
-        <p class="opacity-80">{{ t('footer.colophon') }}</p>
+        <div class="flex flex-wrap items-center gap-4">
+          <NuxtLink :to="localePath('/trattamento-dati')" class="link-hover" data-cursor="link">{{ t('footer.dataProcessing') }}</NuxtLink>
+          <span aria-hidden="true">·</span>
+          <NuxtLink :to="localePath('/cookie')" class="link-hover" data-cursor="link">{{ t('footer.cookie') }}</NuxtLink>
+        </div>
         <button type="button" @click="scrollTop" class="link-hover self-start md:self-auto" data-cursor="link">
           {{ t('footer.backToTop') }} ↑
         </button>

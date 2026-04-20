@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-
 interface NuxtError {
   statusCode?: number
   statusMessage?: string
@@ -8,26 +6,44 @@ interface NuxtError {
 }
 
 const props = defineProps<{ error: NuxtError }>()
+const { t } = useI18n()
+const localePath = useLocalePath()
 
-const title = computed(() => (props.error?.statusCode === 404 ? 'Pagina non trovata' : 'Qualcosa è andato storto'))
-const description = computed(() =>
-  props.error?.statusCode === 404
-    ? "La pagina che cerchi non esiste o è stata spostata. Torna alla home e ripartiamo da lì."
-    : props.error?.message || "C'è stato un problema imprevisto. Riprova tra poco.",
-)
+const is404 = computed(() => props.error?.statusCode === 404)
 
-const handleError = () => clearError({ redirect: '/' })
+const title = computed(() => is404.value ? t('notFound.title') : t('serverError.title'))
+const description = computed(() => is404.value ? t('notFound.description') : t('serverError.description'))
+const cta = computed(() => is404.value ? t('notFound.cta') : t('serverError.cta'))
+
+const handleError = () => clearError({ redirect: localePath('/') })
 </script>
 
 <template>
-  <div class="flex min-h-screen items-center justify-center bg-paper px-6 text-ink dark:bg-ink-950 dark:text-paper">
-    <div class="max-w-xl text-center">
-      <div class="eyebrow mb-6 justify-center">
+  <div class="flex min-h-screen flex-col items-center justify-center bg-paper px-6 py-20 text-ink dark:bg-ink-950 dark:text-paper">
+    <div class="w-full max-w-lg text-center">
+
+      <!-- Status code -->
+      <div class="eyebrow mb-8 justify-center">
         <span>{{ error?.statusCode || 500 }}</span>
       </div>
-      <h1 class="font-display text-display-md mb-6 text-balance">{{ title }}</h1>
-      <p class="mb-10 text-ink-500 dark:text-white/70 text-pretty">{{ description }}</p>
-      <button class="btn btn-primary" @click="handleError">Torna alla home</button>
+
+      <!-- Heading -->
+      <h1 class="font-display text-display-md leading-[0.95] tracking-[-0.04em] mb-6 text-balance">
+        {{ title }}
+      </h1>
+
+      <!-- Description -->
+      <p class="mb-10 text-base text-ink-500 dark:text-white/60 text-pretty md:text-lg">
+        {{ description }}
+      </p>
+
+      <!-- CTA -->
+      <button
+        class="btn btn-primary"
+        @click="handleError"
+      >
+        {{ cta }}
+      </button>
     </div>
   </div>
 </template>

@@ -127,8 +127,92 @@
     "tagline": "Design, das denkt. Code, der zuhört.",
     "copyright": "© {year} Andrea Piscioneri. Alle Rechte vorbehalten.",
     "madeIn": "Handgemacht in der Lombardei, Italien.",
-    "colophon": "Gebaut mit Nuxt 3, TypeScript, Tailwind, GSAP & Lenis.",
-    "backToTop": "Nach oben"
+    "backToTop": "Nach oben",
+    "dataProcessing": "Datenverarbeitung",
+    "privacy": "Datenschutzerklärung",
+    "cookie": "Cookie-Richtlinie"
+  },
+  "dataProcessing": {
+    "title": "Datenverarbeitung",
+    "subtitle": "Informationen zur Verarbeitung personenbezogener Daten gemäß EU-Verordnung 2016/679 (DSGVO).",
+    "lastUpdate": "Letzte Aktualisierung: April 2026"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "subtitle": "Informationen zur Verarbeitung personenbezogener Daten gemäß EU-Verordnung 2016/679 (DSGVO).",
+    "lastUpdate": "Letzte Aktualisierung: April 2026",
+    "ownerTitle": "Verantwortlicher",
+    "ownerText": "Andrea Piscioneri — andrypiscioneri{'@'}gmail.com — Albino (BG), Italien",
+    "dataTitle": "Erhobene Daten",
+    "dataText": "Die Website erhebt ausschließlich Daten, die der Nutzer freiwillig über das Kontaktformular bereitstellt: Name, E-Mail-Adresse und Nachrichtentext. Ohne ausdrückliche Einwilligung werden keine weiteren personenbezogenen Daten erhoben.",
+    "purposeTitle": "Verarbeitungszweck",
+    "purposeText": "Die Daten werden ausschließlich zur Beantwortung von Kontaktanfragen verarbeitet. Sie werden nicht für kommerzielle Zwecke genutzt, nicht an Dritte weitergegeben und nicht zur Profilerstellung verwendet.",
+    "basisTitle": "Rechtsgrundlage",
+    "basisText": "Die Verarbeitung erfolgt auf Basis der ausdrücklichen Einwilligung der betroffenen Person (Art. 6 Abs. 1 lit. a DSGVO), die beim Absenden des Kontaktformulars erteilt wird.",
+    "retentionTitle": "Speicherdauer",
+    "retentionText": "Die Daten werden so lange gespeichert, wie es für die Bearbeitung der Anfrage erforderlich ist, längstens jedoch 12 Monate nach dem letzten Kontakt.",
+    "rightsTitle": "Rechte der betroffenen Person",
+    "rightsIntro": "Als betroffene Person haben Sie das Recht auf:",
+    "rights": [
+      "Auskunft über Ihre personenbezogenen Daten",
+      "Berichtigung oder Löschung",
+      "Einschränkung der Verarbeitung",
+      "Widerspruch gegen die Verarbeitung",
+      "Datenübertragbarkeit",
+      "Widerruf der Einwilligung jederzeit ohne Beeinträchtigung der Rechtmäßigkeit der bisherigen Verarbeitung"
+    ],
+    "rightsText": "Zur Ausübung Ihrer Rechte schreiben Sie an: andrypiscioneri{'@'}gmail.com",
+    "complaintText": "Sie haben außerdem das Recht, Beschwerde bei der zuständigen Datenschutzbehörde einzulegen.",
+    "transferTitle": "Datenübermittlung",
+    "transferText": "Daten werden nicht in Drittländer außerhalb der Europäischen Union übermittelt.",
+    "thirdPartyTitle": "Dritte",
+    "thirdPartyText": "Diese Website integriert keine Tracking-, Analyse- oder Werbedienste Dritter. Die einzigen an externe Systeme übermittelten Daten sind E-Mail-Korrespondenzen zur Beantwortung von Kontaktanfragen.",
+    "cookieLinkText": "Informationen zu Cookies finden Sie in der",
+    "cookieLinkLabel": "Cookie-Richtlinie"
+  },
+  "cookie": {
+    "title": "Cookie-Richtlinie",
+    "subtitle": "Informationen zur Verwendung von Cookies gemäß den geltenden Datenschutzvorschriften.",
+    "lastUpdate": "Letzte Aktualisierung: April 2026",
+    "introTitle": "Was sind Cookies?",
+    "introText": "Cookies sind kleine Textdateien, die beim Besuch einer Website im Browser des Nutzers gespeichert werden. Sie können als Sitzungs-Cookies (werden beim Schließen des Browsers gelöscht) oder persistente Cookies (für einen definierten Zeitraum gespeichert) vorliegen.",
+    "usageTitle": "Wie wir Cookies verwenden",
+    "usageText": "Diese Website verwendet ausschließlich technisch notwendige Cookies, die für den ordnungsgemäßen Betrieb der Website erforderlich sind. Es werden keine Profiling-, Verhaltensverfolgungs- oder Werbe-Cookies gesetzt.",
+    "technicalTitle": "Technische Cookies (notwendig)",
+    "technicalText": "Technische Cookies erfordern keine Einwilligung des Nutzers, da sie für den angeforderten Dienst unbedingt erforderlich sind.",
+    "tableNameHeader": "Name",
+    "tablePurposeHeader": "Zweck",
+    "tableDurationHeader": "Dauer",
+    "cookies": [
+      { "name": "ap-color-mode", "purpose": "Speichert die Theme-Einstellung (Hell / Dunkel / System)", "duration": "12 Monate" },
+      { "name": "i18n_redirected", "purpose": "Speichert die vom Nutzer gewählte Sprache", "duration": "Sitzung" }
+    ],
+    "noTrackingTitle": "Keine Profiling-Cookies",
+    "noTrackingText": "Diese Website setzt weder eigene noch fremde Profiling-Cookies. Es werden keine Analyse-, Werbe- oder Social-Tracking-Dienste verwendet.",
+    "thirdPartyTitle": "Drittanbieter-Cookies",
+    "thirdPartyText": "Die Website integriert keine Dienste, die Drittanbieter-Cookies setzen. Projektbilder werden von externen CDNs (Behance, Altervista) ohne Tracking-Funktionen geladen.",
+    "manageTitle": "Cookie-Verwaltung",
+    "manageText": "Sie können Cookies über die Einstellungen Ihres Browsers steuern und löschen. Das Deaktivieren technischer Cookies kann die ordnungsgemäße Funktion der Website beeinträchtigen.",
+    "browsers": [
+      { "name": "Chrome", "url": "https://support.google.com/chrome/answer/95647" },
+      { "name": "Firefox", "url": "https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen" },
+      { "name": "Safari", "url": "https://support.apple.com/de-de/guide/safari/sfri11471/mac" },
+      { "name": "Edge", "url": "https://support.microsoft.com/de-de/microsoft-edge/cookies-in-microsoft-edge-l%C3%B6schen" }
+    ],
+    "contactTitle": "Kontakt",
+    "contactText": "Für Informationen schreiben Sie an: andrypiscioneri{'@'}gmail.com",
+    "privacyLinkText": "Zur Verarbeitung personenbezogener Daten siehe die",
+    "privacyLinkLabel": "Datenschutzerklärung"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite existiert nicht oder wurde verschoben. Zurück zur Startseite.",
+    "cta": "Zur Startseite"
+  },
+  "serverError": {
+    "title": "Etwas ist schiefgelaufen",
+    "description": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es in einem Moment erneut.",
+    "cta": "Zur Startseite"
   },
   "common": {
     "viewMore": "Alles ansehen",

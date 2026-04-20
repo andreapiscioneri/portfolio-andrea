@@ -1,5 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0a0a0a"/>
-  <path d="M14 46 L24 18 H30 L40 46 H34 L32 39 H22 L20 46 Z M23.5 34 H30.5 L27 24.5 Z" fill="#fafaf7"/>
-  <circle cx="48" cy="18" r="4" fill="#ff4a1c"/>
+  <rect width="64" height="64" rx="14" fill="#000000"/>
+  <image
+    href="/logo.png"
+    x="14"
+    y="14"
+    width="36"
+    height="36"
+    preserveAspectRatio="xMidYMid meet"
+    style="filter: brightness(0) invert(1);"
+  />
 </svg>

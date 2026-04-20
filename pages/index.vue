@@ -15,8 +15,19 @@ useSeoMeta({
   ogType: 'website',
 })
 
-const services = computed(() => tm('home.services') as unknown as { title: string; body: string }[])
-const stats = computed(() => tm('home.stats') as unknown as { value: string; label: string; suffix: string }[])
+const services = computed(() =>
+  (tm('home.services') as { title: unknown; body: unknown }[]).map(s => ({
+    title: rt(s.title),
+    body: rt(s.body),
+  }))
+)
+const stats = computed(() =>
+  (tm('home.stats') as { value: unknown; label: unknown; suffix: unknown }[]).map(s => ({
+    value: rt(s.value),
+    label: rt(s.label),
+    suffix: rt(s.suffix),
+  }))
+)
 
 const marqueeItems = [
   'UX/UI',
@@ -70,6 +81,7 @@ const marqueeItems = [
       <div class="container-x grid gap-12 md:grid-cols-[1fr_1.3fr] md:items-center">
         <Reveal>
           <div class="relative aspect-[4/5] overflow-hidden rounded-3xl bg-gradient-to-br from-ink-800 to-ink-950 p-8 text-paper md:p-12">
+            <img src="/profilo.PNG" alt="Andrea Piscioneri" class="absolute inset-0 h-full w-full object-cover object-top grayscale opacity-40 mix-blend-luminosity" />
             <div class="absolute inset-0 opacity-40 mix-blend-overlay bg-[radial-gradient(circle_at_30%_20%,rgba(57,255,20,0.35),transparent_60%)]" />
             <div class="relative flex h-full flex-col justify-between">
               <div class="flex items-center justify-between text-xs uppercase tracking-[0.3em] text-white/60">

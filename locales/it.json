@@ -127,8 +127,92 @@
     "tagline": "Design che pensa, codice che ascolta.",
     "copyright": "© {year} Andrea Piscioneri. Tutti i diritti riservati.",
     "madeIn": "Fatto a mano in Lombardia, Italia.",
-    "colophon": "Sito costruito in Nuxt 3, TypeScript, Tailwind, GSAP & Lenis.",
-    "backToTop": "Torna su"
+    "backToTop": "Torna su",
+    "dataProcessing": "Trattamento dati",
+    "privacy": "Privacy Policy",
+    "cookie": "Cookie Policy"
+  },
+  "dataProcessing": {
+    "title": "Trattamento dati",
+    "subtitle": "Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR).",
+    "lastUpdate": "Ultimo aggiornamento: aprile 2026"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR).",
+    "lastUpdate": "Ultimo aggiornamento: aprile 2026",
+    "ownerTitle": "Titolare del trattamento",
+    "ownerText": "Andrea Piscioneri — andrypiscioneri{'@'}gmail.com — Albino (BG), Italia",
+    "dataTitle": "Dati raccolti",
+    "dataText": "Il sito raccoglie esclusivamente i dati che l'utente fornisce volontariamente tramite il modulo di contatto: nome, indirizzo email e testo del messaggio. Non vengono raccolti altri dati personali senza esplicito consenso.",
+    "purposeTitle": "Finalità del trattamento",
+    "purposeText": "I dati sono trattati al solo fine di rispondere alle richieste di contatto. Non vengono utilizzati per finalità commerciali, ceduti a terzi né impiegati per profilazione.",
+    "basisTitle": "Base giuridica",
+    "basisText": "Il trattamento si basa sul consenso espresso dell'interessato (art. 6, par. 1, lett. a, GDPR) manifestato al momento dell'invio del modulo di contatto.",
+    "retentionTitle": "Periodo di conservazione",
+    "retentionText": "I dati sono conservati per il tempo strettamente necessario a gestire la comunicazione e comunque non oltre 12 mesi dall'ultimo contatto.",
+    "rightsTitle": "Diritti dell'interessato",
+    "rightsIntro": "In qualità di interessato hai il diritto di:",
+    "rights": [
+      "Accedere ai tuoi dati personali",
+      "Ottenerne la rettifica o la cancellazione",
+      "Richiedere la limitazione del trattamento",
+      "Opporti al trattamento",
+      "Richiedere la portabilità dei dati",
+      "Revocare il consenso in qualsiasi momento senza pregiudicare la liceità del trattamento precedente"
+    ],
+    "rightsText": "Per esercitare i tuoi diritti scrivi a: andrypiscioneri{'@'}gmail.com",
+    "complaintText": "Hai inoltre il diritto di proporre reclamo all'Autorità Garante per la protezione dei dati personali (www.garanteprivacy.it).",
+    "transferTitle": "Trasferimento dei dati",
+    "transferText": "I dati non vengono trasferiti a paesi terzi al di fuori dell'Unione Europea.",
+    "thirdPartyTitle": "Terze parti",
+    "thirdPartyText": "Questo sito non integra servizi di tracciamento, analytics o pubblicità di terze parti. L'unico dato trasmesso a sistemi esterni è la corrispondenza via email per rispondere alle richieste di contatto.",
+    "cookieLinkText": "Per informazioni sui cookie consulta la",
+    "cookieLinkLabel": "Cookie Policy"
+  },
+  "cookie": {
+    "title": "Cookie Policy",
+    "subtitle": "Informativa sull'utilizzo dei cookie ai sensi dell'art. 122 del Codice Privacy e del Provvedimento Garante dell'8 maggio 2014.",
+    "lastUpdate": "Ultimo aggiornamento: aprile 2026",
+    "introTitle": "Cosa sono i cookie",
+    "introText": "I cookie sono piccoli file di testo salvati nel browser dell'utente alla visita di un sito web. Possono essere di sessione (eliminati alla chiusura del browser) o persistenti (conservati per un periodo definito).",
+    "usageTitle": "Come utilizziamo i cookie",
+    "usageText": "Questo sito utilizza esclusivamente cookie tecnici essenziali al corretto funzionamento del sito. Non vengono installati cookie di profilazione, tracciamento comportamentale o pubblicità.",
+    "technicalTitle": "Cookie tecnici (necessari)",
+    "technicalText": "I cookie tecnici non richiedono il consenso dell'utente in quanto strettamente necessari all'erogazione del servizio richiesto.",
+    "tableNameHeader": "Nome",
+    "tablePurposeHeader": "Finalità",
+    "tableDurationHeader": "Durata",
+    "cookies": [
+      { "name": "ap-color-mode", "purpose": "Memorizza la preferenza tema (chiaro / scuro / sistema)", "duration": "12 mesi" },
+      { "name": "i18n_redirected", "purpose": "Memorizza la lingua selezionata dall'utente", "duration": "Sessione" }
+    ],
+    "noTrackingTitle": "Nessun cookie di profilazione",
+    "noTrackingText": "Questo sito non installa cookie di profilazione propri né di terze parti. Non vengono utilizzati servizi di analytics (es. Google Analytics), advertising o social tracking.",
+    "thirdPartyTitle": "Cookie di terze parti",
+    "thirdPartyText": "Il sito non integra servizi che installino cookie di terze parti. Le immagini dei progetti sono caricate da CDN esterne (Behance, Altervista) senza funzionalità di tracciamento.",
+    "manageTitle": "Come gestire i cookie",
+    "manageText": "Puoi controllare e cancellare i cookie tramite le impostazioni del tuo browser. La disabilitazione dei cookie tecnici potrebbe compromettere il corretto funzionamento del sito.",
+    "browsers": [
+      { "name": "Chrome", "url": "https://support.google.com/chrome/answer/95647" },
+      { "name": "Firefox", "url": "https://support.mozilla.org/it/kb/Gestione%20dei%20cookie" },
+      { "name": "Safari", "url": "https://support.apple.com/it-it/guide/safari/sfri11471/mac" },
+      { "name": "Edge", "url": "https://support.microsoft.com/it-it/microsoft-edge/eliminare-i-cookie-in-microsoft-edge" }
+    ],
+    "contactTitle": "Contatti",
+    "contactText": "Per informazioni scrivi a: andrypiscioneri{'@'}gmail.com",
+    "privacyLinkText": "Per il trattamento dei dati personali consulta la",
+    "privacyLinkLabel": "Privacy Policy"
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "description": "La pagina che cerchi non esiste o è stata spostata. Ripartiamo dalla home.",
+    "cta": "Torna alla home"
+  },
+  "serverError": {
+    "title": "Qualcosa è andato storto",
+    "description": "Si è verificato un problema imprevisto. Riprova tra qualche istante.",
+    "cta": "Torna alla home"
   },
   "common": {
     "viewMore": "Vedi tutto",

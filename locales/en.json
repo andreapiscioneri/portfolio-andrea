@@ -127,8 +127,92 @@
     "tagline": "Design that thinks, code that listens.",
     "copyright": "© {year} Andrea Piscioneri. All rights reserved.",
     "madeIn": "Handmade in Lombardy, Italy.",
-    "colophon": "Built with Nuxt 3, TypeScript, Tailwind, GSAP & Lenis.",
-    "backToTop": "Back to top"
+    "backToTop": "Back to top",
+    "dataProcessing": "Data Processing",
+    "privacy": "Privacy Policy",
+    "cookie": "Cookie Policy"
+  },
+  "dataProcessing": {
+    "title": "Data Processing",
+    "subtitle": "Information on the processing of personal data pursuant to EU Regulation 2016/679 (GDPR).",
+    "lastUpdate": "Last updated: April 2026"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Information on the processing of personal data pursuant to EU Regulation 2016/679 (GDPR).",
+    "lastUpdate": "Last updated: April 2026",
+    "ownerTitle": "Data Controller",
+    "ownerText": "Andrea Piscioneri — andrypiscioneri{'@'}gmail.com — Albino (BG), Italy",
+    "dataTitle": "Data collected",
+    "dataText": "The site only collects data voluntarily provided by the user via the contact form: name, email address and message. No other personal data is collected without explicit consent.",
+    "purposeTitle": "Purpose of processing",
+    "purposeText": "Data is processed solely to respond to contact requests. It is not used for commercial purposes, shared with third parties or used for profiling.",
+    "basisTitle": "Legal basis",
+    "basisText": "Processing is based on the data subject's explicit consent (art. 6, par. 1, lit. a, GDPR) given at the time of submitting the contact form.",
+    "retentionTitle": "Retention period",
+    "retentionText": "Data is retained for the time strictly necessary to manage the communication and in any case no longer than 12 months from the last contact.",
+    "rightsTitle": "Your rights",
+    "rightsIntro": "As a data subject you have the right to:",
+    "rights": [
+      "Access your personal data",
+      "Obtain rectification or erasure",
+      "Request restriction of processing",
+      "Object to processing",
+      "Request data portability",
+      "Withdraw consent at any time without affecting the lawfulness of prior processing"
+    ],
+    "rightsText": "To exercise your rights write to: andrypiscioneri{'@'}gmail.com",
+    "complaintText": "You also have the right to lodge a complaint with the competent data protection authority.",
+    "transferTitle": "Data transfers",
+    "transferText": "Data is not transferred to third countries outside the European Union.",
+    "thirdPartyTitle": "Third parties",
+    "thirdPartyText": "This site does not integrate third-party tracking, analytics or advertising services. The only data transmitted to external systems is email correspondence to respond to contact requests.",
+    "cookieLinkText": "For information on cookies see the",
+    "cookieLinkLabel": "Cookie Policy"
+  },
+  "cookie": {
+    "title": "Cookie Policy",
+    "subtitle": "Information on the use of cookies in accordance with applicable privacy regulations.",
+    "lastUpdate": "Last updated: April 2026",
+    "introTitle": "What are cookies",
+    "introText": "Cookies are small text files saved in the user's browser when visiting a website. They can be session cookies (deleted when the browser is closed) or persistent (retained for a defined period).",
+    "usageTitle": "How we use cookies",
+    "usageText": "This site uses only essential technical cookies necessary for the correct functioning of the site. No profiling, behavioural tracking or advertising cookies are installed.",
+    "technicalTitle": "Technical cookies (necessary)",
+    "technicalText": "Technical cookies do not require user consent as they are strictly necessary for the service requested.",
+    "tableNameHeader": "Name",
+    "tablePurposeHeader": "Purpose",
+    "tableDurationHeader": "Duration",
+    "cookies": [
+      { "name": "ap-color-mode", "purpose": "Stores the theme preference (light / dark / system)", "duration": "12 months" },
+      { "name": "i18n_redirected", "purpose": "Stores the language selected by the user", "duration": "Session" }
+    ],
+    "noTrackingTitle": "No profiling cookies",
+    "noTrackingText": "This site does not install any first-party or third-party profiling cookies. No analytics (e.g. Google Analytics), advertising or social tracking services are used.",
+    "thirdPartyTitle": "Third-party cookies",
+    "thirdPartyText": "The site does not integrate services that install third-party cookies. Project images are loaded from external CDNs (Behance, Altervista) without tracking functionality.",
+    "manageTitle": "Managing cookies",
+    "manageText": "You can control and delete cookies through your browser settings. Disabling technical cookies may affect the correct functioning of the site.",
+    "browsers": [
+      { "name": "Chrome", "url": "https://support.google.com/chrome/answer/95647" },
+      { "name": "Firefox", "url": "https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop" },
+      { "name": "Safari", "url": "https://support.apple.com/en-us/guide/safari/sfri11471/mac" },
+      { "name": "Edge", "url": "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge" }
+    ],
+    "contactTitle": "Contact",
+    "contactText": "For information write to: andrypiscioneri{'@'}gmail.com",
+    "privacyLinkText": "For personal data processing see the",
+    "privacyLinkLabel": "Privacy Policy"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved. Let's head back to the home.",
+    "cta": "Back to home"
+  },
+  "serverError": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again in a moment.",
+    "cta": "Back to home"
   },
   "common": {
     "viewMore": "View all",

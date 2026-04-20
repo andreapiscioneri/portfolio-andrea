@@ -10,7 +10,6 @@ const isOpen = ref(false)
 const scrolled = ref(false)
 
 const navLinks = computed(() => [
-  { to: localePath('/'), label: t('nav.home') },
   { to: localePath('/work'), label: t('nav.work') },
   { to: localePath('/about'), label: t('nav.about') },
   { to: localePath('/contact'), label: t('nav.contact') },
@@ -52,10 +51,10 @@ const availableLocales = computed(() =>
     <nav class="container-x flex h-16 items-center justify-between md:h-20">
       <NuxtLink :to="localePath('/')" class="group relative flex items-center gap-3" data-cursor="link">
         <span
-          class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-ink text-paper text-sm font-semibold transition-colors duration-500 dark:border-white/10 dark:bg-paper dark:text-ink"
+          class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-ink transition-colors duration-500 dark:border-white/10 dark:bg-paper overflow-hidden"
           aria-hidden="true"
         >
-          AP
+          <img src="/logo.png" alt="AP" class="h-5 w-5 object-contain dark:invert" />
         </span>
         <span class="hidden text-sm font-medium sm:inline">Andrea Piscioneri</span>
       </NuxtLink>
