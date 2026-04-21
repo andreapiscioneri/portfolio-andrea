@@ -1,12 +1,71 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { personal, links } from '~/content/about'
+import { personal } from '~/content/about'
 
 const { t } = useI18n()
+const { locale } = useI18n()
+const localePath = useLocalePath()
+const { getHeroImageBySlug } = useHeroProjectImage()
+
+const heroImage = getHeroImageBySlug('design-system', 3)
+const site = useRuntimeConfig().public.siteUrl as string
+const absoluteHeroImage = computed(() => (/^https?:\/\//i.test(heroImage.value) ? heroImage.value : `${site}${heroImage.value}`))
+const contactUrl = computed(() => `${site}${localePath('/contact')}`)
+const homeUrl = computed(() => `${site}${localePath('/')}`)
 
 useSeoMeta({
   title: `${t('contact.title')} — Andrea Piscioneri`,
   description: t('contact.subtitle'),
+  ogTitle: `${t('contact.title')} — Andrea Piscioneri`,
+  ogDescription: t('contact.subtitle'),
+  ogImage: absoluteHeroImage,
+  twitterTitle: `${t('contact.title')} — Andrea Piscioneri`,
+  twitterDescription: t('contact.subtitle'),
+  twitterImage: absoluteHeroImage,
+  twitterCard: 'summary_large_image',
+})
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ContactPage',
+        '@id': `${contactUrl.value.replace(/\/$/, '')}/#contactpage`,
+        name: `${t('contact.title')} — Andrea Piscioneri`,
+        url: contactUrl.value,
+        description: t('contact.subtitle'),
+        inLanguage: locale.value,
+        isPartOf: { '@id': `${site}/#website` },
+        mainEntity: {
+          '@type': 'Person',
+          '@id': `${site}/#person`,
+          name: 'Andrea Piscioneri',
+          email: personal.email,
+          telephone: personal.phone,
+          contactPoint: {
+            '@type': 'ContactPoint',
+            contactType: 'customer service',
+            email: personal.email,
+            telephone: personal.phone,
+            availableLanguage: ['Italian', 'English'],
+          },
+        },
+      }),
+    },
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: t('nav.home'), item: homeUrl.value },
+          { '@type': 'ListItem', position: 2, name: t('nav.contact'), item: contactUrl.value },
+        ],
+      }),
+    },
+  ],
 })
 
 const form = ref({ name: '', email: '', message: '' })
@@ -34,17 +93,30 @@ const copyEmail = async () => {
 
 <template>
   <div>
-    <section class="container-x pt-40 md:pt-48 lg:pt-56 pb-20 md:pb-28">
-      <div class="eyebrow mb-4"><span>/ {{ t('nav.contact') }}</span></div>
-      <div class="grid gap-16 md:grid-cols-[1.3fr_1fr] md:items-end">
-        <AnimatedText as="h1" split="lines" class="font-display text-display-xl leading-[0.88] tracking-[-0.04em] text-balance">
-          {{ t('contact.title') }}
-        </AnimatedText>
-        <Reveal :delay="0.2">
-          <p class="max-w-md text-base text-ink-600 text-pretty dark:text-white/70 md:text-lg">
-            {{ t('contact.subtitle') }}
-          </p>
-        </Reveal>
+    <section class="relative overflow-hidden pt-40 md:pt-48 lg:pt-56 pb-20 md:pb-28">
+      <NuxtImg
+        :src="heroImage"
+        :alt="t('contact.title')"
+        class="pointer-events-none absolute inset-0 h-full w-full object-cover"
+        format="webp"
+        sizes="100vw"
+        placeholder
+      />
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/72 via-black/58 to-black/72" />
+      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_82%_18%,rgba(57,255,20,0.18),transparent_50%)]" />
+
+      <div class="container-x relative z-10">
+        <div class="eyebrow mb-4 text-white/70"><span>/ {{ t('nav.contact') }}</span></div>
+        <div class="grid gap-16 md:grid-cols-[1.3fr_1fr] md:items-end">
+          <AnimatedText as="h1" split="lines" class="font-display text-display-xl leading-[0.88] tracking-[-0.04em] text-balance text-paper">
+            {{ t('contact.title') }}
+          </AnimatedText>
+          <Reveal :delay="0.2">
+            <p class="max-w-md text-base text-white/80 text-pretty md:text-lg">
+              {{ t('contact.subtitle') }}
+            </p>
+          </Reveal>
+        </div>
       </div>
     </section>
 

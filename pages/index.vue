@@ -1,28 +1,81 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-const { t, tm, rt } = useI18n()
+const { t, tm, rt, locale } = useI18n()
 const { featured } = useProjects()
 const localePath = useLocalePath()
+const site = useRuntimeConfig().public.siteUrl as string
+const homeUrl = computed(() => `${site}${localePath('/')}`)
+const workUrl = computed(() => `${site}${localePath('/work')}`)
 
 useSeoPerson()
 
 useSeoMeta({
   title: () => t('site.title'),
   description: () => t('site.description'),
+  keywords: 'UX/UI Designer, Web Developer, Graphic Designer, Nuxt, Vue.js, Brand Identity, Portfolio, Andrea Piscioneri, Lombardia, Italia, Figma, React, Next.js, TypeScript',
   ogTitle: () => t('site.title'),
   ogDescription: () => t('site.description'),
+  ogImage: `${site}/profilo.PNG`,
+  twitterTitle: () => t('site.title'),
+  twitterDescription: () => t('site.description'),
+  twitterImage: `${site}/profilo.PNG`,
+  twitterCard: 'summary_large_image',
   ogType: 'website',
 })
 
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        '@id': `${homeUrl.value.replace(/\/$/, '')}/#homepage`,
+        name: t('site.title'),
+        url: homeUrl.value,
+        description: t('site.description'),
+        inLanguage: locale.value,
+        isPartOf: { '@id': `${site}/#website` },
+        about: { '@id': `${site}/#person` },
+        breadcrumb: {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: t('nav.home'), item: homeUrl.value },
+          ],
+        },
+      }),
+    },
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Servizi — Andrea Piscioneri',
+        description: 'Servizi offerti da Andrea Piscioneri: UX/UI Design, Web Development, Brand Identity, 3D & Motion, Fotografia, Odoo & App.',
+        inLanguage: locale.value,
+        url: workUrl.value,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, item: { '@type': 'Service', name: 'UX/UI Design', description: 'Ricerca, wireframe, prototipazione interattiva e design system completi.', provider: { '@id': `${site}/#person` } } },
+          { '@type': 'ListItem', position: 2, item: { '@type': 'Service', name: 'Sviluppo Web', description: 'Siti e app con Vue.js, Nuxt, React, Next.js. Veloci, accessibili e SEO-ready.', provider: { '@id': `${site}/#person` } } },
+          { '@type': 'ListItem', position: 3, item: { '@type': 'Service', name: 'Brand Identity', description: 'Naming, logo, visual identity, linee guida e materiali collateral.', provider: { '@id': `${site}/#person` } } },
+          { '@type': 'ListItem', position: 4, item: { '@type': 'Service', name: '3D & Motion', description: 'Cinema 4D, Blender, motion graphics, rendering di prodotto e video animati.', provider: { '@id': `${site}/#person` } } },
+          { '@type': 'ListItem', position: 5, item: { '@type': 'Service', name: 'Fotografia & Drone', description: 'Shooting, post-produzione e riprese aeree con drone certificate.', provider: { '@id': `${site}/#person` } } },
+          { '@type': 'ListItem', position: 6, item: { '@type': 'Service', name: 'Odoo & App', description: 'Moduli Odoo personalizzati e app mobile native.', provider: { '@id': `${site}/#person` } } },
+        ],
+      }),
+    },
+  ],
+})
+
 const services = computed(() =>
-  (tm('home.services') as { title: unknown; body: unknown }[]).map(s => ({
+  (tm('home.services') as { title: string; body: string }[]).map(s => ({
     title: rt(s.title),
     body: rt(s.body),
   }))
 )
 const stats = computed(() =>
-  (tm('home.stats') as { value: unknown; label: unknown; suffix: unknown }[]).map(s => ({
+  (tm('home.stats') as { value: string; label: string; suffix: string }[]).map(s => ({
     value: rt(s.value),
     label: rt(s.label),
     suffix: rt(s.suffix),

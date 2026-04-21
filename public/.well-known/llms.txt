@@ -1,0 +1,6 @@
+# LLM Discovery - Andrea Piscioneri
+
+Primary: https://andreapiscioneri.com/llms.txt
+Full: https://andreapiscioneri.com/llms-full.txt
+JSON: https://andreapiscioneri.com/llms.json
+Sitemap: https://andreapiscioneri.com/sitemap.xml

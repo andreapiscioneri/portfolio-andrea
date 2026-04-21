@@ -1,0 +1,24 @@
+{
+  "name": "Andrea Piscioneri — Portfolio",
+  "short_name": "AP Portfolio",
+  "description": "Portfolio di Andrea Piscioneri — UX/UI Designer, Web Developer e Graphic Designer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "lang": "it",
+  "scope": "/",
+  "orientation": "portrait-primary"
+}

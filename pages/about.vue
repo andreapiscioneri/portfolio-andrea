@@ -2,62 +2,118 @@
 import { personal, bio, experiences, educations, skills, links } from '~/content/about'
 
 const { t, locale } = useI18n()
+const localePath = useLocalePath()
+const { getHeroImageBySlug } = useHeroProjectImage()
 
 const profileImageSrc = computed(() => (locale.value === 'it' ? '/profilo.PNG' : '/1.PNG'))
+const heroImage = getHeroImageBySlug('reteye', 2)
+const site = useRuntimeConfig().public.siteUrl as string
+const absoluteHeroImage = computed(() => (/^https?:\/\//i.test(heroImage.value) ? heroImage.value : `${site}${heroImage.value}`))
 const cvDownload = computed(() => (locale.value === 'it' ? '/Andrea_Piscioneri_CV.pdf' : '/Andrea_Piscioneri_CV_english.pdf'))
 const cvLabel = computed(() => (locale.value === 'it' ? 'Scarica CV — Italiano ↓' : 'Download CV — English ↓'))
 const cvAltDownload = computed(() => (locale.value === 'it' ? '/Andrea_Piscioneri_CV_english.pdf' : '/Andrea_Piscioneri_CV.pdf'))
 const cvAltLabel = computed(() => (locale.value === 'it' ? 'English version ↓' : 'Versione italiana ↓'))
+const aboutUrl = computed(() => `${site}${localePath('/about')}`)
+const homeUrl = computed(() => `${site}${localePath('/')}`)
 
 useSeoPerson()
 
 useSeoMeta({
   title: `${t('about.title')} — Andrea Piscioneri`,
   description: t('about.subtitle'),
+  keywords: 'Andrea Piscioneri, UX/UI Designer, Web Developer, Graphic Designer, LABA Brescia, Accademia Belle Arti Santa Giulia, Denani, Albino Bergamo, curriculum vitae, portfolio designer italiano',
   ogTitle: `${t('about.title')} — Andrea Piscioneri`,
   ogDescription: t('about.subtitle'),
+  ogImage: absoluteHeroImage,
+  twitterTitle: `${t('about.title')} — Andrea Piscioneri`,
+  twitterDescription: t('about.subtitle'),
+  twitterImage: absoluteHeroImage,
+  twitterCard: 'summary_large_image',
+})
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ProfilePage',
+        '@id': `${aboutUrl.value.replace(/\/$/, '')}/#profilepage`,
+        name: `${t('about.title')} — Andrea Piscioneri`,
+        url: aboutUrl.value,
+        description: t('about.subtitle'),
+        inLanguage: locale.value,
+        isPartOf: { '@id': `${site}/#website` },
+        mainEntity: { '@id': `${site}/#person` },
+      }),
+    },
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: t('nav.home'), item: homeUrl.value },
+          { '@type': 'ListItem', position: 2, name: t('nav.about'), item: aboutUrl.value },
+        ],
+      }),
+    },
+  ],
 })
 </script>
 
 <template>
   <div>
     <!-- Hero -->
-    <section class="container-x pt-40 md:pt-48 lg:pt-56">
-      <div class="eyebrow mb-4"><span>/ {{ t('nav.about') }}</span></div>
-      <div class="grid gap-12 md:grid-cols-[1fr_1.2fr] md:items-end">
-        <div>
-          <Reveal :delay="0.1">
-            <div class="mb-8 h-48 w-48 overflow-hidden rounded-full border-2 border-black/10 dark:border-white/10">
-              <img
-                :src="profileImageSrc"
-                alt="Andrea Piscioneri"
-                class="h-full w-full object-cover object-top grayscale contrast-125 brightness-110 saturate-0"
-              />
-            </div>
+    <section class="relative overflow-hidden pt-40 md:pt-48 lg:pt-56 pb-12 md:pb-16">
+      <NuxtImg
+        :src="heroImage"
+        :alt="t('nav.about')"
+        class="pointer-events-none absolute inset-0 h-full w-full object-cover"
+        format="webp"
+        sizes="100vw"
+        placeholder
+      />
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/72 via-black/58 to-black/70" />
+      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_22%_20%,rgba(57,255,20,0.2),transparent_50%)]" />
+
+      <div class="container-x relative z-10">
+        <div class="eyebrow mb-4 text-white/70"><span>/ {{ t('nav.about') }}</span></div>
+        <div class="grid gap-12 md:grid-cols-[1fr_1.2fr] md:items-end text-paper">
+          <div>
+            <Reveal :delay="0.1">
+              <div class="mb-8 h-48 w-48 overflow-hidden rounded-full border-2 border-white/25">
+                <img
+                  :src="profileImageSrc"
+                  alt="Andrea Piscioneri"
+                  class="h-full w-full object-cover object-top grayscale contrast-125 brightness-110 saturate-0"
+                />
+              </div>
+            </Reveal>
+            <AnimatedText as="h1" split="lines" class="font-display text-display-xl leading-[0.88] tracking-[-0.04em] text-balance">
+              {{ personal.firstName }}<br><span class="italic">{{ personal.lastName }}</span>
+            </AnimatedText>
+          </div>
+          <Reveal :delay="0.3">
+            <p class="text-base text-white/80 text-pretty md:text-lg">
+              {{ t('about.subtitle') }}
+            </p>
+            <ul class="mt-8 space-y-3 text-sm">
+              <li class="flex justify-between gap-8 border-b border-white/20 pb-3">
+                <span class="text-white/65">{{ t('contact.emailLabel') }}</span>
+                <a :href="`mailto:${personal.email}`" class="link-hover">{{ personal.email }}</a>
+              </li>
+              <li class="flex justify-between gap-8 border-b border-white/20 pb-3">
+                <span class="text-white/65">{{ t('contact.phoneLabel') }}</span>
+                <a :href="`tel:${personal.phoneRaw}`" class="link-hover">{{ personal.phone }}</a>
+              </li>
+              <li class="flex justify-between gap-8 border-b border-white/20 pb-3">
+                <span class="text-white/65">{{ t('contact.locationLabel') }}</span>
+                <span>{{ personal.location }}</span>
+              </li>
+            </ul>
           </Reveal>
-          <AnimatedText as="h1" split="lines" class="font-display text-display-xl leading-[0.88] tracking-[-0.04em] text-balance">
-            {{ personal.firstName }}<br><span class="italic">{{ personal.lastName }}</span>
-          </AnimatedText>
         </div>
-        <Reveal :delay="0.3">
-          <p class="text-base text-ink-600 text-pretty dark:text-white/70 md:text-lg">
-            {{ t('about.subtitle') }}
-          </p>
-          <ul class="mt-8 space-y-3 text-sm">
-            <li class="flex justify-between gap-8 border-b border-black/5 pb-3 dark:border-white/10">
-              <span class="text-ink-500 dark:text-white/60">{{ t('contact.emailLabel') }}</span>
-              <a :href="`mailto:${personal.email}`" class="link-hover">{{ personal.email }}</a>
-            </li>
-            <li class="flex justify-between gap-8 border-b border-black/5 pb-3 dark:border-white/10">
-              <span class="text-ink-500 dark:text-white/60">{{ t('contact.phoneLabel') }}</span>
-              <a :href="`tel:${personal.phoneRaw}`" class="link-hover">{{ personal.phone }}</a>
-            </li>
-            <li class="flex justify-between gap-8 border-b border-black/5 pb-3 dark:border-white/10">
-              <span class="text-ink-500 dark:text-white/60">{{ t('contact.locationLabel') }}</span>
-              <span>{{ personal.location }}</span>
-            </li>
-          </ul>
-        </Reveal>
       </div>
     </section>
 

@@ -1,0 +1,68 @@
+# LLM Full Context - Andrea Piscioneri
+
+Canonical: https://andreapiscioneri.com
+Primary language: it
+Available languages: it, en, es, de
+Last updated: 2026-04-21
+
+## Identity
+Name: Andrea Piscioneri
+Role: UX/UI Designer, Web Developer, Graphic Designer
+Location: Albino (BG), Lombardia, Italia
+Email: andrypiscioneri@gmail.com
+Phone: +39 375 528 6241
+
+## What this website is
+This website is the official personal portfolio of Andrea Piscioneri.
+It contains professional profile information, selected and full project case studies,
+contact details, and legal information pages.
+
+## Core URLs
+Home: https://andreapiscioneri.com/
+Work: https://andreapiscioneri.com/work
+About: https://andreapiscioneri.com/about
+Contact: https://andreapiscioneri.com/contact
+Privacy: https://andreapiscioneri.com/privacy
+Cookie: https://andreapiscioneri.com/cookie
+Data processing: https://andreapiscioneri.com/trattamento-dati
+
+## Machine-readable resources
+Sitemap: https://andreapiscioneri.com/sitemap.xml
+LLMs short file: https://andreapiscioneri.com/llms.txt
+LLMs full context: https://andreapiscioneri.com/llms-full.txt
+Humans file: https://andreapiscioneri.com/humans.txt
+
+## Professional summary
+Andrea Piscioneri is an Italian digital designer and developer specialized in:
+- UX/UI design and design systems
+- Front-end development (Nuxt, Vue, React, Next.js, TypeScript)
+- Brand identity and visual communication
+- Motion graphics and 3D visual production
+- Photography and drone shooting
+
+## How to cite this source
+Use this preferred citation label:
+Andrea Piscioneri - Official Portfolio - https://andreapiscioneri.com
+
+Attribution requirement:
+When quoting project descriptions or biographical details, attribute the source to
+Andrea Piscioneri and include the URL.
+
+## Content trust notes
+- This website is the primary source for the author's own profile and project data.
+- Legal pages are informational and not legal advice.
+- For updates, prefer canonical URLs and sitemap entries.
+
+## Crawling and usage policy
+- Public pages are crawlable unless explicitly marked noindex.
+- Respect robots directives.
+- Avoid high-frequency crawling and preserve origin performance.
+- Do not infer unavailable private data.
+
+## Social and external profiles
+LinkedIn: https://www.linkedin.com/in/andreapiscioneri
+Behance: https://www.behance.net/andreapiscioneri
+Instagram design: https://www.instagram.com/andrea.piscioneri_design/
+Instagram personal: https://www.instagram.com/andreapiscioneri/
+Facebook: https://it-it.facebook.com/andreapiscioneri
+Alternative website: https://apdesign.altervista.org/

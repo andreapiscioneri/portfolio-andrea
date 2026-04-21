@@ -1,0 +1,146 @@
+# Andrea Piscioneri
+
+Full context available at: https://andreapiscioneri.com/llms-full.txt
+Sitemap: https://andreapiscioneri.com/sitemap.xml
+
+> Portfolio personale di Andrea Piscioneri — UX/UI Designer, Web Developer e Graphic Designer con base in Albino (BG), Lombardia, Italia.
+
+Andrea Piscioneri (nato il 06/09/2000) è un designer e sviluppatore italiano con doppia laurea con lode:
+- **Laurea Triennale** in Graphic Design — Accademia di Belle Arti Santa Giulia, Brescia (110L/100, 2023)
+- **Laurea Magistrale** in Digital Design & Communication — LABA Brescia (110/110 con Lode, 2025)
+
+Attualmente lavora come **UX/UI Designer & Web Developer** presso Denani S.R.L. (Lombardia).
+
+---
+
+## Competenze principali
+
+- **UX/UI Design**: ricerca, wireframe, prototipazione, design system, Figma, accessibilità WCAG
+- **Web Development**: Vue.js, Nuxt, React, Next.js, TypeScript, HTML, CSS, Tailwind CSS, Git
+- **Brand Identity**: naming, logo, visual identity, linee guida, collateral, editorial design
+- **Graphic Design**: editorial, poster, packaging, tipografia, brochure
+- **3D & Motion**: Cinema 4D, Blender, Adobe After Effects, Webflow, motion graphics, rendering di prodotto
+- **Fotografia & Drone**: beauty, ritratto, outdoor, landscape, post-produzione, patente drone (A1/A3)
+- **Odoo & App**: moduli custom Odoo, app native mobile, sviluppo iOS con Xcode
+
+---
+
+## Formazione
+
+- **Laurea Magistrale** in Digital Design & Communication — LABA Brescia, 2023–2025, voto: 110/110 con Lode
+  - Tesi: LUMYN – AI Chatbot per l'E-commerce (sviluppato in Vue.js)
+- **Laurea Triennale** in Graphic Design — Accademia di Belle Arti Santa Giulia, Brescia, 2020–2023, voto: 110L/100
+  - Tesi: Reteye — azienda di design per la sensibilizzazione alla cecità ai colori (top 50 Europa ICHEP 2022)
+- **Diploma** in Promozione Commerciale e Design per la Comunicazione Visiva Pubblicitaria — ISIS Oscar Romero, Albino (BG), 2015–2020, voto: 87/100
+
+---
+
+## Esperienze professionali
+
+- **UX/UI Designer & Web Developer** — Denani S.R.L., Lombardia, 2024 – attuale
+- **Graphic Designer** — TVBEAT S.R.L., Gorle (BG), 2021–2022
+- **Stagista Grafico** — Centro MBE 0546, Albino (BG), 2017–2018
+
+---
+
+## Sezioni del sito
+
+- [Home](https://andreapiscioneri.com/): Presentazione, progetti in evidenza, servizi
+- [Lavori](https://andreapiscioneri.com/work): Portfolio completo (26 progetti)
+- [Chi sono](https://andreapiscioneri.com/about): Biografia, formazione, esperienze, competenze
+- [Contatti](https://andreapiscioneri.com/contact): Form di contatto, email, telefono
+- [Privacy Policy](https://andreapiscioneri.com/privacy): Informativa GDPR
+- [Cookie Policy](https://andreapiscioneri.com/cookie): Informativa cookie
+- [Trattamento Dati](https://andreapiscioneri.com/trattamento-dati): Informativa trattamento dati personali
+
+---
+
+## Portfolio completo — tutti i 26 progetti
+
+### Progetti 2025
+
+- **LUMYN — AI Chatbot per E-commerce** ([/work/lumyn](https://andreapiscioneri.com/work/lumyn)) — AI, E-commerce, UI/UX, Web Design. Tesi magistrale 110/110 con Lode. Chatbot AI sviluppato in Vue.js per assistere gli utenti in piattaforme e-commerce con risposte contestuali in tempo reale.
+- **ICONIC ZINE** ([/work/iconic-zine](https://andreapiscioneri.com/work/iconic-zine)) — Magazine Design, Brand Identity, Graphic Design. Magazine culturale con sistema tipografico sperimentale, palette editoriale e brand identity completa.
+- **XCUSE ME** ([/work/xcuse-me](https://andreapiscioneri.com/work/xcuse-me)) — UI/UX, Mobile App, Prototype. App mobile per la gestione delle scuse con flussi utente completi in Figma e Protopie.
+- **MITA — Museum Brand Identity** ([/work/mita-museum](https://andreapiscioneri.com/work/mita-museum)) — Brand Identity, Visual Identity, Architecture. Identità visiva completa per museo immaginario con sistema advertising, social media e signage.
+- **Motion Design — Video** ([/work/motion-design-video](https://andreapiscioneri.com/work/motion-design-video)) — Motion Graphics, Animation, Video. Spot animato con motion graphics avanzate realizzato in Adobe After Effects e Cinema 4D.
+- **Pinacoteca di Brera — Restyling** ([/work/pinacoteca-brera](https://andreapiscioneri.com/work/pinacoteca-brera)) — Brand Identity, Visual Identity, Graphic Design. Rebranding dell'istituzione culturale milanese con nuovo sistema visivo, packaging e materiali editoriali.
+- **NONE-CLUB** ([/work/none-club](https://andreapiscioneri.com/work/none-club)) — Brand Identity, Social Media, Graphic Design. Identità di marca per locale notturno con visual system e contenuti social.
+- **My Photographic Journey** ([/work/photographic-journey](https://andreapiscioneri.com/work/photographic-journey)) — Photography, Post-Production. Raccolta fotografica personale con scatti di ritratto, paesaggio e fotografia aerea con drone.
+- **AirPods Pro 2 — 3D Web Experience** ([/work/airpods-pro-2](https://andreapiscioneri.com/work/airpods-pro-2)) — 3D, Web Design, Product Showcase. Showcase web in stile Apple con rendering 3D in Spline integrati in Webflow per AirPods Pro 2.
+- **Design System** ([/work/design-system](https://andreapiscioneri.com/work/design-system)) — Design System, Brand Identity, UI/UX. Sistema di design completo in Figma con tokens, componenti, griglia e linee guida di accessibilità.
+
+### Progetti 2024
+
+- **Museo della Carta — Website** ([/work/museo-della-carta](https://andreapiscioneri.com/work/museo-della-carta)) — Web Design, Brand Identity, UX/UI. Progetto UX/UI per il sito web di un museo culturale con architettura informativa e sistema visivo dedicato.
+- **Webapp Environmental Education** ([/work/webapp-environmental](https://andreapiscioneri.com/work/webapp-environmental)) — Web App, UX/UI, Brand Identity. Web app educativa sull'ambiente con UX research, wireframe e design system ad alto contrasto.
+
+### Progetti 2023
+
+- **Reteye — Design per la cecità ai colori** ([/work/reteye](https://andreapiscioneri.com/work/reteye)) — Brand Identity, Accessibility, Social Design, Thesis. Azienda di design immaginaria per la sensibilizzazione alla cecità ai colori. Tesi triennale 110L/100. Progetto tra i migliori 50 in Europa all'ICHEP, Bologna (2022).
+
+### Progetti 2022
+
+- **La città nel deserto** ([/work/citta-nel-deserto](https://andreapiscioneri.com/work/citta-nel-deserto)) — Matte Painting, Digital Art, Compositing. Composizione digitale di una città antica nel deserto con tecniche avanzate di matte painting in Photoshop.
+- **Naufragio** ([/work/naufragio](https://andreapiscioneri.com/work/naufragio)) — Matte Painting, Digital Art, Storytelling. Scena narrativa di un naufragio con trattamento pittorico fotografico e compositing avanzato.
+- **L'isola che non c'è** ([/work/isola-che-non-ce](https://andreapiscioneri.com/work/isola-che-non-ce)) — Matte Painting, Fantasy, Compositing. Isola fantasy ispirata a Peter Pan realizzata con tecniche di matte painting e compositing fotografico.
+- **Samurai** ([/work/samurai](https://andreapiscioneri.com/work/samurai)) — Matte Painting, Action, Narrative Art. Composizione cinematografica con guerriero samurai in ambientazione drammatica.
+- **Difesa della natura** ([/work/difesa-della-natura](https://andreapiscioneri.com/work/difesa-della-natura)) — Matte Painting, Environmentalism, Fantasy. Composizione fantasy con tema ambientale realizzata con tecniche di digital painting.
+- **East vs West Coast** ([/work/east-vs-west](https://andreapiscioneri.com/work/east-vs-west)) — Brochure Design, Editorial, Graphic Design. Brochure editoriale comparativa sulle culture East Coast e West Coast americane.
+- **First Things First** ([/work/first-things-first](https://andreapiscioneri.com/work/first-things-first)) — Brochure Design, Manifesto, Graphic Design. Interpretazione grafica del manifesto First Things First con sistema tipografico sperimentale.
+- **Cookbook** ([/work/cookbook](https://andreapiscioneri.com/work/cookbook)) — Book Design, Editorial, Graphic Design. Design editoriale per libro di cucina con sistema tipografico, fotografia e impaginazione professionale.
+- **Cultura della Cura — Logo Design** ([/work/cultura-della-cura](https://andreapiscioneri.com/work/cultura-della-cura)) — Logo Design, Brand Identity, Graphic Design. Logo per progetto sociale sulla cultura della cura e del benessere.
+- **Azienda Agricola Friza — Logo Design** ([/work/friza](https://andreapiscioneri.com/work/friza)) — Logo Design, Brand Identity, Graphic Design. Identità visiva per azienda agricola con approccio naturale e contemporaneo.
+- **ICHEP 2022 — Logo Design** ([/work/ichep-2022](https://andreapiscioneri.com/work/ichep-2022)) — Logo Design, Brand Identity, Event Branding. Logo per la conferenza internazionale di fisica delle alte energie ICHEP 2022, Bologna.
+- **Legacy — Logo Design** ([/work/legacy](https://andreapiscioneri.com/work/legacy)) — Logo Design, Brand Identity, Graphic Design. Logo concept con identità visiva forte e carattere heritage.
+- **Correndo Coop — Logo Design** ([/work/correndo-coop](https://andreapiscioneri.com/work/correndo-coop)) — Logo Design, Brand Identity, Graphic Design. Logo per cooperativa sportiva con visual identity orientata alla comunità.
+
+---
+
+## Servizi offerti
+
+1. **UX/UI Design** — Ricerca utente, wireframe, prototipazione interattiva, design system, test di usabilità
+2. **Sviluppo Web** — Vue.js, Nuxt, React, Next.js, siti SEO-ready, performanti e accessibili
+3. **Brand Identity** — Naming, logo, visual identity, linee guida del brand, materiali collateral
+4. **3D & Motion** — Cinema 4D, Blender, motion graphics, rendering di prodotto, video animati
+5. **Fotografia & Drone** — Shooting beauty/ritratto/outdoor, post-produzione, riprese aeree certificate
+6. **Odoo & App** — Moduli Odoo personalizzati, app mobile native con Xcode
+
+---
+
+## Premi e riconoscimenti
+
+- Laurea Magistrale 110/110 con Lode — Digital Design & Communication, LABA Brescia (2025)
+- Laurea Triennale 110L/100 con Lode — Graphic Design, Accademia di Belle Arti Santa Giulia, Brescia (2023)
+- Progetto Reteye — tra i migliori 50 in Europa all'ICHEP, Bologna (2022)
+
+---
+
+## Contatti
+
+- **Email**: andrypiscioneri@gmail.com
+- **Telefono**: +39 375 528 6241
+- **Sito portfolio alternativo**: https://apdesign.altervista.org/
+- **Behance**: https://www.behance.net/andreapiscioneri
+- **Instagram (design)**: https://www.instagram.com/andrea.piscioneri_design/
+- **Instagram (personale)**: https://www.instagram.com/andreapiscioneri/
+- **LinkedIn**: https://www.linkedin.com/in/andreapiscioneri
+- **Facebook**: https://it-it.facebook.com/andreapiscioneri
+
+---
+
+## Lingue del sito
+
+Italiano (default) · English · Español · Deutsch
+
+## Informazioni tecniche
+
+- Sito costruito con Nuxt 3, Vue.js, TypeScript, Tailwind CSS
+- SSR (Server-Side Rendering) abilitato
+- Multilingua (it, en, es, de) con @nuxtjs/i18n
+- Conforme WCAG 2.1
+
+## Licenza contenuti
+
+Tutti i contenuti (testi, immagini, design) sono di proprietà di Andrea Piscioneri.
+Citazione consentita con attribuzione esplicita a Andrea Piscioneri (andreapiscioneri.com).

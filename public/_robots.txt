@@ -1,20 +1,62 @@
 User-agent: *
 Allow: /
 
-# AI / LLM crawlers explicitly allowed (GEO optimization)
+# ── AI / LLM crawlers explicitly allowed (GEO optimization) ──────────────────
+
+# OpenAI
 User-agent: GPTBot
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: PerplexityBot
+User-agent: anthropic-ai
 Allow: /
 
+# Google AI
 User-agent: Google-Extended
 Allow: /
 
-User-agent: anthropic-ai
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Amazon Alexa / AWS
+User-agent: Amazonbot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (dataset for AI training)
+User-agent: CCBot
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# ByteDance / TikTok AI
+User-agent: Bytespider
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
 Allow: /
 
 Sitemap: https://andreapiscioneri.com/sitemap.xml

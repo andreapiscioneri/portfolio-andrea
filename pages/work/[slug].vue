@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 
 const route = useRoute()
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const localePath = useLocalePath()
 const { getBySlug, getNextPrev } = useProjects()
 
@@ -16,6 +16,16 @@ if (!project.value) {
 const { next, prev } = getNextPrev(slug.value)
 
 const site = useRuntimeConfig().public.siteUrl as string
+const pageUrl = computed(() => `${site}${route.path}`)
+const galleryImages = computed(() =>
+  (project.value?.gallery ?? []).map((img) =>
+    /^https?:\/\//i.test(img.src) ? img.src : `${site}${img.src}`,
+  ),
+)
+const absoluteCover = computed(() => {
+  const cover = project.value?.cover ?? '/logo.png'
+  return /^https?:\/\//i.test(cover) ? cover : `${site}${cover}`
+})
 const detailGallery = computed(() => {
   if (!project.value) return []
 
@@ -35,13 +45,16 @@ const detailGallery = computed(() => {
 useSeoMeta({
   title: `${project.value!.title} — Andrea Piscioneri`,
   description: project.value!.excerpt,
+  keywords: [...project.value!.category, ...project.value!.stack, 'Andrea Piscioneri', 'portfolio', project.value!.client].join(', '),
   ogTitle: `${project.value!.title} — Andrea Piscioneri`,
   ogDescription: project.value!.excerpt,
-  ogImage: `${site}${project.value!.cover}`,
+  ogImage: absoluteCover,
+  twitterTitle: `${project.value!.title} — Andrea Piscioneri`,
+  twitterDescription: project.value!.excerpt,
+  twitterImage: absoluteCover,
   twitterCard: 'summary_large_image',
 })
 
-// JSON-LD CreativeWork schema per GEO / AI
 useHead({
   script: [
     {
@@ -49,17 +62,34 @@ useHead({
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'CreativeWork',
+        '@id': `${site}/work/${project.value!.slug}/#work`,
         name: project.value!.title,
+        abstract: project.value!.excerpt,
         description: project.value!.description,
-        creator: {
-          '@type': 'Person',
-          name: 'Andrea Piscioneri',
-          url: site,
-        },
-        datePublished: project.value!.year,
+        creator: { '@type': 'Person', '@id': `${site}/#person`, name: 'Andrea Piscioneri', url: site },
+        author: { '@type': 'Person', '@id': `${site}/#person`, name: 'Andrea Piscioneri' },
+        datePublished: `${project.value!.year}-01-01`,
+        dateCreated: `${project.value!.year}-01-01`,
         keywords: [...project.value!.category, ...project.value!.stack].join(', '),
-        url: `${site}/work/${project.value!.slug}`,
-        image: `${site}${project.value!.cover}`,
+        genre: project.value!.category[0] ?? '',
+        about: project.value!.category.map(c => ({ '@type': 'Thing', name: c })),
+        url: pageUrl.value,
+        image: galleryImages.value,
+        thumbnailUrl: absoluteCover.value,
+        inLanguage: locale.value,
+        isPartOf: { '@id': `${site}/#website` },
+      }),
+    },
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: t('nav.home'), item: `${site}${localePath('/')}` },
+          { '@type': 'ListItem', position: 2, name: t('nav.work'), item: `${site}${localePath('/work')}` },
+          { '@type': 'ListItem', position: 3, name: project.value!.title, item: pageUrl.value },
+        ],
       }),
     },
   ],
@@ -69,20 +99,33 @@ useHead({
 <template>
   <article v-if="project">
     <!-- Hero -->
-    <section class="container-x pt-40 md:pt-48 lg:pt-56 pb-10 md:pb-16">
-      <div class="mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.24em] text-ink-500 dark:text-white/60">
-        <NuxtLink :to="localePath('/work')" class="link-hover" data-cursor="link">← {{ t('project.backToWork') }}</NuxtLink>
-        <span>·</span>
-        <span>{{ project.year }}</span>
+    <section class="relative overflow-hidden pt-40 md:pt-48 lg:pt-56 pb-10 md:pb-16">
+      <NuxtImg
+        :src="project.cover"
+        :alt="project.title"
+        class="pointer-events-none absolute inset-0 h-full w-full object-cover"
+        format="webp"
+        sizes="100vw"
+        placeholder
+      />
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/75 via-black/60 to-black/75" />
+      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_78%_20%,rgba(57,255,20,0.18),transparent_50%)]" />
+
+      <div class="container-x relative z-10 text-paper">
+        <div class="mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.24em] text-white/65">
+          <NuxtLink :to="localePath('/work')" class="link-hover" data-cursor="link">← {{ t('project.backToWork') }}</NuxtLink>
+          <span>·</span>
+          <span>{{ project.year }}</span>
+        </div>
+        <AnimatedText as="h1" split="lines" class="font-display text-display-xl leading-[0.9] tracking-[-0.04em] max-w-5xl text-balance">
+          {{ project.title }}
+        </AnimatedText>
+        <Reveal :delay="0.2">
+          <p class="mt-8 max-w-3xl text-lg text-white/80 text-pretty md:text-xl">
+            {{ project.excerpt }}
+          </p>
+        </Reveal>
       </div>
-      <AnimatedText as="h1" split="lines" class="font-display text-display-xl leading-[0.9] tracking-[-0.04em] max-w-5xl text-balance">
-        {{ project.title }}
-      </AnimatedText>
-      <Reveal :delay="0.2">
-        <p class="mt-8 max-w-3xl text-lg text-ink-600 dark:text-white/70 text-pretty md:text-xl">
-          {{ project.excerpt }}
-        </p>
-      </Reveal>
     </section>
 
     <!-- Cover image -->

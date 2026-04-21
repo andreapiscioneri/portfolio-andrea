@@ -1,14 +1,14 @@
 /* TEAM */
   Designer & Developer: Andrea Piscioneri
   Contact: andrypiscioneri@gmail.com
-  Twitter / Instagram: @andrea.piscioneri_design
-  Behance: @andreapiscioneri
+  Instagram (design): @andrea.piscioneri_design
+  Instagram (personal): @andreapiscioneri
+  Behance: behance.net/andreapiscioneri
+  LinkedIn: linkedin.com/in/andreapiscioneri
   Location: Albino (BG), Lombardia, Italia
 
 /* SITE */
   Last update: 2026
-  Language: Italiano (default) · English · Español · Deutsch
+  Languages: Italiano (default) · English · Español · Deutsch
   Doctype: HTML5
-  Standards: HTML5, CSS3, TypeScript
-  Components: Nuxt 3, Vue 3, TailwindCSS, GSAP, Lenis
-  Software: VS Code, Figma, Nuxt Devtools
+  Standards: HTML5, CSS3, TypeScript, WCAG 2.1

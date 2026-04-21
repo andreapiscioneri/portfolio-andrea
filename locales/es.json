@@ -4,15 +4,9 @@
     "description": "Portafolio de Andrea Piscioneri. Diseñador UX/UI, web designer & developer, diseñador gráfico con base en Lombardía, Italia. Diseño digital, identidad de marca y desarrollo web.",
     "tagline": "Diseño que piensa, código que escucha."
   },
-    "dataProcessing": "Tratamiento de datos",
   "nav": {
     "home": "Inicio",
     "work": "Trabajos",
-  "dataProcessing": {
-    "title": "Tratamiento de datos",
-    "subtitle": "Información sobre el tratamiento de datos personales de conformidad con el Reglamento UE 2016/679 (RGPD).",
-    "lastUpdate": "Última actualización: abril de 2026"
-  },
     "about": "Sobre mí",
     "contact": "Contacto",
     "menu": "Menú",
@@ -135,7 +129,8 @@
     "madeIn": "Hecho a mano en Lombardía, Italia.",
     "backToTop": "Volver arriba",
     "privacy": "Política de privacidad",
-    "cookie": "Política de cookies"
+    "cookie": "Política de cookies",
+    "dataProcessing": "Tratamiento de datos"
   },
   "privacy": {
     "title": "Política de privacidad",
@@ -203,6 +198,11 @@
     "contactText": "Para más información escribe a: andrypiscioneri{'@'}gmail.com",
     "privacyLinkText": "Para el tratamiento de datos personales consulta la",
     "privacyLinkLabel": "Política de privacidad"
+  },
+  "dataProcessing": {
+    "title": "Tratamiento de datos",
+    "subtitle": "Información sobre el tratamiento de datos personales de conformidad con el Reglamento UE 2016/679 (RGPD).",
+    "lastUpdate": "Última actualización: abril de 2026"
   },
   "notFound": {
     "title": "Página no encontrada",

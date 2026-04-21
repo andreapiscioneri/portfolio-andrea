@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const { t, tm, rt } = useI18n()
 const localePath = useLocalePath()
+const { getHeroImageBySlug } = useHeroProjectImage()
+const heroImage = getHeroImageBySlug('pinacoteca-brera', 6)
 
 useSeoMeta({
   title: `${t('dataProcessing.title')} — Andrea Piscioneri`,
@@ -13,17 +15,29 @@ const rights = computed(() => tm('privacy.rights') as string[])
 
 <template>
   <div>
-    <section class="container-x pt-40 md:pt-48 lg:pt-56 pb-12 md:pb-16">
-      <div class="eyebrow mb-4"><span>/ {{ t('dataProcessing.title') }}</span></div>
-      <AnimatedText as="h1" split="lines" class="font-display text-display-lg leading-[0.92] tracking-[-0.04em] max-w-3xl text-balance">
-        {{ t('dataProcessing.title') }}
-      </AnimatedText>
-      <Reveal :delay="0.15">
-        <p class="mt-6 max-w-2xl text-base text-ink-600 dark:text-white/70 text-pretty md:text-lg">
-          {{ t('dataProcessing.subtitle') }}
-        </p>
-        <p class="mt-2 text-sm text-ink-400 dark:text-white/40">{{ t('dataProcessing.lastUpdate') }}</p>
-      </Reveal>
+    <section class="relative overflow-hidden pt-40 md:pt-48 lg:pt-56 pb-12 md:pb-16">
+      <NuxtImg
+        :src="heroImage"
+        :alt="t('dataProcessing.title')"
+        class="pointer-events-none absolute inset-0 h-full w-full object-cover"
+        format="webp"
+        sizes="100vw"
+        placeholder
+      />
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/74 via-black/60 to-black/74" />
+
+      <div class="container-x relative z-10">
+        <div class="eyebrow mb-4 text-white/70"><span>/ {{ t('dataProcessing.title') }}</span></div>
+        <AnimatedText as="h1" split="lines" class="font-display text-display-lg leading-[0.92] tracking-[-0.04em] max-w-3xl text-balance text-paper">
+          {{ t('dataProcessing.title') }}
+        </AnimatedText>
+        <Reveal :delay="0.15">
+          <p class="mt-6 max-w-2xl text-base text-white/80 text-pretty md:text-lg">
+            {{ t('dataProcessing.subtitle') }}
+          </p>
+          <p class="mt-2 text-sm text-white/50">{{ t('dataProcessing.lastUpdate') }}</p>
+        </Reveal>
+      </div>
     </section>
 
     <section class="container-x pb-24 md:pb-32">
