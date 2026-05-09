@@ -129,7 +129,7 @@ const copyEmail = async () => {
 
       <div class="container-x relative z-10">
         <div class="eyebrow mb-6 text-white/70"><span>/ {{ t('nav.contact') }}</span></div>
-        <div class="grid gap-16 md:grid-cols-[1.3fr_1fr] md:items-end">
+        <div class="grid gap-8 md:gap-16 md:grid-cols-[1.3fr_1fr] md:items-end">
           <div>
             <Reveal :delay="0.1" class="mb-6">
               <div class="h-28 w-28 overflow-hidden rounded-full border-2 border-white/25">
@@ -153,7 +153,7 @@ const copyEmail = async () => {
       </div>
     </section>
 
-    <section class="container-x pt-16 md:pt-20 pb-24 md:pb-32">
+    <section class="container-x pt-12 md:pt-16 lg:pt-20 pb-16 md:pb-24 lg:pb-32">
       <div class="grid gap-10 md:grid-cols-[1.2fr_1fr] lg:gap-16 md:items-start">
         <!-- Form / mailto -->
         <Reveal>

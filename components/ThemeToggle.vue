@@ -32,7 +32,7 @@ const setMode = (value: (typeof modes)[number]['value']) => {
       v-for="m in modes"
       :key="m.value"
       type="button"
-      class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full transition-colors duration-300"
+      class="relative z-10 flex h-9 w-9 items-center justify-center rounded-full transition-colors duration-300"
       :class="colorMode.preference === m.value ? 'text-paper dark:text-ink' : 'text-ink-500 dark:text-white/60'"
       :aria-label="t(`theme.${m.value}`)"
       :aria-pressed="colorMode.preference === m.value"

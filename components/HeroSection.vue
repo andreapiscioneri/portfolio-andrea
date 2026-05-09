@@ -72,7 +72,7 @@ const heroImage = getHeroImageBySlug('lumyn', 0)
     />
 
     <!-- scroll cue -->
-    <div class="container-x relative z-10 mt-24 flex items-center justify-between pb-10 md:pb-14 text-xs uppercase tracking-[0.3em] text-white/60">
+    <div class="container-x relative z-10 mt-16 md:mt-24 flex items-center justify-between pb-10 md:pb-14 text-xs uppercase tracking-[0.3em] text-white/60">
       <span>{{ t('home.scroll') }} ↓</span>
       <span>Lombardia · Italia</span>
     </div>

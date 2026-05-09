@@ -135,8 +135,8 @@ const marqueeItems = [
     </section>
 
     <!-- Featured projects -->
-    <section class="container-x py-24 md:py-32">
-      <div class="mb-14 flex flex-col items-start justify-between gap-6 md:mb-20 md:flex-row md:items-end">
+    <section class="container-x py-16 md:py-24 lg:py-32">
+      <div class="mb-10 flex flex-col items-start justify-between gap-6 md:mb-20 md:flex-row md:items-end">
         <div class="max-w-2xl">
           <div class="eyebrow mb-4"><span class="inline-block h-1.5 w-1.5 rounded-full bg-accent" /><span>{{ t('common.selectedWorks') }}</span></div>
           <AnimatedText as="h2" split="lines" class="font-display text-display-md leading-[0.95] tracking-[-0.03em] text-balance">
@@ -161,7 +161,7 @@ const marqueeItems = [
     </section>
 
     <!-- About inline -->
-    <section class="relative overflow-hidden border-y border-black/5 bg-paper-200 py-24 md:py-32 dark:border-white/10 dark:bg-ink-900">
+    <section class="relative overflow-hidden border-y border-black/5 bg-paper-200 py-16 md:py-24 lg:py-32 dark:border-white/10 dark:bg-ink-900">
       <div class="container-x grid gap-12 md:grid-cols-[1fr_1.3fr] md:items-center">
         <Reveal>
           <div class="relative aspect-[4/5] overflow-hidden rounded-3xl bg-gradient-to-br from-ink-800 to-ink-950 p-8 text-paper md:p-12">
@@ -208,8 +208,8 @@ const marqueeItems = [
     </section>
 
     <!-- Services -->
-    <section class="container-x py-24 md:py-32">
-      <div class="mb-14 md:mb-20">
+    <section class="container-x py-16 md:py-24 lg:py-32">
+      <div class="mb-10 md:mb-20">
         <div class="eyebrow mb-4"><span>{{ t('home.servicesTitle') }}</span></div>
         <AnimatedText as="h2" split="lines" class="font-display text-display-md leading-[0.95] tracking-[-0.03em] text-balance">
           Costruisco tutto ciò che serve al tuo prodotto digitale.
@@ -239,10 +239,10 @@ const marqueeItems = [
     </section>
 
     <!-- Stats -->
-    <section class="container-x pb-24 md:pb-32">
-      <div class="rounded-3xl border border-black/5 bg-ink text-paper p-10 md:p-16 dark:border-white/10 dark:bg-ink-900 dark:text-paper">
-        <div class="eyebrow mb-8 text-paper/70"><span>{{ t('home.statsTitle') }}</span></div>
-        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+    <section class="container-x pb-16 md:pb-24 lg:pb-32">
+      <div class="rounded-3xl border border-black/5 bg-ink text-paper p-6 md:p-10 lg:p-16 dark:border-white/10 dark:bg-ink-900 dark:text-paper">
+        <div class="eyebrow mb-6 md:mb-8 text-paper/70"><span>{{ t('home.statsTitle') }}</span></div>
+        <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <Reveal v-for="(s, i) in stats" :key="i" :delay="i * 0.08">
             <div class="flex flex-col">
               <div class="font-display text-[clamp(3rem,6vw,5rem)] leading-[0.9] tracking-[-0.04em]">
@@ -258,8 +258,8 @@ const marqueeItems = [
     </section>
 
     <!-- FAQ -->
-    <section class="container-x pb-24 md:pb-32">
-      <div class="mb-12 md:mb-16">
+    <section class="container-x pb-16 md:pb-24 lg:pb-32">
+      <div class="mb-10 md:mb-16">
         <div class="eyebrow mb-4"><span class="inline-block h-1.5 w-1.5 rounded-full bg-accent" /><span>FAQ</span></div>
         <AnimatedText as="h2" split="lines" class="font-display text-display-md leading-[0.95] tracking-[-0.03em] text-balance max-w-2xl">
           {{ t('faq.title') }}
@@ -279,8 +279,8 @@ const marqueeItems = [
     </section>
 
     <!-- CTA -->
-    <section class="container-x pb-32">
-      <div class="relative overflow-hidden rounded-3xl border border-black/5 p-12 md:p-20 dark:border-white/10 bg-paper-200 dark:bg-ink-900">
+    <section class="container-x pb-16 md:pb-24 lg:pb-32">
+      <div class="relative overflow-hidden rounded-3xl border border-black/5 p-8 md:p-12 lg:p-20 dark:border-white/10 bg-paper-200 dark:bg-ink-900">
         <div class="relative z-10 flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <AnimatedText as="h2" split="lines" class="font-display text-display-lg leading-[0.92] tracking-[-0.03em] text-balance max-w-3xl">
             {{ t('home.ctaTitle') }}

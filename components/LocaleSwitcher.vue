@@ -33,7 +33,7 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside))
   <div ref="root" class="relative">
     <button
       type="button"
-      class="inline-flex items-center gap-2 rounded-full border border-black/10 px-3 py-1.5 text-xs uppercase tracking-[0.16em] transition-colors hover:bg-ink hover:text-paper dark:border-white/15 dark:hover:bg-paper dark:hover:text-ink"
+      class="inline-flex min-h-[44px] items-center gap-2 rounded-full border border-black/10 px-3 py-2 text-xs uppercase tracking-[0.16em] transition-colors hover:bg-ink hover:text-paper dark:border-white/15 dark:hover:bg-paper dark:hover:text-ink touch-manipulation"
       :aria-expanded="open"
       data-cursor="link"
       @click="open = !open"

@@ -19,9 +19,9 @@ const scrollTop = () => {
 </script>
 
 <template>
-  <footer class="relative border-t border-black/5 bg-paper pt-24 dark:border-white/10 dark:bg-ink-950">
+  <footer class="relative border-t border-black/5 bg-paper pt-16 md:pt-24 dark:border-white/10 dark:bg-ink-950">
     <div class="container-x">
-      <div class="grid gap-16 pb-16 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
+      <div class="grid gap-10 pb-16 md:gap-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
         <div>
           <div class="eyebrow mb-4"><span>Portfolio · 2026</span></div>
           <p class="font-display text-display-sm leading-[1.05] text-balance">

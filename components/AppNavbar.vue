@@ -85,7 +85,7 @@ const availableLocales = computed(() =>
         </NuxtLink>
         <button
           type="button"
-          class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/10 dark:border-white/15 md:hidden"
+          class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 dark:border-white/15 md:hidden touch-manipulation"
           :aria-label="isOpen ? t('nav.close') : t('nav.menu')"
           @click="isOpen = !isOpen"
           data-cursor="link"
