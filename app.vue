@@ -61,36 +61,42 @@ useHead(() => {
       { rel: 'alternate', type: 'text/plain', href: '/llms.txt', title: 'LLMs.txt' },
       { rel: 'alternate', type: 'text/plain', href: '/llms-full.txt', title: 'LLMs Full Context' },
     ],
-    script: canonicalHref
-      ? [
-          {
-            type: 'application/ld+json',
-            innerHTML: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'WebSite',
-              '@id': `${siteUrl.value}/#website`,
-              name: 'Andrea Piscioneri — Portfolio',
-              description: 'Portfolio di Andrea Piscioneri — UX/UI Designer, Web Developer e Graphic Designer con base in Lombardia, Italia. Progetti di design digitale, brand identity, sviluppo web e fotografia.',
-              url: canonicalHref,
-              inLanguage: locale.value,
-              author: { '@id': `${siteUrl.value}/#person` },
-              publisher: { '@id': `${siteUrl.value}/#person` },
-              potentialAction: [
-                {
-                  '@type': 'SearchAction',
-                  target: { '@type': 'EntryPoint', urlTemplate: `${siteUrl.value}/work?q={search_term_string}` },
-                  'query-input': 'required name=search_term_string',
-                },
-                {
-                  '@type': 'ContactAction',
-                  target: `${siteUrl.value}/contact`,
-                  name: 'Contatta Andrea Piscioneri',
-                },
-              ],
-            }),
-          },
-        ]
-      : [],
+    script: [
+      {
+        innerHTML: `document.documentElement.classList.add('dark');document.documentElement.classList.remove('light');`,
+        tagPosition: 'head',
+      },
+      ...(canonicalHref
+        ? [
+            {
+              type: 'application/ld+json',
+              innerHTML: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'WebSite',
+                '@id': `${siteUrl.value}/#website`,
+                name: 'Andrea Piscioneri — Portfolio',
+                description: 'Portfolio di Andrea Piscioneri — UX/UI Designer, Web Developer e Graphic Designer con base in Lombardia, Italia. Progetti di design digitale, brand identity, sviluppo web e fotografia.',
+                url: canonicalHref,
+                inLanguage: locale.value,
+                author: { '@id': `${siteUrl.value}/#person` },
+                publisher: { '@id': `${siteUrl.value}/#person` },
+                potentialAction: [
+                  {
+                    '@type': 'SearchAction',
+                    target: { '@type': 'EntryPoint', urlTemplate: `${siteUrl.value}/work?q={search_term_string}` },
+                    'query-input': 'required name=search_term_string',
+                  },
+                  {
+                    '@type': 'ContactAction',
+                    target: `${siteUrl.value}/contact`,
+                    name: 'Contatta Andrea Piscioneri',
+                  },
+                ],
+              }),
+            },
+          ]
+        : []),
+    ],
   }
 })
 </script>
