@@ -5,13 +5,14 @@ import { useHead, useRoute } from '#imports'
 const colorMode = useColorMode()
 const route = useRoute()
 const { locale } = useI18n()
-const i18nHead = useLocaleHead({ addSeoAttributes: true })
+const i18nHead = useLocaleHead()
 const site = useRuntimeConfig().public.siteUrl as string
 const siteUrl = computed(() => String(site).replace(/\/$/, ''))
 
-const htmlClass = computed(() =>
-  [colorMode.value === 'dark' ? 'dark' : '', 'cursor-custom'].filter(Boolean).join(' '),
-)
+const htmlClass = computed(() => {
+  const themeClass = colorMode.value === 'dark' ? 'dark' : ''
+  return [themeClass, 'cursor-custom'].filter(Boolean).join(' ')
+})
 
 const ogLocaleMap: Record<string, string> = {
   it: 'it_IT',
