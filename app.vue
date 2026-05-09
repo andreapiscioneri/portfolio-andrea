@@ -16,14 +16,16 @@ const htmlClass = computed(() =>
 const ogLocaleMap: Record<string, string> = {
   it: 'it_IT',
   en: 'en_US',
-  es: 'es_ES',
+  fr: 'fr_FR',
   de: 'de_DE',
+  es: 'es_ES',
 }
 const ogLocaleAlternateMap: Record<string, string[]> = {
-  it: ['en_US', 'es_ES', 'de_DE'],
-  en: ['it_IT', 'es_ES', 'de_DE'],
-  es: ['it_IT', 'en_US', 'de_DE'],
-  de: ['it_IT', 'en_US', 'es_ES'],
+  it: ['en_US', 'fr_FR', 'de_DE', 'es_ES'],
+  en: ['it_IT', 'fr_FR', 'de_DE', 'es_ES'],
+  fr: ['it_IT', 'en_US', 'de_DE', 'es_ES'],
+  de: ['it_IT', 'en_US', 'fr_FR', 'es_ES'],
+  es: ['it_IT', 'en_US', 'fr_FR', 'de_DE'],
 }
 
 useSeoMeta({

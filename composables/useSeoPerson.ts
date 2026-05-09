@@ -107,8 +107,9 @@ export const useSeoPerson = () => {
     knowsLanguage: [
       { '@type': 'Language', name: 'Italian', alternateName: 'it' },
       { '@type': 'Language', name: 'English', alternateName: 'en' },
-      { '@type': 'Language', name: 'Spanish', alternateName: 'es' },
+      { '@type': 'Language', name: 'French', alternateName: 'fr' },
       { '@type': 'Language', name: 'German', alternateName: 'de' },
+      { '@type': 'Language', name: 'Spanish', alternateName: 'es' },
     ],
   }
 

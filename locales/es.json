@@ -35,6 +35,7 @@
     "featuredTitle": "Proyectos destacados",
     "featuredSubtitle": "Una selección de trabajos recientes entre diseño, desarrollo y branding digital.",
     "allWork": "Todos los proyectos",
+    "ctaTitle": "¿Tienes un proyecto en mente? Construyámoslo juntos.",
     "aboutSectionTitle": "Construyo experiencias digitales completas.",
     "aboutSectionBody": "Desde mi primera práctica gráfica en MBE hasta mi rol actual como diseñador UX/UI en Denani, he recorrido todos los niveles del diseño visual y el desarrollo. Hoy uno investigación, UI, motion y código para crear productos que realmente funcionan.",
     "servicesTitle": "Qué hago",
@@ -51,7 +52,7 @@
       { "value": "110", "label": "Cum Laude × 2", "suffix": "L" },
       { "value": "9+", "label": "Años en diseño", "suffix": "" },
       { "value": "20+", "label": "Proyectos entregados", "suffix": "" },
-      { "value": "4", "label": "Idiomas del sitio", "suffix": "" }
+      { "value": "5", "label": "Idiomas del sitio", "suffix": "" }
     ]
   },
   "work": {
@@ -220,5 +221,35 @@
     "getInTouch": "Contáctame",
     "selectedWorks": "Trabajos seleccionados",
     "languageSwitcher": "Cambiar idioma"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Todo lo que podrías querer saber antes de contactarme.",
+    "items": [
+      {
+        "q": "¿Qué haces exactamente?",
+        "a": "Me ocupo de UX/UI design, desarrollo web (Vue.js, Nuxt, React, Next.js), brand identity, motion graphics 3D, fotografía profesional y grabaciones con drone. Gestiono proyectos digitales de principio a fin: desde la idea hasta el producto terminado."
+      },
+      {
+        "q": "¿Estás disponible para proyectos freelance?",
+        "a": "Sí. Acepto proyectos freelance en paralelo a mi actividad principal. Estoy disponible para colaboraciones en UX/UI design, desarrollo web, brand identity y fotografía. Escríbeme para hablar de disponibilidad y plazos."
+      },
+      {
+        "q": "¿Dónde estás y trabajas de forma remota?",
+        "a": "Estoy ubicado en Albino (BG), Lombardía, Italia. Trabajo tanto de forma remota como presencial en la zona de Lombardía. Para clientes a distancia gestiono todo digitalmente sin problemas."
+      },
+      {
+        "q": "¿Qué tecnologías usas para el desarrollo web?",
+        "a": "Principalmente Vue.js, Nuxt 3, React y Next.js con TypeScript. Para los estilos uso Tailwind CSS. Para el diseño uso Figma. Creo sitios SSR, estáticos y apps web con atención al rendimiento, SEO y accesibilidad."
+      },
+      {
+        "q": "¿Cuánto tarda un proyecto?",
+        "a": "Depende de la complejidad: un logo puede llevar 1–2 semanas, un sitio completo 4–8 semanas, un design system incluso más. Siempre proporciono una estimación precisa tras un briefing inicial."
+      },
+      {
+        "q": "¿Cómo puedo ver tu currículum?",
+        "a": "El CV está disponible para descargar directamente desde la página Sobre mí en versión italiana e inglesa. Puedes encontrarlo en andreapiscioneri.com/about."
+      }
+    ]
   }
 }

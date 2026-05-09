@@ -1,0 +1,255 @@
+{
+  "site": {
+    "title": "Andrea Piscioneri — Designer UX/UI & Développeur",
+    "description": "Portfolio d'Andrea Piscioneri. Designer UX/UI, web designer & développeur, graphiste basé en Lombardie, Italie. Projets de design digital, identité de marque et développement web.",
+    "tagline": "Un design qui pense, un code qui écoute."
+  },
+  "nav": {
+    "home": "Accueil",
+    "work": "Projets",
+    "about": "À propos",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Fermer"
+  },
+  "theme": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système",
+    "toggle": "Changer le thème"
+  },
+  "loader": {
+    "hello": "Bonjour, je suis Andrea",
+    "loading": "Chargement en cours..."
+  },
+  "home": {
+    "heroEyebrow": "Portfolio · 2026",
+    "heroLine1": "Designer UX/UI",
+    "heroLine2": "& développeur qui",
+    "heroLine3": "crée des expériences",
+    "heroLine4": "qui comptent.",
+    "heroDescription": "Je conçois des interfaces, des sites et des marques digitales. Je travaille chez Denani S.R.L. en tant que designer UX/UI et je développe des produits avec Nuxt, Next et Vue. Diplômé avec mention en Design Graphique (Santa Giulia) et Master en Digital Design & Communication (LABA) 110/110 avec mention.",
+    "ctaWork": "Voir mes projets",
+    "ctaContact": "Parlons-en",
+    "scroll": "Défiler",
+    "featuredTitle": "Projets en vedette",
+    "featuredSubtitle": "Une sélection de travaux récents en design, développement et branding digital.",
+    "allWork": "Tous les projets",
+    "ctaTitle": "Vous avez un projet en tête ? Construisons-le ensemble.",
+    "aboutSectionTitle": "Je construis des expériences digitales complètes.",
+    "aboutSectionBody": "Du premier stage graphique chez MBE à mon rôle actuel de designer UX/UI chez Denani, j'ai traversé chaque niveau du design visuel et du développement. Aujourd'hui, j'allie recherche, UI, motion et code pour créer des produits qui fonctionnent vraiment.",
+    "servicesTitle": "Ce que je fais",
+    "services": [
+      { "title": "UX/UI Design", "body": "Recherche, wireframes, prototypes et design systems complets." },
+      { "title": "Développement Web", "body": "Nuxt, Next, Vue, React. Sites rapides, accessibles et SEO-ready." },
+      { "title": "Identité de Marque", "body": "Naming, logo, système visuel, charte graphique et supports." },
+      { "title": "3D & Motion", "body": "Cinema 4D, Blender, motion graphics, rendu produit." },
+      { "title": "Photographie & Drone", "body": "Shooting, post-production, prises de vue par drone certifiées." },
+      { "title": "Odoo & Apps", "body": "Modules Odoo personnalisés et applications mobiles natives." }
+    ],
+    "statsTitle": "En chiffres",
+    "stats": [
+      { "value": "110", "label": "Mention très bien × 2", "suffix": "L" },
+      { "value": "9+", "label": "Ans dans le design", "suffix": "" },
+      { "value": "20+", "label": "Projets livrés", "suffix": "" },
+      { "value": "5", "label": "Langues du site", "suffix": "" }
+    ]
+  },
+  "work": {
+    "title": "Projets",
+    "subtitle": "Tous les projets : design digital, développement, branding et graphisme.",
+    "all": "Tous",
+    "filter": "Filtrer par",
+    "viewProject": "Voir le projet",
+    "year": "Année",
+    "client": "Client",
+    "role": "Rôle",
+    "stack": "Stack",
+    "category": "Catégorie"
+  },
+  "project": {
+    "overview": "Aperçu",
+    "highlights": "Points clés",
+    "gallery": "Galerie",
+    "credits": "Crédits",
+    "next": "Projet suivant",
+    "prev": "Projet précédent",
+    "backToWork": "Retour aux projets",
+    "visitLive": "Visiter le site",
+    "year": "Année",
+    "client": "Client",
+    "role": "Rôle",
+    "stack": "Stack technique",
+    "category": "Catégorie",
+    "services": "Services"
+  },
+  "about": {
+    "title": "À propos",
+    "subtitle": "Designer, développeur, photographe. D'Albino (BG), Italie — avec une ambition européenne.",
+    "bioTitle": "Profil professionnel",
+    "experienceTitle": "Expérience professionnelle",
+    "educationTitle": "Formation",
+    "skillsTitle": "Compétences",
+    "strengthsTitle": "Points forts",
+    "softTitle": "Soft skills",
+    "softwareTitle": "Logiciels",
+    "developmentTitle": "Développement",
+    "languagesTitle": "Langues",
+    "licensesTitle": "Permis de conduire",
+    "certsTitle": "Certifications",
+    "thesisLabel": "Mémoire",
+    "gradeLabel": "Mention finale",
+    "technicalLabel": "Compétences techniques",
+    "professionalLabel": "Compétences professionnelles",
+    "activitiesLabel": "Activités pédagogiques",
+    "downloadCv": "Télécharger le CV",
+    "socialTitle": "Réseaux & Portfolio",
+    "current": "Actuel"
+  },
+  "contact": {
+    "title": "Parlons-en.",
+    "subtitle": "Vous avez un projet, une idée ou simplement une question ? Écrivez-moi.",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Téléphone",
+    "locationLabel": "Localisation",
+    "availableTitle": "Disponible pour",
+    "hoursLabel": "Horaires",
+    "hoursValue": "Lun–Ven · 9h00–19h00 (CET)",
+    "formName": "Votre nom",
+    "formEmail": "Votre e-mail",
+    "formMessage": "Votre message",
+    "formSend": "Envoyer le message",
+    "formSent": "Message prêt",
+    "mailCta": "Écrivez-moi",
+    "copiedEmail": "E-mail copié",
+    "copyEmail": "Copier l'e-mail"
+  },
+  "footer": {
+    "tagline": "Un design qui pense, un code qui écoute.",
+    "copyright": "© {year} Andrea Piscioneri. Tous droits réservés.",
+    "madeIn": "Fait à la main en Lombardie, Italie.",
+    "backToTop": "Retour en haut",
+    "dataProcessing": "Traitement des données",
+    "privacy": "Politique de confidentialité",
+    "cookie": "Politique de cookies"
+  },
+  "dataProcessing": {
+    "title": "Traitement des données",
+    "subtitle": "Information sur le traitement des données personnelles conformément au Règlement UE 2016/679 (RGPD).",
+    "lastUpdate": "Dernière mise à jour : avril 2026"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "subtitle": "Information sur le traitement des données personnelles conformément au Règlement UE 2016/679 (RGPD).",
+    "lastUpdate": "Dernière mise à jour : avril 2026",
+    "ownerTitle": "Responsable du traitement",
+    "ownerText": "Andrea Piscioneri — andrypiscioneri{'@'}gmail.com — Albino (BG), Italie",
+    "dataTitle": "Données collectées",
+    "dataText": "Le site collecte uniquement les données fournies volontairement par l'utilisateur via le formulaire de contact : nom, adresse e-mail et message. Aucune autre donnée personnelle n'est collectée sans consentement explicite.",
+    "purposeTitle": "Finalité du traitement",
+    "purposeText": "Les données sont traitées dans le seul but de répondre aux demandes de contact. Elles ne sont pas utilisées à des fins commerciales, ne sont pas cédées à des tiers et ne servent pas au profilage.",
+    "basisTitle": "Base juridique",
+    "basisText": "Le traitement est fondé sur le consentement explicite de la personne concernée (art. 6, par. 1, lit. a, RGPD) exprimé lors de l'envoi du formulaire de contact.",
+    "retentionTitle": "Durée de conservation",
+    "retentionText": "Les données sont conservées le temps strictement nécessaire à la gestion de la communication et en tout état de cause pas plus de 12 mois après le dernier contact.",
+    "rightsTitle": "Droits de la personne concernée",
+    "rightsIntro": "En tant que personne concernée, vous avez le droit de :",
+    "rights": [
+      "Accéder à vos données personnelles",
+      "Obtenir leur rectification ou leur effacement",
+      "Demander la limitation du traitement",
+      "Vous opposer au traitement",
+      "Demander la portabilité des données",
+      "Retirer votre consentement à tout moment sans porter atteinte à la licéité du traitement antérieur"
+    ],
+    "rightsText": "Pour exercer vos droits, écrivez à : andrypiscioneri{'@'}gmail.com",
+    "complaintText": "Vous avez également le droit d'introduire une réclamation auprès de l'autorité de contrôle compétente.",
+    "transferTitle": "Transfert de données",
+    "transferText": "Les données ne sont pas transférées vers des pays tiers en dehors de l'Union européenne.",
+    "thirdPartyTitle": "Tiers",
+    "thirdPartyText": "Ce site n'intègre aucun service de suivi, d'analyse ou de publicité tiers. La seule donnée transmise à des systèmes externes est la correspondance par e-mail pour répondre aux demandes de contact.",
+    "cookieLinkText": "Pour des informations sur les cookies, consultez la",
+    "cookieLinkLabel": "Politique de cookies"
+  },
+  "cookie": {
+    "title": "Politique de cookies",
+    "subtitle": "Information sur l'utilisation des cookies conformément à la réglementation applicable en matière de protection des données.",
+    "lastUpdate": "Dernière mise à jour : avril 2026",
+    "introTitle": "Qu'est-ce qu'un cookie ?",
+    "introText": "Les cookies sont de petits fichiers texte enregistrés dans le navigateur de l'utilisateur lors de la visite d'un site web. Ils peuvent être des cookies de session (supprimés à la fermeture du navigateur) ou persistants (conservés pour une durée définie).",
+    "usageTitle": "Comment nous utilisons les cookies",
+    "usageText": "Ce site utilise exclusivement des cookies techniques essentiels au bon fonctionnement du site. Aucun cookie de profilage, de suivi comportemental ou publicitaire n'est installé.",
+    "technicalTitle": "Cookies techniques (nécessaires)",
+    "technicalText": "Les cookies techniques ne nécessitent pas le consentement de l'utilisateur car ils sont strictement nécessaires au service demandé.",
+    "tableNameHeader": "Nom",
+    "tablePurposeHeader": "Finalité",
+    "tableDurationHeader": "Durée",
+    "cookies": [
+      { "name": "ap-color-mode", "purpose": "Enregistre la préférence de thème (clair / sombre / système)", "duration": "12 mois" },
+      { "name": "i18n_redirected", "purpose": "Enregistre la langue sélectionnée par l'utilisateur", "duration": "Session" }
+    ],
+    "noTrackingTitle": "Aucun cookie de profilage",
+    "noTrackingText": "Ce site n'installe aucun cookie de profilage propre ou tiers. Aucun service d'analyse, de publicité ou de suivi social n'est utilisé.",
+    "thirdPartyTitle": "Cookies tiers",
+    "thirdPartyText": "Le site n'intègre aucun service installant des cookies tiers. Les images des projets sont chargées depuis des CDN externes (Behance, Altervista) sans fonctionnalité de suivi.",
+    "manageTitle": "Gestion des cookies",
+    "manageText": "Vous pouvez contrôler et supprimer les cookies via les paramètres de votre navigateur. La désactivation des cookies techniques peut affecter le bon fonctionnement du site.",
+    "browsers": [
+      { "name": "Chrome", "url": "https://support.google.com/chrome/answer/95647" },
+      { "name": "Firefox", "url": "https://support.mozilla.org/fr/kb/activer-desactiver-cookies" },
+      { "name": "Safari", "url": "https://support.apple.com/fr-fr/guide/safari/sfri11471/mac" },
+      { "name": "Edge", "url": "https://support.microsoft.com/fr-fr/microsoft-edge/supprimer-les-cookies-dans-microsoft-edge" }
+    ],
+    "contactTitle": "Contact",
+    "contactText": "Pour toute information, écrivez à : andrypiscioneri{'@'}gmail.com",
+    "privacyLinkText": "Pour le traitement des données personnelles, consultez la",
+    "privacyLinkLabel": "Politique de confidentialité"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée. Retournons à l'accueil.",
+    "cta": "Retour à l'accueil"
+  },
+  "serverError": {
+    "title": "Une erreur s'est produite",
+    "description": "Une erreur inattendue est survenue. Veuillez réessayer dans un instant.",
+    "cta": "Retour à l'accueil"
+  },
+  "common": {
+    "viewMore": "Voir tout",
+    "readMore": "Lire la suite",
+    "getInTouch": "Me contacter",
+    "selectedWorks": "Projets sélectionnés",
+    "languageSwitcher": "Changer de langue"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce que vous pourriez vouloir savoir avant de me contacter.",
+    "items": [
+      {
+        "q": "Que faites-vous exactement ?",
+        "a": "Je travaille en UX/UI design, développement web (Vue.js, Nuxt, React, Next.js), brand identity, motion graphics 3D, photographie professionnelle et prises de vue par drone. Je gère des projets digitaux de A à Z : de l'idée au produit fini."
+      },
+      {
+        "q": "Êtes-vous disponible pour des projets freelance ?",
+        "a": "Oui. J'accepte des projets freelance en parallèle de mon activité principale. Je suis disponible pour des collaborations en UX/UI design, développement web, brand identity et photographie. Contactez-moi pour discuter des disponibilités et délais."
+      },
+      {
+        "q": "Où êtes-vous basé et travaillez-vous à distance ?",
+        "a": "Je suis basé à Albino (BG), Lombardie, Italie. Je travaille aussi bien à distance qu'en présentiel en Lombardie. Pour les clients à distance, je gère tout en ligne sans problème."
+      },
+      {
+        "q": "Quelles technologies utilisez-vous pour le développement web ?",
+        "a": "Principalement Vue.js, Nuxt 3, React et Next.js avec TypeScript. Pour le style j'utilise Tailwind CSS. Pour le design j'utilise Figma. Je réalise des sites SSR, statiques et des applications web avec une attention à la performance, au SEO et à l'accessibilité."
+      },
+      {
+        "q": "Combien de temps prend un projet ?",
+        "a": "Cela dépend de la complexité : un logo peut prendre 1 à 2 semaines, un site complet 4 à 8 semaines, un design system encore plus longtemps. Je fournis toujours une estimation précise après un briefing initial."
+      },
+      {
+        "q": "Comment puis-je consulter votre CV ?",
+        "a": "Le CV est téléchargeable directement depuis la page À propos en version italienne et anglaise. Vous pouvez le trouver sur andreapiscioneri.com/about."
+      }
+    ]
+  }
+}

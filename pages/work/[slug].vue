@@ -46,13 +46,19 @@ useSeoMeta({
   title: `${project.value!.title} — Andrea Piscioneri`,
   description: project.value!.excerpt,
   keywords: [...project.value!.category, ...project.value!.stack, 'Andrea Piscioneri', 'portfolio', project.value!.client].join(', '),
+  ogType: 'article',
+  ogUrl: pageUrl,
   ogTitle: `${project.value!.title} — Andrea Piscioneri`,
   ogDescription: project.value!.excerpt,
   ogImage: absoluteCover,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   twitterTitle: `${project.value!.title} — Andrea Piscioneri`,
   twitterDescription: project.value!.excerpt,
   twitterImage: absoluteCover,
   twitterCard: 'summary_large_image',
+  articleAuthor: ['https://andreapiscioneri.com/#person'],
+  articlePublishedTime: `${project.value!.year}-01-01`,
 })
 
 useHead({

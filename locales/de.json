@@ -35,6 +35,7 @@
     "featuredTitle": "Ausgewählte Projekte",
     "featuredSubtitle": "Eine Auswahl aktueller Arbeiten aus Design, Entwicklung und digitalem Branding.",
     "allWork": "Alle Arbeiten",
+    "ctaTitle": "Hast du ein Projekt im Sinn? Lass es uns gemeinsam bauen.",
     "aboutSectionTitle": "Ich baue vollständige digitale Erlebnisse.",
     "aboutSectionBody": "Vom ersten Grafik-Praktikum bei MBE bis zu meiner heutigen Rolle als UX/UI-Designer bei Denani habe ich jede Ebene des visuellen Designs und der Entwicklung durchlaufen. Heute verbinde ich Research, UI, Motion und Code, um Produkte zu liefern, die wirklich funktionieren.",
     "servicesTitle": "Was ich mache",
@@ -51,7 +52,7 @@
       { "value": "110", "label": "Cum Laude × 2", "suffix": "L" },
       { "value": "9+", "label": "Jahre im Design", "suffix": "" },
       { "value": "20+", "label": "Gelieferte Projekte", "suffix": "" },
-      { "value": "4", "label": "Sprachen", "suffix": "" }
+      { "value": "5", "label": "Sprachen", "suffix": "" }
     ]
   },
   "work": {
@@ -220,5 +221,35 @@
     "getInTouch": "Kontakt aufnehmen",
     "selectedWorks": "Ausgewählte Arbeiten",
     "languageSwitcher": "Sprache wechseln"
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "subtitle": "Alles, was Sie wissen möchten, bevor Sie mich kontaktieren.",
+    "items": [
+      {
+        "q": "Was genau machen Sie?",
+        "a": "Ich arbeite in den Bereichen UX/UI-Design, Webentwicklung (Vue.js, Nuxt, React, Next.js), Brand Identity, 3D Motion Graphics, professionelle Fotografie und Drohnenaufnahmen. Ich betreue digitale Projekte von A bis Z: von der Idee bis zum fertigen Produkt."
+      },
+      {
+        "q": "Sind Sie für Freelance-Projekte verfügbar?",
+        "a": "Ja. Ich nehme Freelance-Projekte parallel zu meiner Haupttätigkeit an. Ich bin für Zusammenarbeiten in UX/UI-Design, Webentwicklung, Brand Identity und Fotografie verfügbar. Kontaktieren Sie mich, um Verfügbarkeit und Zeitplan zu besprechen."
+      },
+      {
+        "q": "Wo sind Sie ansässig und arbeiten Sie remote?",
+        "a": "Ich bin in Albino (BG), Lombardei, Italien ansässig. Ich arbeite sowohl remote als auch vor Ort in der Lombardei. Für Fernkunden erledige ich alles digital ohne Probleme."
+      },
+      {
+        "q": "Welche Technologien verwenden Sie für die Webentwicklung?",
+        "a": "Hauptsächlich Vue.js, Nuxt 3, React und Next.js mit TypeScript. Für das Styling verwende ich Tailwind CSS, für das Design Figma. Ich erstelle SSR-Seiten, statische Seiten und Web-Apps mit Fokus auf Performance, SEO und Barrierefreiheit."
+      },
+      {
+        "q": "Wie lange dauert ein Projekt?",
+        "a": "Das hängt von der Komplexität ab: Ein Logo kann 1–2 Wochen dauern, eine vollständige Website 4–8 Wochen, ein Design-System noch länger. Nach einem ersten Briefing liefere ich immer eine genaue Schätzung."
+      },
+      {
+        "q": "Wie kann ich Ihren Lebenslauf einsehen?",
+        "a": "Der Lebenslauf kann direkt von der Über-mich-Seite in der deutschen und englischen Version heruntergeladen werden. Sie finden ihn auf andreapiscioneri.com/about."
+      }
+    ]
   }
 }

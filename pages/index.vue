@@ -13,15 +13,18 @@ useSeoPerson()
 useSeoMeta({
   title: () => t('site.title'),
   description: () => t('site.description'),
-  keywords: 'UX/UI Designer, Web Developer, Graphic Designer, Nuxt, Vue.js, Brand Identity, Portfolio, Andrea Piscioneri, Lombardia, Italia, Figma, React, Next.js, TypeScript',
+  keywords: () => `UX/UI Designer, Web Developer, Graphic Designer, Nuxt, Vue.js, Brand Identity, Portfolio, Andrea Piscioneri, Lombardia, Italia, Figma, React, Next.js, TypeScript, ${t('site.tagline')}`,
+  ogType: 'website',
+  ogUrl: homeUrl,
   ogTitle: () => t('site.title'),
   ogDescription: () => t('site.description'),
   ogImage: `${site}/profilo.PNG`,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   twitterTitle: () => t('site.title'),
   twitterDescription: () => t('site.description'),
   twitterImage: `${site}/profilo.PNG`,
   twitterCard: 'summary_large_image',
-  ogType: 'website',
 })
 
 useHead({
@@ -38,6 +41,11 @@ useHead({
         inLanguage: locale.value,
         isPartOf: { '@id': `${site}/#website` },
         about: { '@id': `${site}/#person` },
+        speakable: {
+          '@type': 'SpeakableSpecification',
+          cssSelector: ['h1', '.hero-description', '.about-section-body'],
+        },
+        dateModified: '2026-05-09',
         breadcrumb: {
           '@type': 'BreadcrumbList',
           itemListElement: [
@@ -51,17 +59,73 @@ useHead({
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'ItemList',
-        name: 'Servizi — Andrea Piscioneri',
-        description: 'Servizi offerti da Andrea Piscioneri: UX/UI Design, Web Development, Brand Identity, 3D & Motion, Fotografia, Odoo & App.',
+        name: `${t('home.servicesTitle')} — Andrea Piscioneri`,
+        description: t('site.description'),
         inLanguage: locale.value,
         url: workUrl.value,
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, item: { '@type': 'Service', name: 'UX/UI Design', description: 'Ricerca, wireframe, prototipazione interattiva e design system completi.', provider: { '@id': `${site}/#person` } } },
-          { '@type': 'ListItem', position: 2, item: { '@type': 'Service', name: 'Sviluppo Web', description: 'Siti e app con Vue.js, Nuxt, React, Next.js. Veloci, accessibili e SEO-ready.', provider: { '@id': `${site}/#person` } } },
-          { '@type': 'ListItem', position: 3, item: { '@type': 'Service', name: 'Brand Identity', description: 'Naming, logo, visual identity, linee guida e materiali collateral.', provider: { '@id': `${site}/#person` } } },
-          { '@type': 'ListItem', position: 4, item: { '@type': 'Service', name: '3D & Motion', description: 'Cinema 4D, Blender, motion graphics, rendering di prodotto e video animati.', provider: { '@id': `${site}/#person` } } },
-          { '@type': 'ListItem', position: 5, item: { '@type': 'Service', name: 'Fotografia & Drone', description: 'Shooting, post-produzione e riprese aeree con drone certificate.', provider: { '@id': `${site}/#person` } } },
-          { '@type': 'ListItem', position: 6, item: { '@type': 'Service', name: 'Odoo & App', description: 'Moduli Odoo personalizzati e app mobile native.', provider: { '@id': `${site}/#person` } } },
+        itemListElement: (tm('home.services') as { title: string; body: string }[]).map((s, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          item: { '@type': 'Service', name: rt(s.title), description: rt(s.body), provider: { '@id': `${site}/#person` } },
+        })),
+      }),
+    },
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        '@id': `${homeUrl.value.replace(/\/$/, '')}/#faq`,
+        inLanguage: locale.value,
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Chi è Andrea Piscioneri?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Andrea Piscioneri è un UX/UI Designer e Web Developer italiano con sede ad Albino (BG), Lombardia. Ha conseguito la Laurea Magistrale in Digital Design & Communication (LABA Brescia, 110/110 cum laude, 2025) e la Laurea Triennale in Graphic Design (Accademia di Belle Arti Santa Giulia, 110L/100, 2023). Attualmente lavora come UX/UI Designer & Web Developer presso Denani S.R.L. in Lombardia.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Cosa fa Andrea Piscioneri?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Andrea Piscioneri si occupa di: UX/UI design (ricerca, wireframe, prototipazione, design system), sviluppo web (Vue.js, Nuxt, React, Next.js, TypeScript), brand identity (naming, logo, visual identity), motion graphics 3D (Cinema 4D, Blender, After Effects), fotografia professionale e riprese drone certificate (patente A1/A3), moduli custom Odoo e app mobile native.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Dove lavora Andrea Piscioneri?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Dal 2024 Andrea Piscioneri lavora come UX/UI Designer & Web Developer presso Denani S.R.L. in Lombardia, Italia. In precedenza ha lavorato come Graphic Designer presso TVBEAT S.R.L. a Gorle (BG) dal 2021 al 2022.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Come contattare Andrea Piscioneri?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Andrea Piscioneri è contattabile via email a andrypiscioneri@gmail.com, per telefono al +39 375 528 6241, o tramite il form di contatto su https://andreapiscioneri.com/contact. È disponibile per progetti di UX/UI design, sviluppo web, brand identity, fotografia e consulenza digitale.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Quali tecnologie usa Andrea Piscioneri per lo sviluppo web?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Per lo sviluppo web usa principalmente Vue.js, Nuxt 3, React, Next.js e TypeScript. Per il design usa Figma, Adobe Creative Suite (Photoshop, Illustrator, InDesign, After Effects), Cinema 4D e Blender. Utilizza anche Tailwind CSS, Git, Webflow e Odoo.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Quanti progetti ha nel portfolio di Andrea Piscioneri?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Il portfolio di Andrea Piscioneri conta 26 progetti documentati, dal 2022 al 2025, in ambiti che spaziano da UX/UI design a brand identity, matte painting digitale, editorial design, motion graphics e fotografia. I progetti sono consultabili su https://andreapiscioneri.com/work.',
+            },
+          },
         ],
       }),
     },
@@ -79,6 +143,14 @@ const stats = computed(() =>
     value: rt(s.value),
     label: rt(s.label),
     suffix: rt(s.suffix),
+  }))
+)
+
+const FAQ_COUNT = 6
+const faqItems = computed(() =>
+  Array.from({ length: FAQ_COUNT }, (_, i) => ({
+    q: t(`faq.items[${i}].q`),
+    a: t(`faq.items[${i}].a`),
   }))
 )
 
@@ -230,12 +302,33 @@ const marqueeItems = [
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section class="container-x pb-24 md:pb-32">
+      <div class="mb-12 md:mb-16">
+        <div class="eyebrow mb-4"><span class="inline-block h-1.5 w-1.5 rounded-full bg-accent" /><span>FAQ</span></div>
+        <AnimatedText as="h2" split="lines" class="font-display text-display-md leading-[0.95] tracking-[-0.03em] text-balance max-w-2xl">
+          {{ t('faq.title') }}
+        </AnimatedText>
+        <Reveal :delay="0.15" class="mt-4 max-w-xl text-base text-ink-500 dark:text-white/70">
+          {{ t('faq.subtitle') }}
+        </Reveal>
+      </div>
+      <div class="divide-y divide-black/10 dark:divide-white/10">
+        <FaqItem
+          v-for="(item, i) in faqItems"
+          :key="i"
+          :question="item.q"
+          :answer="item.a"
+        />
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="container-x pb-32">
       <div class="relative overflow-hidden rounded-3xl border border-black/5 p-12 md:p-20 dark:border-white/10 bg-paper-200 dark:bg-ink-900">
         <div class="relative z-10 flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <AnimatedText as="h2" split="lines" class="font-display text-display-lg leading-[0.92] tracking-[-0.03em] text-balance max-w-3xl">
-            Hai un progetto in mente? Costruiamolo insieme.
+            {{ t('home.ctaTitle') }}
           </AnimatedText>
           <NuxtLink :to="localePath('/contact')" class="btn btn-primary self-end" data-cursor="link">
             {{ t('common.getInTouch') }} <span aria-hidden="true">→</span>

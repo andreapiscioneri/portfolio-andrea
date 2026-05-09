@@ -2,7 +2,7 @@
 import { fileURLToPath } from 'node:url'
 import { projects } from './content/projects'
 
-const localeCodes = ['it', 'en', 'es', 'de']
+const localeCodes = ['it', 'en', 'fr', 'de', 'es']
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
@@ -68,8 +68,9 @@ export default defineNuxtConfig({
     locales: [
       { code: 'it', iso: 'it-IT', name: 'Italiano', file: 'it.json' },
       { code: 'en', iso: 'en-US', name: 'English', file: 'en.json' },
-      { code: 'es', iso: 'es-ES', name: 'Español', file: 'es.json' },
+      { code: 'fr', iso: 'fr-FR', name: 'Français', file: 'fr.json' },
       { code: 'de', iso: 'de-DE', name: 'Deutsch', file: 'de.json' },
+      { code: 'es', iso: 'es-ES', name: 'Español', file: 'es.json' },
     ],
     detectBrowserLanguage: {
       useCookie: true,
@@ -187,14 +188,18 @@ export default defineNuxtConfig({
         '/en/about',
         '/en/work',
         '/en/contact',
-        '/es',
-        '/es/about',
-        '/es/work',
-        '/es/contact',
+        '/fr',
+        '/fr/about',
+        '/fr/work',
+        '/fr/contact',
         '/de',
         '/de/about',
         '/de/work',
         '/de/contact',
+        '/es',
+        '/es/about',
+        '/es/work',
+        '/es/contact',
         '/sitemap.xml',
         '/robots.txt',
       ],
