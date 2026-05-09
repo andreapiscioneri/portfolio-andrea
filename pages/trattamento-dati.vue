@@ -15,7 +15,7 @@ const rights = computed(() => tm('privacy.rights') as string[])
 
 <template>
   <div>
-    <section class="relative overflow-hidden pt-40 md:pt-48 lg:pt-56 pb-12 md:pb-16">
+    <section class="relative overflow-hidden pt-40 md:pt-48 lg:pt-56 pb-24 md:pb-32 lg:pb-40">
       <NuxtImg
         :src="heroImage"
         :alt="t('dataProcessing.title')"
@@ -25,6 +25,8 @@ const rights = computed(() => tm('privacy.rights') as string[])
         placeholder
       />
       <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/74 via-black/60 to-black/74" />
+      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_22%_20%,rgba(57,255,20,0.18),transparent_50%)]" />
+      <div class="pointer-events-none absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-paper dark:to-ink" />
 
       <div class="container-x relative z-10">
         <div class="eyebrow mb-4 text-white/70"><span>/ {{ t('dataProcessing.title') }}</span></div>

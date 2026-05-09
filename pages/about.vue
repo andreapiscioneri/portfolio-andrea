@@ -101,7 +101,7 @@ useHead({
 
       <div class="container-x relative z-10">
         <div class="eyebrow mb-4 text-white/70"><span>/ {{ t('nav.about') }}</span></div>
-        <div class="grid gap-8 md:gap-12 md:grid-cols-[1fr_1.2fr] md:items-end text-paper">
+        <div class="grid gap-8 md:gap-12 md:grid-cols-[1.4fr_1fr] md:items-end text-paper">
           <div>
             <Reveal :delay="0.1">
               <div class="mb-8 h-48 w-48 overflow-hidden rounded-full border-2 border-white/25">
