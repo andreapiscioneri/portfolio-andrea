@@ -42,7 +42,7 @@ const href = computed(() => localePath(`/work/${props.project.slug}`))
         {{ t('common.selectedWorks') }}
       </span>
       <span
-        class="absolute right-4 top-4 rounded-full bg-paper/90 px-3 py-1 text-[0.65rem] font-medium uppercase tracking-[0.18em] text-ink shadow-sm"
+        class="absolute right-4 top-4 rounded-full bg-paper/90 px-3 py-1 text-[0.65rem] font-medium uppercase tracking-[0.18em] text-ink shadow-sm dark:bg-ink-950/90 dark:text-paper"
       >
         {{ project.year }}
       </span>

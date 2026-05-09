@@ -29,7 +29,7 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
       titleTemplate: '%s',
       meta: [
-        { name: 'theme-color', content: '#0a0a0a' },
+        { name: 'theme-color', content: '#0a0a0a', key: 'theme-color' },
         { name: 'format-detection', content: 'telephone=no' },
         { name: 'author', content: 'Andrea Piscioneri' },
       ],

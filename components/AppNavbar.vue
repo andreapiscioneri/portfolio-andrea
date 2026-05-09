@@ -45,13 +45,14 @@ const availableLocales = computed(() =>
     :class="[
       scrolled || isOpen
         ? 'bg-paper/80 backdrop-blur-xl dark:bg-ink-950/70 border-b border-black/5 dark:border-white/10'
-        : 'bg-transparent border-b border-transparent',
+        : 'bg-transparent border-b border-transparent text-paper',
     ]"
   >
     <nav class="container-x flex h-16 items-center justify-between md:h-20">
       <NuxtLink :to="localePath('/')" class="group relative flex items-center gap-3" data-cursor="link">
         <span
-          class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-ink transition-colors duration-500 dark:border-white/10 dark:bg-paper overflow-hidden"
+          class="flex h-9 w-9 items-center justify-center rounded-full border bg-ink transition-colors duration-500 dark:bg-paper overflow-hidden"
+          :class="scrolled || isOpen ? 'border-black/10 dark:border-white/10' : 'border-white/20'"
           aria-hidden="true"
         >
           <img src="/logo.png" alt="AP" class="h-5 w-5 object-contain dark:invert" />
@@ -74,18 +75,22 @@ const availableLocales = computed(() =>
       </ul>
 
       <div class="flex items-center gap-2">
-        <LocaleSwitcher class="hidden md:flex" />
-        <ThemeToggle class="hidden md:inline-flex" />
+        <LocaleSwitcher class="hidden md:flex" :ghost="!scrolled && !isOpen" />
+        <ThemeToggle class="hidden md:inline-flex" :ghost="!scrolled && !isOpen" />
         <NuxtLink
           :to="localePath('/contact')"
-          class="btn btn-primary hidden text-xs md:inline-flex"
+          class="btn hidden text-xs md:inline-flex transition-colors duration-500"
+          :class="scrolled || isOpen
+            ? 'btn-primary'
+            : 'border-white/30 bg-white/10 text-paper hover:bg-paper hover:text-ink'"
           data-cursor="link"
         >
           {{ t('common.getInTouch') }}
         </NuxtLink>
         <button
           type="button"
-          class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 dark:border-white/15 md:hidden touch-manipulation"
+          class="inline-flex h-11 w-11 items-center justify-center rounded-full border md:hidden touch-manipulation transition-colors duration-500"
+          :class="scrolled || isOpen ? 'border-black/10 dark:border-white/15' : 'border-white/25'"
           :aria-label="isOpen ? t('nav.close') : t('nav.menu')"
           @click="isOpen = !isOpen"
           data-cursor="link"

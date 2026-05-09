@@ -71,6 +71,8 @@ const scrollTop = () => {
         <div class="flex flex-wrap items-center gap-4">
           <NuxtLink :to="localePath('/trattamento-dati')" class="link-hover" data-cursor="link">{{ t('footer.dataProcessing') }}</NuxtLink>
           <span aria-hidden="true">·</span>
+          <NuxtLink :to="localePath('/privacy')" class="link-hover" data-cursor="link">{{ t('footer.privacy') }}</NuxtLink>
+          <span aria-hidden="true">·</span>
           <NuxtLink :to="localePath('/cookie')" class="link-hover" data-cursor="link">{{ t('footer.cookie') }}</NuxtLink>
         </div>
         <button type="button" @click="scrollTop" class="link-hover self-start md:self-auto" data-cursor="link">

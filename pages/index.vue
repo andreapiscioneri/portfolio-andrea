@@ -130,7 +130,7 @@ const marqueeItems = [
     <HeroSection />
 
     <!-- Marquee -->
-    <section class="relative border-y border-black/5 bg-paper-200 py-8 dark:border-white/10 dark:bg-ink-900">
+    <section class="relative py-8 bg-ink dark:bg-ink-900 text-paper">
       <Marquee :items="marqueeItems" />
     </section>
 

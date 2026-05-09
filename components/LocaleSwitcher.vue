@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { computed, ref, onMounted, onUnmounted } from 'vue'
 
+defineProps<{ ghost?: boolean }>()
+
 const { locale, locales } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 
@@ -33,7 +35,10 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside))
   <div ref="root" class="relative">
     <button
       type="button"
-      class="inline-flex min-h-[44px] items-center gap-2 rounded-full border border-black/10 px-3 py-2 text-xs uppercase tracking-[0.16em] transition-colors hover:bg-ink hover:text-paper dark:border-white/15 dark:hover:bg-paper dark:hover:text-ink touch-manipulation"
+      class="inline-flex min-h-[44px] items-center gap-2 rounded-full border px-3 py-2 text-xs uppercase tracking-[0.16em] transition-colors touch-manipulation"
+      :class="ghost
+        ? 'border-white/25 hover:bg-white/10 hover:text-paper'
+        : 'border-black/10 hover:bg-ink hover:text-paper dark:border-white/15 dark:hover:bg-paper dark:hover:text-ink'"
       :aria-expanded="open"
       data-cursor="link"
       @click="open = !open"

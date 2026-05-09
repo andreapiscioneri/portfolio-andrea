@@ -229,26 +229,6 @@ useHead({
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section v-if="detailGallery.length" class="container-x pb-20 md:pb-28">
-      <div class="eyebrow mb-6"><span>{{ t('project.gallery') }}</span></div>
-      <div class="grid gap-4 md:grid-cols-2">
-        <Reveal v-for="(img, i) in detailGallery" :key="i" :delay="i * 0.04">
-          <figure class="relative aspect-[4/3] overflow-hidden rounded-3xl bg-ink-100 dark:bg-ink-900">
-            <NuxtImg
-              :src="img.src"
-              :alt="img.alt"
-              loading="lazy"
-              format="webp"
-              class="h-full w-full object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              placeholder
-            />
-          </figure>
-        </Reveal>
-      </div>
-    </section>
-
     <!-- Next / Prev nav -->
     <section class="container-x pb-24">
       <div class="grid gap-4 md:grid-cols-2">

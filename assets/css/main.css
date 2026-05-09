@@ -53,7 +53,7 @@
 
   ::selection {
     background: var(--accent);
-    color: #fff;
+    color: #0a0a0a;
   }
 
   a {

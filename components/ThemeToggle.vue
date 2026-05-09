@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
+const props = defineProps<{ ghost?: boolean }>()
 const colorMode = useColorMode()
 const { t } = useI18n()
 
@@ -19,12 +20,15 @@ const setMode = (value: (typeof modes)[number]['value']) => {
 
 <template>
   <div
-    class="relative inline-flex items-center rounded-full border border-black/10 bg-paper/50 p-1 text-xs dark:border-white/15 dark:bg-ink-900/60"
+    class="relative inline-flex items-center rounded-full border p-1 text-xs transition-colors duration-500"
+    :class="props.ghost
+      ? 'border-white/25 bg-white/10'
+      : 'border-black/10 bg-paper/50 dark:border-white/15 dark:bg-ink-900/60'"
     role="group"
     :aria-label="t('theme.toggle')"
   >
     <span
-      class="absolute inset-y-1 w-8 rounded-full bg-ink transition-all duration-500 ease-smooth dark:bg-paper"
+      class="absolute inset-y-1 w-9 rounded-full bg-ink transition-all duration-500 ease-smooth dark:bg-paper"
       aria-hidden="true"
       :style="{ transform: `translateX(${activeIdx * 100}%)`, left: '0.25rem' }"
     />
@@ -33,7 +37,9 @@ const setMode = (value: (typeof modes)[number]['value']) => {
       :key="m.value"
       type="button"
       class="relative z-10 flex h-9 w-9 items-center justify-center rounded-full transition-colors duration-300"
-      :class="colorMode.preference === m.value ? 'text-paper dark:text-ink' : 'text-ink-500 dark:text-white/60'"
+      :class="colorMode.preference === m.value
+        ? 'text-paper dark:text-ink'
+        : props.ghost ? 'text-white/70' : 'text-ink-500 dark:text-white/60'"
       :aria-label="t(`theme.${m.value}`)"
       :aria-pressed="colorMode.preference === m.value"
       data-cursor="link"
