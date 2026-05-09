@@ -5,7 +5,7 @@ import { ref } from 'vue'
 <template>
   <div class="relative flex min-h-screen flex-col bg-paper text-ink dark:bg-ink-950 dark:text-paper">
     <AppNavbar />
-    <main class="flex-1">
+    <main class="relative flex-1 overflow-hidden">
       <slot />
     </main>
     <AppFooter />

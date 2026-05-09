@@ -74,8 +74,8 @@ useHead({
         sizes="100vw"
         placeholder
       />
-      <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/72 via-black/58 to-black/70" />
-      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_22%_20%,rgba(57,255,20,0.2),transparent_50%)]" />
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/85 via-black/75 to-black/80" />
+      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_22%_20%,rgba(57,255,20,0.18),transparent_50%)]" />
 
       <div class="container-x relative z-10">
         <div class="eyebrow mb-4 text-white/70"><span>/ {{ t('nav.about') }}</span></div>

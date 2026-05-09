@@ -1,25 +1,30 @@
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 
-const cursor = ref<HTMLElement | null>(null)
-const label = ref<string>('')
+const dot = ref<HTMLElement | null>(null)
+const ring = ref<HTMLElement | null>(null)
 const active = ref(false)
 const enabled = ref(true)
 
 let raf = 0
 let mouseX = 0
 let mouseY = 0
-let currentX = 0
-let currentY = 0
+let ringX = 0
+let ringY = 0
 
 const lerp = (a: number, b: number, n: number) => a + (b - a) * n
 
 const loop = () => {
-  currentX = lerp(currentX, mouseX, 0.18)
-  currentY = lerp(currentY, mouseY, 0.18)
-  if (cursor.value) {
-    cursor.value.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`
+  ringX = lerp(ringX, mouseX, 0.12)
+  ringY = lerp(ringY, mouseY, 0.12)
+
+  if (dot.value) {
+    dot.value.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`
   }
+  if (ring.value) {
+    ring.value.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%)`
+  }
+
   raf = requestAnimationFrame(loop)
 }
 
@@ -30,15 +35,12 @@ const onMove = (e: MouseEvent) => {
 
 const onOver = (e: MouseEvent) => {
   const target = e.target as HTMLElement | null
-  const el = target?.closest?.('[data-cursor]') as HTMLElement | null
-  if (el) {
-    label.value = el.getAttribute('data-cursor-label') || el.getAttribute('data-cursor') || ''
+  if (target?.closest?.('[data-cursor]')) {
     active.value = true
   }
 }
 const onOut = () => {
   active.value = false
-  label.value = ''
 }
 
 onMounted(() => {
@@ -65,22 +67,29 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div
-    v-if="enabled"
-    ref="cursor"
-    class="pointer-events-none fixed left-0 top-0 z-[500] -translate-x-1/2 -translate-y-1/2 will-change-transform"
-    aria-hidden="true"
-  >
+  <template v-if="enabled">
+    <!-- Dot -->
     <div
-      class="relative flex items-center justify-center rounded-full bg-ink text-paper mix-blend-difference transition-[width,height] duration-300 ease-smooth dark:bg-paper dark:text-ink"
-      :class="[active ? 'h-20 w-20' : 'h-3 w-3']"
+      ref="dot"
+      class="pointer-events-none fixed left-0 top-0 z-[501] will-change-transform"
+      aria-hidden="true"
     >
-      <span
-        v-if="active && label"
-        class="absolute inset-0 flex items-center justify-center text-[0.6rem] uppercase tracking-[0.2em]"
-      >
-        {{ label === 'true' || label === 'link' ? '↗' : label }}
-      </span>
+      <div
+        class="rounded-full bg-accent transition-transform duration-150"
+        :class="active ? 'h-2 w-2 scale-150' : 'h-2 w-2'"
+      />
     </div>
-  </div>
+
+    <!-- Ring -->
+    <div
+      ref="ring"
+      class="pointer-events-none fixed left-0 top-0 z-[500] will-change-transform"
+      aria-hidden="true"
+    >
+      <div
+        class="rounded-full border border-accent/60 transition-[width,height] duration-300 ease-out"
+        :class="active ? 'h-10 w-10' : 'h-7 w-7'"
+      />
+    </div>
+  </template>
 </template>

@@ -177,19 +177,21 @@
 /* ------------------------------------------------------------------ *
  * Page transitions
  * ------------------------------------------------------------------ */
-.page-enter-active,
 .page-leave-active {
-  transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1), transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: opacity 0.2s ease;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  pointer-events: none;
 }
 
-.page-enter-from {
-  opacity: 0;
-  transform: translateY(12px);
+.page-enter-active {
+  transition: opacity 0.3s ease 0.2s;
 }
 
+.page-enter-from,
 .page-leave-to {
   opacity: 0;
-  transform: translateY(-12px);
 }
 
 /* ------------------------------------------------------------------ *
@@ -214,4 +216,13 @@ html.lenis body {
 
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
+}
+
+
+/* Hide Nuxt dev error overlay */
+nuxt-error-overlay,
+[data-v-inspector-ignore],
+.__nuxt-error-overlay,
+#nuxt-devtools-anchor {
+  display: none !important;
 }

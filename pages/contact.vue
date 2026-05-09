@@ -106,22 +106,33 @@ const copyEmail = async () => {
       <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_82%_18%,rgba(57,255,20,0.18),transparent_50%)]" />
 
       <div class="container-x relative z-10">
-        <div class="eyebrow mb-4 text-white/70"><span>/ {{ t('nav.contact') }}</span></div>
+        <div class="eyebrow mb-6 text-white/70"><span>/ {{ t('nav.contact') }}</span></div>
         <div class="grid gap-16 md:grid-cols-[1.3fr_1fr] md:items-end">
-          <AnimatedText as="h1" split="lines" class="font-display text-display-xl leading-[0.88] tracking-[-0.04em] text-balance text-paper">
-            {{ t('contact.title') }}
-          </AnimatedText>
-          <Reveal :delay="0.2">
-            <p class="max-w-md text-base text-white/80 text-pretty md:text-lg">
-              {{ t('contact.subtitle') }}
-            </p>
-          </Reveal>
+          <div>
+            <Reveal :delay="0.1" class="mb-6">
+              <div class="h-28 w-28 overflow-hidden rounded-full border-2 border-white/25">
+                <img
+                  src="/1.PNG"
+                  alt="Andrea Piscioneri"
+                  class="h-full w-full object-cover object-top grayscale contrast-125 brightness-110 saturate-0"
+                />
+              </div>
+            </Reveal>
+            <AnimatedText as="h1" split="lines" class="font-display text-display-xl leading-[0.88] tracking-[-0.04em] text-balance text-paper">
+              {{ t('contact.title') }}
+            </AnimatedText>
+            <Reveal :delay="0.2">
+              <p class="mt-6 max-w-md text-base text-white/80 text-pretty md:text-lg">
+                {{ t('contact.subtitle') }}
+              </p>
+            </Reveal>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="container-x pb-24 md:pb-32">
-      <div class="grid gap-10 md:grid-cols-[1.2fr_1fr] lg:gap-16">
+    <section class="container-x pt-16 md:pt-20 pb-24 md:pb-32">
+      <div class="grid gap-10 md:grid-cols-[1.2fr_1fr] lg:gap-16 md:items-start">
         <!-- Form / mailto -->
         <Reveal>
           <form class="space-y-6 rounded-3xl border border-black/5 bg-paper-200 p-8 md:p-10 dark:border-white/10 dark:bg-ink-900" @submit.prevent>
@@ -165,29 +176,27 @@ const copyEmail = async () => {
 
         <!-- Info -->
         <Reveal :delay="0.1">
-          <div class="space-y-10">
-            <div>
-              <div class="eyebrow mb-3">{{ t('contact.emailLabel') }}</div>
-              <a :href="`mailto:${personal.email}`" class="font-display text-[clamp(1.5rem,3vw,2.5rem)] leading-[1.05] tracking-[-0.02em] link-hover" data-cursor="link">
+          <div class="space-y-8 rounded-3xl border border-black/5 bg-paper-200 p-8 md:p-10 dark:border-white/10 dark:bg-ink-900">
+            <div class="border-b border-black/5 pb-8 dark:border-white/10">
+              <div class="eyebrow mb-2">{{ t('contact.emailLabel') }}</div>
+              <a :href="`mailto:${personal.email}`" class="break-all text-base font-medium link-hover" data-cursor="link">
                 {{ personal.email }}
               </a>
             </div>
-            <div>
-              <div class="eyebrow mb-3">{{ t('contact.phoneLabel') }}</div>
-              <a :href="`tel:${personal.phoneRaw}`" class="font-display text-[clamp(1.5rem,3vw,2.5rem)] leading-[1.05] tracking-[-0.02em] link-hover" data-cursor="link">
+            <div class="border-b border-black/5 pb-8 dark:border-white/10">
+              <div class="eyebrow mb-2">{{ t('contact.phoneLabel') }}</div>
+              <a :href="`tel:${personal.phoneRaw}`" class="text-base font-medium link-hover" data-cursor="link">
                 {{ personal.phone }}
               </a>
             </div>
-            <div>
-              <div class="eyebrow mb-3">{{ t('contact.locationLabel') }}</div>
-              <p class="font-display text-[clamp(1.5rem,3vw,2.5rem)] leading-[1.05] tracking-[-0.02em]">
-                {{ personal.city }}, {{ personal.region }}
-              </p>
+            <div class="border-b border-black/5 pb-8 dark:border-white/10">
+              <div class="eyebrow mb-2">{{ t('contact.locationLabel') }}</div>
+              <p class="text-base font-medium">{{ personal.city }}, {{ personal.region }}</p>
               <p class="mt-1 text-sm text-ink-500 dark:text-white/60">{{ personal.country }}</p>
             </div>
-            <div>
-              <div class="eyebrow mb-3">{{ t('contact.availableTitle') }}</div>
-              <ul class="flex flex-wrap gap-2">
+            <div class="border-b border-black/5 pb-8 dark:border-white/10">
+              <div class="eyebrow mb-2">{{ t('contact.availableTitle') }}</div>
+              <ul class="flex flex-wrap gap-2 mt-3">
                 <li
                   v-for="a in personal.availableFor"
                   :key="a"
@@ -198,7 +207,7 @@ const copyEmail = async () => {
               </ul>
             </div>
             <div>
-              <div class="eyebrow mb-3">{{ t('contact.hoursLabel') }}</div>
+              <div class="eyebrow mb-2">{{ t('contact.hoursLabel') }}</div>
               <p class="text-base">{{ t('contact.hoursValue') }}</p>
             </div>
           </div>

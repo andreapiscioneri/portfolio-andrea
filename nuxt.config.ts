@@ -6,7 +6,8 @@ const localeCodes = ['it', 'en', 'es', 'de']
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
+  features: { devLogs: false },
   ssr: true,
 
   modules: [
@@ -15,7 +16,6 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
-    '@pinia/nuxt',
     '@nuxtjs/seo',
   ],
 
@@ -23,7 +23,6 @@ export default defineNuxtConfig({
 
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
-    layoutTransition: { name: 'layout', mode: 'out-in' },
     head: {
       htmlAttrs: { lang: 'it' },
       charset: 'utf-8',
@@ -83,7 +82,7 @@ export default defineNuxtConfig({
   image: {
     format: ['webp', 'avif'],
     quality: 85,
-    domains: ['images.unsplash.com', 'images.pexels.com', 'apdesign.altervista.org', 'reteye.altervista.org', 'mir-s3-cdn-cf.behance.net'],
+    domains: ['images.unsplash.com', 'images.pexels.com', 'apdesign.altervista.org', 'reteye.altervista.org', 'mir-s3-cdn-cf.behance.net', 'cdn.simpleicons.org'],
     screens: {
       xs: 320,
       sm: 640,
@@ -221,7 +220,7 @@ export default defineNuxtConfig({
   },
 
   experimental: {
-    viewTransition: true,
+    viewTransition: false,
     appManifest: false,
   },
 })

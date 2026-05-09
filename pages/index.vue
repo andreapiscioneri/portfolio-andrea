@@ -83,14 +83,18 @@ const stats = computed(() =>
 )
 
 const marqueeItems = [
-  'UX/UI',
-  'Web Design',
-  'Brand Identity',
-  '3D & Motion',
-  'Photography',
-  'Odoo',
-  'Vue & Nuxt',
-  'Next & React',
+  { name: 'Figma',              logo: 'https://cdn.simpleicons.org/figma/ffffff' },
+  { name: 'Vue.js',             logo: 'https://cdn.simpleicons.org/vuedotjs/ffffff' },
+  { name: 'Nuxt',               logo: 'https://cdn.simpleicons.org/nuxt/ffffff' },
+  { name: 'React',              logo: 'https://cdn.simpleicons.org/react/ffffff' },
+  { name: 'Next.js',            logo: 'https://cdn.simpleicons.org/nextdotjs/ffffff' },
+  { name: 'TypeScript',         logo: 'https://cdn.simpleicons.org/typescript/ffffff' },
+  { name: 'Odoo',               logo: 'https://cdn.simpleicons.org/odoo/ffffff' },
+  { name: 'Adobe Photoshop',    logo: '/Adobe_Photoshop_CC_icon.svg.png' },
+  { name: 'Adobe Illustrator',  logo: '/Adobe_Illustrator_CC_icon.svg.png' },
+  { name: 'Adobe After Effects',logo: '/Adobe_After_Effects_CC_icon.svg.png' },
+  { name: 'Blender',            logo: 'https://cdn.simpleicons.org/blender/ffffff' },
+  { name: 'Tailwind CSS',       logo: 'https://cdn.simpleicons.org/tailwindcss/ffffff' },
 ]
 </script>
 
@@ -209,15 +213,15 @@ const marqueeItems = [
 
     <!-- Stats -->
     <section class="container-x pb-24 md:pb-32">
-      <div class="rounded-3xl border border-black/5 bg-ink text-paper p-10 md:p-16 dark:border-white/10 dark:bg-paper dark:text-ink">
-        <div class="eyebrow mb-8 text-paper/70 dark:text-ink/60"><span>{{ t('home.statsTitle') }}</span></div>
+      <div class="rounded-3xl border border-black/5 bg-ink text-paper p-10 md:p-16 dark:border-white/10 dark:bg-ink-900 dark:text-paper">
+        <div class="eyebrow mb-8 text-paper/70"><span>{{ t('home.statsTitle') }}</span></div>
         <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <Reveal v-for="(s, i) in stats" :key="i" :delay="i * 0.08">
             <div class="flex flex-col">
               <div class="font-display text-[clamp(3rem,6vw,5rem)] leading-[0.9] tracking-[-0.04em]">
                 {{ s.value }}<span class="text-accent">{{ s.suffix }}</span>
               </div>
-              <div class="mt-3 text-sm uppercase tracking-[0.2em] text-paper/60 dark:text-ink/60">
+              <div class="mt-3 text-sm uppercase tracking-[0.2em] text-paper/60">
                 {{ s.label }}
               </div>
             </div>

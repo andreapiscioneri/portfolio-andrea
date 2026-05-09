@@ -39,18 +39,12 @@ onMounted(() => {
           <img src="/logo.png" alt="Andrea Piscioneri" class="h-24 w-24 object-contain brightness-0 invert" />
         </div>
 
-        <div class="flex items-end justify-between text-xs uppercase tracking-[0.3em] text-paper/60">
-          <span>{{ t('loader.hello') }}</span>
-          <span class="tabular-nums">{{ progress.toString().padStart(3, '0') }}</span>
-        </div>
-
         <div class="my-6 h-[1px] w-full bg-paper/15">
           <div class="h-[1px] bg-accent transition-[width] duration-75 ease-linear" :style="{ width: `${progress}%` }" />
         </div>
 
-        <div class="flex items-center justify-between text-[0.65rem] uppercase tracking-[0.4em] text-paper/50">
-          <span>Andrea · Piscioneri</span>
-          <span>{{ t('loader.loading') }}</span>
+        <div class="flex items-center justify-center text-xs uppercase tracking-[0.3em] text-paper/60">
+          <span class="tabular-nums">{{ progress.toString().padStart(3, '0') }}%</span>
         </div>
       </div>
     </div>
