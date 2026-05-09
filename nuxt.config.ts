@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image',
     '@nuxtjs/i18n',
-
+    '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
     '@nuxtjs/seo',
@@ -53,6 +53,14 @@ export default defineNuxtConfig({
   },
 
 
+
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
+    classSuffix: '',
+    storageKey: 'ap-color-mode',
+    storage: 'cookie',
+  },
 
   i18n: {
     strategy: 'prefix_except_default',
