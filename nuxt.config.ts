@@ -54,10 +54,10 @@ export default defineNuxtConfig({
       {
         innerHTML: `
           const colorMode = localStorage.getItem('ap-color-mode');
-          if (colorMode === 'dark') {
-            document.documentElement.classList.add('dark');
-          } else if (colorMode === 'light') {
+          if (colorMode === 'light') {
             document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.add('dark');
           }
         `,
       },
@@ -65,7 +65,7 @@ export default defineNuxtConfig({
   },
 
   colorMode: {
-    preference: 'system',
+    preference: 'dark',
     fallback: 'dark',
     classSuffix: '',
     storageKey: 'ap-color-mode',
