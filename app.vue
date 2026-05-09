@@ -9,11 +9,6 @@ const i18nHead = useLocaleHead()
 const site = useRuntimeConfig().public.siteUrl as string
 const siteUrl = computed(() => String(site).replace(/\/$/, ''))
 
-const htmlClass = computed(() => {
-  const themeClass = colorMode.value === 'dark' ? 'dark' : ''
-  return [themeClass, 'cursor-custom'].filter(Boolean).join(' ')
-})
-
 const ogLocaleMap: Record<string, string> = {
   it: 'it_IT',
   en: 'en_US',
@@ -48,7 +43,6 @@ const themeColor = computed(() => colorMode.value === 'dark' ? '#0a0a0a' : '#faf
 
 useHead(() => {
   const localeHtmlAttrs = i18nHead.value.htmlAttrs ?? {}
-  const localeClass = String(localeHtmlAttrs.class ?? '')
   const i18nLinks = i18nHead.value.link ?? []
   const canonical = i18nLinks.find(l => l.rel === 'canonical')
   const canonicalHref = canonical?.href?.replace(/\/$/, '')
@@ -57,7 +51,6 @@ useHead(() => {
     htmlAttrs: {
       ...localeHtmlAttrs,
       lang: locale.value,
-      class: [localeClass, htmlClass.value].filter(Boolean).join(' ').trim(),
     },
     meta: [
       ...(i18nHead.value.meta ?? []),
