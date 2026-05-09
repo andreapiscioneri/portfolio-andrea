@@ -225,6 +225,24 @@
   "faq": {
     "title": "Domande frequenti",
     "subtitle": "Tutto quello che potresti voler sapere prima di contattarmi.",
+    "aboutItems": [
+      {
+        "q": "Dove ha studiato Andrea Piscioneri?",
+        "a": "Andrea Piscioneri ha conseguito la Laurea Magistrale in Digital Design & Communication presso la Libera Accademia di Belle Arti LABA di Brescia nel 2025 (110/110 cum laude) e la Laurea Triennale in Graphic Design presso l'Accademia di Belle Arti Santa Giulia di Brescia nel 2023 (110L/100). Ha anche conseguito un Diploma in Design per la Comunicazione Visiva presso l'ISIS Oscar Romero di Albino (BG) nel 2020."
+      },
+      {
+        "q": "Quanti anni di esperienza ha Andrea Piscioneri nel design?",
+        "a": "Andrea Piscioneri ha oltre 9 anni di esperienza nel settore del design visivo. Ha iniziato con il primo stage grafico presso Centro MBE nel 2017, ha lavorato come Graphic Designer presso TVBEAT S.R.L. dal 2021 al 2022, e dal 2024 lavora come UX/UI Designer & Web Developer presso Denani S.R.L."
+      },
+      {
+        "q": "Quali lingue parla Andrea Piscioneri?",
+        "a": "Andrea Piscioneri parla 5 lingue: Italiano (madrelingua), Inglese, Francese, Tedesco e Spagnolo. Il suo sito portfolio è disponibile in tutte e 5 le lingue."
+      },
+      {
+        "q": "Qual è la tesi di laurea di Andrea Piscioneri?",
+        "a": "La tesi magistrale si intitola LUMYN — AI Chatbot per E-commerce sviluppato in Vue.js (LABA Brescia, 2025, 110/110 cum laude). La tesi triennale si intitola Reteye — progetto per la sensibilizzazione alla cecità ai colori, tra i migliori 50 in Europa all'ICHEP, Bologna 2022."
+      }
+    ],
     "items": [
       {
         "q": "Cosa fai esattamente?",
@@ -248,7 +266,7 @@
       },
       {
         "q": "Come posso vedere il tuo curriculum?",
-        "a": "Il CV è scaricabile direttamente dalla pagina Chi sono in versione italiana e inglese. Puoi trovarlo su andreapiscioneri.com/about."
+        "a": "Il CV è scaricabile direttamente dalla pagina Chi sono in versione italiana e inglese."
       }
     ]
   }

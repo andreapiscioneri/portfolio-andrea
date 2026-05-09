@@ -225,6 +225,24 @@
   "faq": {
     "title": "Preguntas frecuentes",
     "subtitle": "Todo lo que podrías querer saber antes de contactarme.",
+    "aboutItems": [
+      {
+        "q": "¿Dónde estudió Andrea Piscioneri?",
+        "a": "Andrea Piscioneri tiene un Máster en Digital Design & Communication de la LABA Brescia (110/110 cum laude, 2025) y una Licenciatura en Diseño Gráfico de la Accademia di Belle Arti Santa Giulia, Brescia (110L/100, 2023). También tiene un Diploma en Diseño de Comunicación Visual del ISIS Oscar Romero, Albino (BG), 2020."
+      },
+      {
+        "q": "¿Cuántos años de experiencia tiene Andrea Piscioneri en diseño?",
+        "a": "Andrea Piscioneri tiene más de 9 años de experiencia en diseño visual. Comenzó con su primera práctica gráfica en Centro MBE en 2017, trabajó como Diseñador Gráfico en TVBEAT S.R.L. de 2021 a 2022, y desde 2024 trabaja como UX/UI Designer & Web Developer en Denani S.R.L."
+      },
+      {
+        "q": "¿Qué idiomas habla Andrea Piscioneri?",
+        "a": "Andrea Piscioneri habla 5 idiomas: italiano (lengua materna), inglés, francés, alemán y español. Su sitio portfolio está disponible en los 5 idiomas."
+      },
+      {
+        "q": "¿Cuál es la tesis de Andrea Piscioneri?",
+        "a": "Su tesis de máster se titula LUMYN — un chatbot IA para e-commerce desarrollado en Vue.js (LABA Brescia, 2025, 110/110 cum laude). Su tesis de grado se titula Reteye — un proyecto de diseño para la concienciación sobre el daltonismo, clasificado entre los 50 mejores de Europa en el ICHEP, Bolonia 2022."
+      }
+    ],
     "items": [
       {
         "q": "¿Qué haces exactamente?",
@@ -248,7 +266,7 @@
       },
       {
         "q": "¿Cómo puedo ver tu currículum?",
-        "a": "El CV está disponible para descargar directamente desde la página Sobre mí en versión italiana e inglesa. Puedes encontrarlo en andreapiscioneri.com/about."
+        "a": "El CV está disponible para descargar directamente desde la página Sobre mí en versión italiana e inglesa."
       }
     ]
   }

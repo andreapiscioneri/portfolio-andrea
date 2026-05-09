@@ -77,56 +77,11 @@ useHead({
         '@type': 'FAQPage',
         '@id': `${homeUrl.value.replace(/\/$/, '')}/#faq`,
         inLanguage: locale.value,
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: 'Chi è Andrea Piscioneri?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Andrea Piscioneri è un UX/UI Designer e Web Developer italiano con sede ad Albino (BG), Lombardia. Ha conseguito la Laurea Magistrale in Digital Design & Communication (LABA Brescia, 110/110 cum laude, 2025) e la Laurea Triennale in Graphic Design (Accademia di Belle Arti Santa Giulia, 110L/100, 2023). Attualmente lavora come UX/UI Designer & Web Developer presso Denani S.R.L. in Lombardia.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'Cosa fa Andrea Piscioneri?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Andrea Piscioneri si occupa di: UX/UI design (ricerca, wireframe, prototipazione, design system), sviluppo web (Vue.js, Nuxt, React, Next.js, TypeScript), brand identity (naming, logo, visual identity), motion graphics 3D (Cinema 4D, Blender, After Effects), fotografia professionale e riprese drone certificate (patente A1/A3), moduli custom Odoo e app mobile native.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'Dove lavora Andrea Piscioneri?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Dal 2024 Andrea Piscioneri lavora come UX/UI Designer & Web Developer presso Denani S.R.L. in Lombardia, Italia. In precedenza ha lavorato come Graphic Designer presso TVBEAT S.R.L. a Gorle (BG) dal 2021 al 2022.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'Come contattare Andrea Piscioneri?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Andrea Piscioneri è contattabile via email a andrypiscioneri@gmail.com, per telefono al +39 375 528 6241, o tramite il form di contatto su https://andreapiscioneri.com/contact. È disponibile per progetti di UX/UI design, sviluppo web, brand identity, fotografia e consulenza digitale.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'Quali tecnologie usa Andrea Piscioneri per lo sviluppo web?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Per lo sviluppo web usa principalmente Vue.js, Nuxt 3, React, Next.js e TypeScript. Per il design usa Figma, Adobe Creative Suite (Photoshop, Illustrator, InDesign, After Effects), Cinema 4D e Blender. Utilizza anche Tailwind CSS, Git, Webflow e Odoo.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'Quanti progetti ha nel portfolio di Andrea Piscioneri?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Il portfolio di Andrea Piscioneri conta 26 progetti documentati, dal 2022 al 2025, in ambiti che spaziano da UX/UI design a brand identity, matte painting digitale, editorial design, motion graphics e fotografia. I progetti sono consultabili su https://andreapiscioneri.com/work.',
-            },
-          },
-        ],
+        mainEntity: Array.from({ length: 6 }, (_, i) => ({
+          '@type': 'Question',
+          name: t(`faq.items[${i}].q`),
+          acceptedAnswer: { '@type': 'Answer', text: t(`faq.items[${i}].a`) },
+        })),
       }),
     },
   ],

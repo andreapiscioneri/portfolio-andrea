@@ -75,6 +75,19 @@ useHead(() => {
               url: canonicalHref,
               inLanguage: locale.value,
               author: { '@id': `${siteUrl.value}/#person` },
+              publisher: { '@id': `${siteUrl.value}/#person` },
+              potentialAction: [
+                {
+                  '@type': 'SearchAction',
+                  target: { '@type': 'EntryPoint', urlTemplate: `${siteUrl.value}/work?q={search_term_string}` },
+                  'query-input': 'required name=search_term_string',
+                },
+                {
+                  '@type': 'ContactAction',
+                  target: `${siteUrl.value}/contact`,
+                  name: 'Contatta Andrea Piscioneri',
+                },
+              ],
             }),
           },
         ]

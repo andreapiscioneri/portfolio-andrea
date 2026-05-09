@@ -41,11 +41,16 @@ useHead({
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'ItemList',
-        name: 'Portfolio — Andrea Piscioneri',
-        description: 'Tutti i progetti di design digitale, sviluppo web, brand identity, grafica e fotografia di Andrea Piscioneri.',
+        name: `${t('work.title')} — Andrea Piscioneri`,
+        description: t('work.subtitle'),
         url: workUrl.value,
         inLanguage: locale.value,
         numberOfItems: all.length,
+        dateModified: '2026-05-09',
+        speakable: {
+          '@type': 'SpeakableSpecification',
+          cssSelector: ['h1', '.project-title', '.project-excerpt'],
+        },
         itemListElement: all.map((p, i) => ({
           '@type': 'ListItem',
           position: i + 1,

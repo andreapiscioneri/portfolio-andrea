@@ -73,40 +73,11 @@ useHead({
         '@type': 'FAQPage',
         '@id': `${aboutUrl.value.replace(/\/$/, '')}/#faq`,
         inLanguage: locale.value,
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: 'Dove ha studiato Andrea Piscioneri?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Andrea Piscioneri ha conseguito la Laurea Magistrale in Digital Design & Communication presso la Libera Accademia di Belle Arti LABA di Brescia nel 2025 (110/110 cum laude) e la Laurea Triennale in Graphic Design presso l\'Accademia di Belle Arti Santa Giulia di Brescia nel 2023 (110L/100). Ha anche conseguito un Diploma in Design per la Comunicazione Visiva presso l\'ISIS Oscar Romero di Albino (BG) nel 2020.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'Quanti anni di esperienza ha Andrea Piscioneri nel design?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Andrea Piscioneri ha oltre 9 anni di esperienza complessiva nel settore del design visivo. Ha iniziato con il primo stage grafico presso Centro MBE nel 2017, ha lavorato come Graphic Designer presso TVBEAT S.R.L. dal 2021 al 2022, e dal 2024 lavora come UX/UI Designer & Web Developer presso Denani S.R.L.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'Quali lingue parla Andrea Piscioneri?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Andrea Piscioneri parla 5 lingue: Italiano (madrelingua), Inglese, Francese, Tedesco e Spagnolo. Il suo sito portfolio è disponibile in tutte e 5 le lingue: italiano, inglese, francese, tedesco e spagnolo.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'Qual è la tesi di laurea di Andrea Piscioneri?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'La tesi magistrale di Andrea Piscioneri si intitola LUMYN — un AI Chatbot per E-commerce sviluppato in Vue.js, discussa presso LABA Brescia nel 2025 con voto 110/110 cum laude. La tesi triennale si intitola Reteye — un progetto di design per la sensibilizzazione alla cecità ai colori, che è stato tra i migliori 50 progetti in Europa all\'ICHEP di Bologna nel 2022.',
-            },
-          },
-        ],
+        mainEntity: Array.from({ length: 4 }, (_, i) => ({
+          '@type': 'Question',
+          name: t(`faq.aboutItems[${i}].q`),
+          acceptedAnswer: { '@type': 'Answer', text: t(`faq.aboutItems[${i}].a`) },
+        })),
       }),
     },
   ],

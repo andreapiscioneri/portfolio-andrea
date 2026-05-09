@@ -42,6 +42,11 @@ useHead({
         description: t('contact.subtitle'),
         inLanguage: locale.value,
         isPartOf: { '@id': `${site}/#website` },
+        dateModified: '2026-05-09',
+        speakable: {
+          '@type': 'SpeakableSpecification',
+          cssSelector: ['h1', '.contact-intro', '.contact-info'],
+        },
         mainEntity: {
           '@type': 'Person',
           '@id': `${site}/#person`,
@@ -50,10 +55,23 @@ useHead({
           telephone: personal.phone,
           contactPoint: {
             '@type': 'ContactPoint',
-            contactType: 'customer service',
+            contactType: 'customer support',
             email: personal.email,
             telephone: personal.phone,
-            availableLanguage: ['Italian', 'English', 'French', 'German', 'Spanish'],
+            areaServed: ['IT', 'EU'],
+            availableLanguage: [
+              { '@type': 'Language', name: 'Italian' },
+              { '@type': 'Language', name: 'English' },
+              { '@type': 'Language', name: 'French' },
+              { '@type': 'Language', name: 'German' },
+              { '@type': 'Language', name: 'Spanish' },
+            ],
+            hoursAvailable: {
+              '@type': 'OpeningHoursSpecification',
+              dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+              opens: '09:00',
+              closes: '19:00',
+            },
           },
         },
       }),

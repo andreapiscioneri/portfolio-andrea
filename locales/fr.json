@@ -225,6 +225,24 @@
   "faq": {
     "title": "Questions fréquentes",
     "subtitle": "Tout ce que vous pourriez vouloir savoir avant de me contacter.",
+    "aboutItems": [
+      {
+        "q": "Où Andrea Piscioneri a-t-il étudié ?",
+        "a": "Andrea Piscioneri est titulaire d'un Master en Digital Design & Communication de la LABA Brescia (110/110 cum laude, 2025) et d'une Licence en Graphic Design de l'Accademia di Belle Arti Santa Giulia, Brescia (110L/100, 2023). Il est également diplômé en Design de la Communication Visuelle de l'ISIS Oscar Romero, Albino (BG), 2020."
+      },
+      {
+        "q": "Combien d'années d'expérience Andrea Piscioneri a-t-il dans le design ?",
+        "a": "Andrea Piscioneri a plus de 9 ans d'expérience dans le design visuel. Il a commencé par un premier stage graphique au Centro MBE en 2017, a travaillé comme Graphic Designer chez TVBEAT S.R.L. de 2021 à 2022, et depuis 2024 travaille comme UX/UI Designer & Web Developer chez Denani S.R.L."
+      },
+      {
+        "q": "Quelles langues parle Andrea Piscioneri ?",
+        "a": "Andrea Piscioneri parle 5 langues : italien (langue maternelle), anglais, français, allemand et espagnol. Son site portfolio est disponible dans les 5 langues."
+      },
+      {
+        "q": "Quel est le mémoire de fin d'études d'Andrea Piscioneri ?",
+        "a": "Son mémoire de master s'intitule LUMYN — un chatbot IA pour l'e-commerce développé en Vue.js (LABA Brescia, 2025, 110/110 cum laude). Son mémoire de licence s'intitule Reteye — un projet de design pour la sensibilisation au daltonisme, classé parmi les 50 meilleurs en Europe à l'ICHEP, Bologne 2022."
+      }
+    ],
     "items": [
       {
         "q": "Que faites-vous exactement ?",
@@ -248,7 +266,7 @@
       },
       {
         "q": "Comment puis-je consulter votre CV ?",
-        "a": "Le CV est téléchargeable directement depuis la page À propos en version italienne et anglaise. Vous pouvez le trouver sur andreapiscioneri.com/about."
+        "a": "Le CV est téléchargeable directement depuis la page À propos en version italienne et anglaise."
       }
     ]
   }

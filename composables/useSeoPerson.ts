@@ -111,6 +111,44 @@ export const useSeoPerson = () => {
       { '@type': 'Language', name: 'German', alternateName: 'de' },
       { '@type': 'Language', name: 'Spanish', alternateName: 'es' },
     ],
+    hasCredential: [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        name: 'Laurea Magistrale in Digital Design & Communication',
+        credentialCategory: 'degree',
+        educationalLevel: 'Master\'s Degree',
+        recognizedBy: { '@type': 'Organization', name: 'Libera Accademia di Belle Arti LABA Brescia' },
+        validFrom: '2025-01-01',
+        url: 'https://www.laba.edu/',
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        name: 'Laurea Triennale in Graphic Design',
+        credentialCategory: 'degree',
+        educationalLevel: 'Bachelor\'s Degree',
+        recognizedBy: { '@type': 'Organization', name: 'Accademia di Belle Arti Santa Giulia, Brescia' },
+        validFrom: '2023-01-01',
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        name: 'Patente Drone A1/A3 — ENAC',
+        credentialCategory: 'certificate',
+        recognizedBy: { '@type': 'Organization', name: 'ENAC — Ente Nazionale per l\'Aviazione Civile', url: 'https://www.enac.gov.it/' },
+        description: 'Certificato per operazioni con sistemi aeromobili a pilotaggio remoto (SAPR) nelle categorie A1 e A3',
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        name: 'Corso Sicurezza sul Lavoro',
+        credentialCategory: 'certificate',
+        recognizedBy: { '@type': 'Organization', name: 'ISIS Oscar Romero, Albino (BG)' },
+        description: 'Formazione sulla salute e sicurezza sul lavoro — 12 ore',
+      },
+    ],
+    potentialAction: {
+      '@type': 'ContactAction',
+      target: `${site}/contact`,
+      name: 'Contatta Andrea Piscioneri',
+    },
   }
 
   useHead({

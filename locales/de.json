@@ -225,6 +225,24 @@
   "faq": {
     "title": "Häufige Fragen",
     "subtitle": "Alles, was Sie wissen möchten, bevor Sie mich kontaktieren.",
+    "aboutItems": [
+      {
+        "q": "Wo hat Andrea Piscioneri studiert?",
+        "a": "Andrea Piscioneri hat einen Master in Digital Design & Communication von der LABA Brescia (110/110 cum laude, 2025) und einen Bachelor in Graphic Design von der Accademia di Belle Arti Santa Giulia, Brescia (110L/100, 2023). Er hat auch ein Diplom in Visueller Kommunikationsdesign von der ISIS Oscar Romero, Albino (BG), 2020."
+      },
+      {
+        "q": "Wie viele Jahre Erfahrung hat Andrea Piscioneri im Design?",
+        "a": "Andrea Piscioneri hat über 9 Jahre Erfahrung im visuellen Design. Er begann mit seinem ersten Grafikpraktikum beim Centro MBE im Jahr 2017, arbeitete von 2021 bis 2022 als Grafikdesigner bei TVBEAT S.R.L. und ist seit 2024 als UX/UI Designer & Web Developer bei Denani S.R.L. tätig."
+      },
+      {
+        "q": "Welche Sprachen spricht Andrea Piscioneri?",
+        "a": "Andrea Piscioneri spricht 5 Sprachen: Italienisch (Muttersprache), Englisch, Französisch, Deutsch und Spanisch. Sein Portfolio-Website ist in allen 5 Sprachen verfügbar."
+      },
+      {
+        "q": "Was ist die Abschlussarbeit von Andrea Piscioneri?",
+        "a": "Seine Masterarbeit trägt den Titel LUMYN — ein KI-Chatbot für E-Commerce, entwickelt in Vue.js (LABA Brescia, 2025, 110/110 cum laude). Seine Bachelorarbeit trägt den Titel Reteye — ein Designprojekt zur Sensibilisierung für Farbenblindheit, das beim ICHEP in Bologna 2022 unter den Top 50 in Europa eingestuft wurde."
+      }
+    ],
     "items": [
       {
         "q": "Was genau machen Sie?",
@@ -248,7 +266,7 @@
       },
       {
         "q": "Wie kann ich Ihren Lebenslauf einsehen?",
-        "a": "Der Lebenslauf kann direkt von der Über-mich-Seite in der deutschen und englischen Version heruntergeladen werden. Sie finden ihn auf andreapiscioneri.com/about."
+        "a": "Der Lebenslauf kann direkt von der Über-mich-Seite in der deutschen und englischen Version heruntergeladen werden."
       }
     ]
   }
