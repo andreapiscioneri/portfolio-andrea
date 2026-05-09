@@ -189,9 +189,9 @@ export const projects: Project[] = [
     category: ['Motion Graphics', 'Animation', 'Video'],
     role: ['Motion Designer', 'Animator'],
     stack: ['Adobe After Effects', 'Photoshop', 'Cinema 4D'],
-    cover: `${BO}/ec5e7a237498571.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png`,
+    cover: '/l.png',
     gallery: [
-      { src: `${BO}/ec5e7a237498571.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png`, alt: 'Motion Design — frame 1' },
+      { src: '/l.png', alt: 'Motion Design — frame 1' },
       { src: `${BO}/b3f7fc238170125.Y3JvcCwxMzgwLDEwODAsMzM0LDA.png`, alt: 'Motion Design — frame 2' },
     ],
     url: 'https://www.behance.net/gallery/235103681/MOTION-DESIGN-VIDEO',
@@ -213,9 +213,9 @@ export const projects: Project[] = [
     category: ['Brand Identity', 'Visual Identity', 'Graphic Design'],
     role: ['Brand Designer', 'Art Director'],
     stack: ['Adobe Illustrator', 'InDesign', 'Photoshop'],
-    cover: `${BO}/e15989235103219.68d0f72bafdef.jpeg`,
+    cover: '/p.png',
     gallery: [
-      { src: `${BO}/e15989235103219.68d0f72bafdef.jpeg`, alt: 'Pinacoteca Brera — cover' },
+      { src: '/p.png', alt: 'Pinacoteca Brera — cover' },
       { src: `${BO}/ec8c08235103219.68d0f72ba4317.jpeg`, alt: 'Pinacoteca Brera — logo' },
       { src: `${BO}/5897a6235103219.68d0f72baa413.jpeg`, alt: 'Pinacoteca Brera — brand' },
       { src: `${BO}/857d69235103219.68d0f72ba4be0.jpeg`, alt: 'Pinacoteca Brera — poster' },
