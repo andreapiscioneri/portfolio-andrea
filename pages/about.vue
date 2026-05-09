@@ -391,7 +391,8 @@ useHead({
           <div class="flex flex-wrap gap-4">
             <a
               :href="cvDownload"
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               class="btn btn-primary"
               data-cursor="link"
             >
@@ -399,7 +400,8 @@ useHead({
             </a>
             <a
               :href="cvAltDownload"
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               class="btn btn-ghost"
               data-cursor="link"
             >
