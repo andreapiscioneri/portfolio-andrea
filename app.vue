@@ -50,6 +50,7 @@ useHead(() => {
     htmlAttrs: {
       ...localeHtmlAttrs,
       lang: locale.value,
+      class: 'dark',
     },
     meta: [
       ...(i18nHead.value.meta ?? []),

@@ -60,6 +60,7 @@ export default defineNuxtConfig({
     classSuffix: '',
     storageKey: 'ap-color-mode',
     storage: 'localStorage',
+    dataValue: 'theme',
   },
 
   i18n: {

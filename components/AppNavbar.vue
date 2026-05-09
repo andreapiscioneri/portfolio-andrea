@@ -76,9 +76,6 @@ const availableLocales = computed(() =>
 
       <div class="flex items-center gap-2">
         <LocaleSwitcher class="hidden md:flex" :ghost="!scrolled && !isOpen" />
-        <ClientOnly>
-          <ThemeToggle class="hidden md:inline-flex" :ghost="!scrolled && !isOpen" />
-        </ClientOnly>
         <NuxtLink
           :to="localePath('/contact')"
           class="btn hidden text-xs md:inline-flex transition-colors duration-500"
@@ -130,9 +127,6 @@ const availableLocales = computed(() =>
           </li>
           <li class="flex items-center justify-between px-4 pt-6">
             <LocaleSwitcher />
-            <ClientOnly>
-              <ThemeToggle />
-            </ClientOnly>
           </li>
         </ul>
       </div>

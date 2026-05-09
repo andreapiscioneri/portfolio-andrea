@@ -23,7 +23,7 @@ const scrollTop = () => {
     <div class="container-x">
       <div class="grid gap-10 pb-16 md:gap-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
         <div>
-          <div class="eyebrow mb-4"><span>Portfolio · 2026</span></div>
+          <div class="eyebrow mb-4"><span>Portfolio</span></div>
           <p class="font-display text-display-sm leading-[1.05] text-balance">
             {{ t('footer.tagline') }}
           </p>
