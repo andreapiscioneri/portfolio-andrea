@@ -19,7 +19,7 @@ const scrollTop = () => {
 </script>
 
 <template>
-  <footer class="relative border-t border-black/5 bg-paper pt-16 md:pt-24 dark:border-white/10 dark:bg-ink-950">
+  <footer class="relative border-t border-white/10 bg-ink-950 pt-16 md:pt-24">
     <div class="container-x">
       <div class="grid gap-10 pb-16 md:gap-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
         <div>
