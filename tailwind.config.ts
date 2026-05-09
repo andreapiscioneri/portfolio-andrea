@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
+import plugin from 'tailwindcss/plugin'
 
 export default {
   darkMode: 'class',
@@ -82,5 +83,10 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addVariant }) => {
+      // site is always dark — make dark: variants unconditionally active
+      addVariant('dark', '&')
+    }),
+  ],
 } satisfies Config

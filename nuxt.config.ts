@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: false,
     head: {
-      htmlAttrs: { lang: 'it', class: 'dark' },
+      htmlAttrs: { lang: 'it' },
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
       titleTemplate: '%s',
