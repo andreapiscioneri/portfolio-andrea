@@ -13,7 +13,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image',
     '@nuxtjs/i18n',
-    '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
     '@nuxtjs/seo',
@@ -24,7 +23,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: false,
     head: {
-      htmlAttrs: { lang: 'it' },
+      htmlAttrs: { lang: 'it', class: 'dark' },
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
       titleTemplate: '%s',
@@ -53,15 +52,6 @@ export default defineNuxtConfig({
   },
 
 
-
-  colorMode: {
-    preference: 'dark',
-    fallback: 'dark',
-    classSuffix: '',
-    storageKey: 'ap-color-mode',
-    storage: 'localStorage',
-    dataValue: 'theme',
-  },
 
   i18n: {
     strategy: 'prefix_except_default',
