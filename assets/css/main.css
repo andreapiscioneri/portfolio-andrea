@@ -174,25 +174,6 @@
   will-change: transform;
 }
 
-/* ------------------------------------------------------------------ *
- * Page transitions
- * ------------------------------------------------------------------ */
-.page-leave-active {
-  transition: opacity 0.2s ease;
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  pointer-events: none;
-}
-
-.page-enter-active {
-  transition: opacity 0.3s ease 0.2s;
-}
-
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-}
 
 /* ------------------------------------------------------------------ *
  * Lenis reset

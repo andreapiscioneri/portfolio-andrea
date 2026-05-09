@@ -22,7 +22,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' },
+    pageTransition: false,
     head: {
       htmlAttrs: { lang: 'it' },
       charset: 'utf-8',
