@@ -2,7 +2,6 @@
 import { computed } from 'vue'
 import { useHead, useRoute } from '#imports'
 
-const colorMode = useColorMode()
 const route = useRoute()
 const { locale } = useI18n()
 const i18nHead = useLocaleHead()
@@ -39,7 +38,7 @@ useSeoMeta({
   referrer: 'strict-origin-when-cross-origin',
 })
 
-const themeColor = computed(() => colorMode.value === 'dark' ? '#0a0a0a' : '#fafaf7')
+const themeColor = '#0a0a0a'
 
 useHead(() => {
   const localeHtmlAttrs = i18nHead.value.htmlAttrs ?? {}
@@ -54,7 +53,7 @@ useHead(() => {
     },
     meta: [
       ...(i18nHead.value.meta ?? []),
-      { name: 'theme-color', content: themeColor.value, key: 'theme-color' },
+      { name: 'theme-color', content: themeColor, key: 'theme-color' },
     ],
     link: [
       ...i18nLinks,

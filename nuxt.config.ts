@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image',
     '@nuxtjs/i18n',
-    '@nuxtjs/color-mode',
+
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
     '@nuxtjs/seo',
@@ -52,11 +52,7 @@ export default defineNuxtConfig({
     },
   },
 
-  colorMode: {
-    preference: 'dark',
-    fallback: 'dark',
-    classSuffix: '',
-  },
+
 
   i18n: {
     strategy: 'prefix_except_default',
