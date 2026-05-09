@@ -28,7 +28,7 @@ const heroImage = getHeroImageBySlug('lumyn', 0)
           </div>
         </Reveal>
 
-        <h1 class="font-display text-display-xl leading-[0.88] tracking-[-0.04em] text-balance text-paper">
+        <h1 class="font-display text-display-xl leading-[0.93] md:leading-[0.9] tracking-[-0.04em] text-balance text-paper">
           <AnimatedText as="span" split="lines" class="block">
             <span class="block">{{ t('home.heroLine1') }}</span>
             <span class="block">{{ t('home.heroLine2') }}</span>

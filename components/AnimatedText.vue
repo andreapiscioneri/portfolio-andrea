@@ -30,10 +30,13 @@ onMounted(async () => {
 
   if (!targets || !targets.length) return
 
-  // Wrap each target in overflow:hidden wrapper
+  // Wrap each target in an overflow wrapper for reveal animation.
+  // For line splits we add a tiny bottom padding to avoid clipping descenders.
   targets.forEach((t) => {
     const parent = document.createElement('span')
-    parent.className = 'inline-block overflow-hidden align-baseline'
+    parent.className = props.split === 'lines'
+      ? 'block overflow-hidden [padding-bottom:0.08em]'
+      : 'inline-block overflow-hidden align-baseline'
     t.classList.add('inline-block', 'will-change-transform')
     ;(t as HTMLElement).style.transform = 'translateY(115%)'
     t.parentNode?.insertBefore(parent, t)
