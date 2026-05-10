@@ -26,7 +26,7 @@ const open = ref(false)
       leave-from-class="opacity-100 translate-y-0"
       leave-to-class="opacity-0 -translate-y-1"
     >
-      <p v-if="open" class="mt-3 max-w-3xl text-sm leading-relaxed text-ink-500 dark:text-white/65">
+      <p v-if="open" class="mt-3 max-w-3xl text-sm leading-relaxed text-white/65">
         {{ props.answer }}
       </p>
     </Transition>

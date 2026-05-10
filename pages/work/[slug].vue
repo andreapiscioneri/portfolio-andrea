@@ -144,7 +144,7 @@ useHead({
     <!-- Cover image -->
     <section class="container-x">
       <Reveal :delay="0.1">
-        <div class="relative aspect-[16/9] w-full overflow-hidden rounded-3xl bg-ink-100 dark:bg-ink-900">
+        <div class="relative aspect-[16/9] w-full overflow-hidden rounded-3xl bg-ink-900">
           <NuxtImg
             :src="project.cover"
             :alt="project.title"
@@ -162,7 +162,7 @@ useHead({
       <div class="grid gap-14 md:grid-cols-[1.8fr_1fr]">
         <Reveal>
           <div class="eyebrow mb-4"><span>{{ t('project.overview') }}</span></div>
-          <div class="prose prose-neutral max-w-none text-lg leading-relaxed text-ink-700 dark:prose-invert dark:text-white/80 text-pretty">
+          <div class="prose prose-neutral prose-invert max-w-none text-lg leading-relaxed text-white/80 text-pretty">
             <p v-for="(line, i) in project.description.split(/\n+/)" :key="i" class="mb-4">{{ line }}</p>
           </div>
           <a
@@ -178,7 +178,7 @@ useHead({
         </Reveal>
 
         <Reveal :delay="0.15">
-          <dl class="grid grid-cols-1 gap-6 rounded-3xl border border-black/5 bg-paper-200 p-8 text-sm dark:border-white/10 dark:bg-ink-900">
+          <dl class="grid grid-cols-1 gap-6 rounded-3xl border border-white/10 bg-ink-900 p-8 text-sm">
             <div>
               <dt class="eyebrow mb-2">{{ t('project.client') }}</dt>
               <dd class="font-medium">{{ project.client }}</dd>
@@ -190,19 +190,19 @@ useHead({
             <div>
               <dt class="eyebrow mb-2">{{ t('project.role') }}</dt>
               <dd class="flex flex-wrap gap-1.5">
-                <span v-for="r in project.role" :key="r" class="rounded-full border border-black/10 px-3 py-1 text-xs dark:border-white/15">{{ r }}</span>
+                <span v-for="r in project.role" :key="r" class="rounded-full border border-white/15 px-3 py-1 text-xs">{{ r }}</span>
               </dd>
             </div>
             <div>
               <dt class="eyebrow mb-2">{{ t('project.category') }}</dt>
               <dd class="flex flex-wrap gap-1.5">
-                <span v-for="c in project.category" :key="c" class="rounded-full border border-black/10 px-3 py-1 text-xs dark:border-white/15">{{ c }}</span>
+                <span v-for="c in project.category" :key="c" class="rounded-full border border-white/15 px-3 py-1 text-xs">{{ c }}</span>
               </dd>
             </div>
             <div>
               <dt class="eyebrow mb-2">{{ t('project.stack') }}</dt>
               <dd class="flex flex-wrap gap-1.5">
-                <span v-for="s in project.stack" :key="s" class="rounded-full bg-ink px-3 py-1 text-xs text-paper dark:bg-paper dark:text-ink">{{ s }}</span>
+                <span v-for="s in project.stack" :key="s" class="rounded-full bg-paper px-3 py-1 text-xs text-ink">{{ s }}</span>
               </dd>
             </div>
           </dl>
@@ -214,7 +214,7 @@ useHead({
     <!-- <section class="container-x pb-16 md:pb-24">
       <div class="grid gap-4 md:gap-6 lg:gap-8">
         <Reveal v-for="(image, i) in detailGallery" :key="i" :delay="i * 0.05">
-          <div class="relative w-full overflow-hidden rounded-3xl bg-ink-100 dark:bg-ink-900">
+          <div class="relative w-full overflow-hidden rounded-3xl bg-ink-900">
             <NuxtImg
               :src="image.src"
               :alt="image.alt"
@@ -237,11 +237,11 @@ useHead({
       </div>
       <div class="grid gap-4 md:grid-cols-2">
         <Reveal v-for="(h, i) in project.highlights" :key="i" :delay="i * 0.05">
-          <div class="flex gap-5 rounded-3xl border border-black/5 bg-paper-200 p-6 dark:border-white/10 dark:bg-ink-900">
-            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-black/10 bg-paper text-xs font-medium dark:border-white/15 dark:bg-ink-950 dark:text-paper">
+          <div class="flex gap-5 rounded-3xl border border-white/10 bg-ink-900 p-6">
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/15 bg-ink-950 text-xs font-medium text-paper">
               {{ String(i + 1).padStart(2, '0') }}
             </span>
-            <p class="text-base text-ink-700 dark:text-white/80 text-pretty">{{ h }}</p>
+            <p class="text-base text-white/80 text-pretty">{{ h }}</p>
           </div>
         </Reveal>
       </div>
@@ -253,7 +253,7 @@ useHead({
         <NuxtLink
           v-if="prev"
           :to="localePath(`/work/${prev.slug}`)"
-          class="group block rounded-3xl border border-black/5 bg-paper-200 p-8 transition-colors hover:bg-ink hover:text-paper dark:border-white/10 dark:bg-ink-900 dark:hover:bg-paper dark:hover:text-ink"
+          class="group block rounded-3xl border border-white/10 bg-ink-900 p-8 transition-colors hover:bg-paper hover:text-ink"
           data-cursor="link"
         >
           <div class="eyebrow mb-3">← {{ t('project.prev') }}</div>
@@ -262,7 +262,7 @@ useHead({
         <NuxtLink
           v-if="next"
           :to="localePath(`/work/${next.slug}`)"
-          class="group block rounded-3xl border border-black/5 bg-paper-200 p-8 text-right transition-colors hover:bg-ink hover:text-paper dark:border-white/10 dark:bg-ink-900 dark:hover:bg-paper dark:hover:text-ink"
+          class="group block rounded-3xl border border-white/10 bg-ink-900 p-8 text-right transition-colors hover:bg-paper hover:text-ink"
           data-cursor="link"
         >
           <div class="eyebrow mb-3 justify-end">{{ t('project.next') }} →</div>

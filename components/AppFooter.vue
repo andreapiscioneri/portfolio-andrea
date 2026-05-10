@@ -57,16 +57,16 @@ const scrollTop = () => {
 
         <div>
           <h3 class="eyebrow mb-4">{{ t('about.current') }}</h3>
-          <p class="text-sm text-ink-500 dark:text-white/70">
+          <p class="text-sm text-white/70">
             {{ personal.city }}<br>{{ personal.region }}, {{ personal.country }}
           </p>
-          <p class="mt-3 text-sm text-ink-500 dark:text-white/70">
+          <p class="mt-3 text-sm text-white/70">
             {{ personal.phone }}
           </p>
         </div>
       </div>
 
-      <div class="flex flex-col gap-4 border-t border-black/5 py-8 text-xs text-ink-500 md:flex-row md:items-center md:justify-between dark:border-white/10 dark:text-white/60">
+      <div class="flex flex-col gap-4 border-t border-white/10 py-8 text-xs text-white/60 md:flex-row md:items-center md:justify-between">
         <p>{{ t('footer.copyright', { year }) }}</p>
         <div class="flex flex-wrap items-center gap-4">
           <NuxtLink :to="localePath('/trattamento-dati')" class="link-hover" data-cursor="link">{{ t('footer.dataProcessing') }}</NuxtLink>
@@ -85,7 +85,7 @@ const scrollTop = () => {
     <!-- Giant wordmark — full width, outside container -->
     <div aria-hidden="true" class="pointer-events-none w-full overflow-hidden pb-4 -mb-6">
       <span
-        class="block whitespace-nowrap text-left font-display text-[clamp(1.5rem,10vw,14rem)] leading-[0.9] tracking-[-0.04em] text-ink/5 dark:text-white/5 select-none"
+        class="block whitespace-nowrap text-left font-display text-[clamp(1.5rem,10vw,14rem)] leading-[0.9] tracking-[-0.04em] text-white/5 select-none"
       >
         Andrea Piscioneri
       </span>

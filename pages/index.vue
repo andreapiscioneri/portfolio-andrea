@@ -130,7 +130,7 @@ const marqueeItems = [
     <HeroSection />
 
     <!-- Marquee -->
-    <section class="relative py-8 bg-ink dark:bg-ink-900 text-paper">
+    <section class="relative py-8 bg-ink-900 text-paper">
       <Marquee :items="marqueeItems" />
     </section>
 
@@ -142,7 +142,7 @@ const marqueeItems = [
           <AnimatedText as="h2" split="lines" class="font-display text-display-md leading-[0.95] tracking-[-0.03em] text-balance">
             {{ t('home.featuredTitle') }}
           </AnimatedText>
-          <Reveal :delay="0.2" class="mt-5 max-w-xl text-base text-ink-500 dark:text-white/70">
+          <Reveal :delay="0.2" class="mt-5 max-w-xl text-base text-white/70">
             {{ t('home.featuredSubtitle') }}
           </Reveal>
         </div>
@@ -161,7 +161,7 @@ const marqueeItems = [
     </section>
 
     <!-- About inline -->
-    <section class="relative overflow-hidden border-y border-black/5 bg-paper-200 py-16 md:py-24 lg:py-32 dark:border-white/10 dark:bg-ink-900">
+    <section class="relative overflow-hidden border-y border-white/10 bg-ink-900 py-16 md:py-24 lg:py-32">
       <div class="container-x grid gap-12 md:grid-cols-[1fr_1.3fr] md:items-center">
         <Reveal>
           <div class="relative aspect-[4/5] overflow-hidden rounded-3xl bg-gradient-to-br from-ink-800 to-ink-950 p-8 text-paper md:p-12">
@@ -189,7 +189,7 @@ const marqueeItems = [
             {{ t('home.aboutSectionTitle') }}
           </AnimatedText>
           <Reveal :delay="0.2">
-            <p class="mt-6 text-base text-ink-600 text-pretty dark:text-white/70 md:text-lg">
+            <p class="mt-6 text-base text-white/70 text-pretty md:text-lg">
               {{ t('home.aboutSectionBody') }}
             </p>
           </Reveal>
@@ -218,11 +218,11 @@ const marqueeItems = [
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <Reveal v-for="(s, i) in services" :key="i" :delay="i * 0.06">
           <article
-            class="group relative h-full overflow-hidden rounded-3xl border border-black/5 bg-paper p-8 transition-colors duration-700 hover:bg-ink hover:text-paper dark:border-white/10 dark:bg-ink-900 dark:hover:bg-paper dark:hover:text-ink"
+            class="group relative h-full overflow-hidden rounded-3xl border border-white/10 bg-ink-900 p-8 transition-colors duration-700 hover:bg-paper hover:text-ink"
             data-cursor="link"
           >
             <div class="flex items-center justify-between">
-              <span class="text-xs font-medium text-ink-500 transition-colors duration-500 group-hover:text-paper/80 dark:text-white/50 dark:group-hover:text-ink/70">
+              <span class="text-xs font-medium text-white/50 transition-colors duration-500 group-hover:text-ink/70">
                 0{{ i + 1 }}
               </span>
               <span class="text-xs transition-transform duration-500 group-hover:translate-x-1">→</span>
@@ -230,7 +230,7 @@ const marqueeItems = [
             <h3 class="mt-6 font-display text-2xl leading-[1.05] tracking-[-0.02em]">
               {{ s.title }}
             </h3>
-            <p class="mt-3 text-sm text-ink-500 transition-colors duration-500 group-hover:text-paper/80 dark:text-white/60 dark:group-hover:text-ink/70">
+            <p class="mt-3 text-sm text-white/60 transition-colors duration-500 group-hover:text-ink/70">
               {{ s.body }}
             </p>
           </article>
@@ -240,7 +240,7 @@ const marqueeItems = [
 
     <!-- Stats -->
     <section class="container-x pb-16 md:pb-24 lg:pb-32">
-      <div class="rounded-3xl border border-black/5 bg-ink text-paper p-6 md:p-10 lg:p-16 dark:border-white/10 dark:bg-ink-900 dark:text-paper">
+      <div class="rounded-3xl border border-white/10 bg-ink-900 text-paper p-6 md:p-10 lg:p-16">
         <div class="eyebrow mb-6 md:mb-8 text-paper/70"><span>{{ t('home.statsTitle') }}</span></div>
         <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <Reveal v-for="(s, i) in stats" :key="i" :delay="i * 0.08">
@@ -264,11 +264,11 @@ const marqueeItems = [
         <AnimatedText as="h2" split="lines" class="font-display text-display-md leading-[0.95] tracking-[-0.03em] text-balance max-w-2xl">
           {{ t('faq.title') }}
         </AnimatedText>
-        <Reveal :delay="0.15" class="mt-4 max-w-xl text-base text-ink-500 dark:text-white/70">
+        <Reveal :delay="0.15" class="mt-4 max-w-xl text-base text-white/70">
           {{ t('faq.subtitle') }}
         </Reveal>
       </div>
-      <div class="divide-y divide-black/10 dark:divide-white/10">
+      <div class="divide-y divide-white/10">
         <FaqItem
           v-for="(item, i) in faqItems"
           :key="i"
@@ -280,7 +280,7 @@ const marqueeItems = [
 
     <!-- CTA -->
     <section class="container-x pb-16 md:pb-24 lg:pb-32">
-      <div class="relative overflow-hidden rounded-3xl border border-black/5 p-8 md:p-12 lg:p-20 dark:border-white/10 bg-paper-200 dark:bg-ink-900">
+      <div class="relative overflow-hidden rounded-3xl border border-white/10 p-8 md:p-12 lg:p-20 bg-ink-900">
         <div class="relative z-10 flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <AnimatedText as="h2" split="lines" class="font-display text-display-lg leading-[0.92] tracking-[-0.03em] text-balance max-w-3xl">
             {{ t('home.ctaTitle') }}

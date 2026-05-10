@@ -26,7 +26,7 @@ const rights = computed(() => tm('privacy.rights') as string[])
       />
       <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/74 via-black/60 to-black/74" />
       <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_22%_20%,rgba(57,255,20,0.18),transparent_50%)]" />
-      <div class="pointer-events-none absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-paper dark:to-ink" />
+      <div class="pointer-events-none absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-ink" />
 
       <div class="container-x relative z-10">
         <div class="eyebrow mb-4 text-white/70"><span>/ {{ t('privacy.title') }}</span></div>
@@ -46,77 +46,77 @@ const rights = computed(() => tm('privacy.rights') as string[])
       <div class="mx-auto max-w-3xl space-y-12">
 
         <Reveal>
-          <div class="rounded-3xl border border-black/5 bg-paper-200 p-8 md:p-10 dark:border-white/10 dark:bg-ink-900">
+          <div class="rounded-3xl border border-white/10 bg-ink-900 p-8 md:p-10">
             <h2 class="eyebrow mb-3">{{ t('privacy.ownerTitle') }}</h2>
-            <p class="text-base text-ink-700 dark:text-white/80">{{ t('privacy.ownerText') }}</p>
+            <p class="text-base text-white/80">{{ t('privacy.ownerText') }}</p>
           </div>
         </Reveal>
 
         <Reveal :delay="0.05">
           <div>
             <h2 class="font-display text-2xl tracking-[-0.02em] mb-4">{{ t('privacy.dataTitle') }}</h2>
-            <p class="text-base leading-relaxed text-ink-600 dark:text-white/70 text-pretty">{{ t('privacy.dataText') }}</p>
+            <p class="text-base leading-relaxed text-white/70 text-pretty">{{ t('privacy.dataText') }}</p>
           </div>
         </Reveal>
 
         <Reveal :delay="0.05">
           <div>
             <h2 class="font-display text-2xl tracking-[-0.02em] mb-4">{{ t('privacy.purposeTitle') }}</h2>
-            <p class="text-base leading-relaxed text-ink-600 dark:text-white/70 text-pretty">{{ t('privacy.purposeText') }}</p>
+            <p class="text-base leading-relaxed text-white/70 text-pretty">{{ t('privacy.purposeText') }}</p>
           </div>
         </Reveal>
 
         <Reveal :delay="0.05">
           <div>
             <h2 class="font-display text-2xl tracking-[-0.02em] mb-4">{{ t('privacy.basisTitle') }}</h2>
-            <p class="text-base leading-relaxed text-ink-600 dark:text-white/70 text-pretty">{{ t('privacy.basisText') }}</p>
+            <p class="text-base leading-relaxed text-white/70 text-pretty">{{ t('privacy.basisText') }}</p>
           </div>
         </Reveal>
 
         <Reveal :delay="0.05">
           <div>
             <h2 class="font-display text-2xl tracking-[-0.02em] mb-4">{{ t('privacy.retentionTitle') }}</h2>
-            <p class="text-base leading-relaxed text-ink-600 dark:text-white/70 text-pretty">{{ t('privacy.retentionText') }}</p>
+            <p class="text-base leading-relaxed text-white/70 text-pretty">{{ t('privacy.retentionText') }}</p>
           </div>
         </Reveal>
 
         <Reveal :delay="0.05">
           <div>
             <h2 class="font-display text-2xl tracking-[-0.02em] mb-4">{{ t('privacy.rightsTitle') }}</h2>
-            <p class="mb-4 text-base text-ink-600 dark:text-white/70">{{ t('privacy.rightsIntro') }}</p>
+            <p class="mb-4 text-base text-white/70">{{ t('privacy.rightsIntro') }}</p>
             <ul class="mb-6 space-y-2">
               <li
                 v-for="(right, i) in rights"
                 :key="i"
-                class="flex items-start gap-3 text-base text-ink-600 dark:text-white/70"
+                class="flex items-start gap-3 text-base text-white/70"
               >
-                <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-black/10 text-[10px] font-medium dark:border-white/15">{{ i + 1 }}</span>
+                <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-white/15 text-[10px] font-medium">{{ i + 1 }}</span>
                 <span>{{ rt(right) }}</span>
               </li>
             </ul>
-            <p class="text-base text-ink-600 dark:text-white/70">{{ t('privacy.rightsText') }}</p>
-            <p class="mt-2 text-sm text-ink-400 dark:text-white/40 text-pretty">{{ t('privacy.complaintText') }}</p>
+            <p class="text-base text-white/70">{{ t('privacy.rightsText') }}</p>
+            <p class="mt-2 text-sm text-white/40 text-pretty">{{ t('privacy.complaintText') }}</p>
           </div>
         </Reveal>
 
         <Reveal :delay="0.05">
           <div>
             <h2 class="font-display text-2xl tracking-[-0.02em] mb-4">{{ t('privacy.transferTitle') }}</h2>
-            <p class="text-base leading-relaxed text-ink-600 dark:text-white/70 text-pretty">{{ t('privacy.transferText') }}</p>
+            <p class="text-base leading-relaxed text-white/70 text-pretty">{{ t('privacy.transferText') }}</p>
           </div>
         </Reveal>
 
         <Reveal :delay="0.05">
           <div>
             <h2 class="font-display text-2xl tracking-[-0.02em] mb-4">{{ t('privacy.thirdPartyTitle') }}</h2>
-            <p class="text-base leading-relaxed text-ink-600 dark:text-white/70 text-pretty">{{ t('privacy.thirdPartyText') }}</p>
+            <p class="text-base leading-relaxed text-white/70 text-pretty">{{ t('privacy.thirdPartyText') }}</p>
           </div>
         </Reveal>
 
         <Reveal :delay="0.05">
-          <p class="text-sm text-ink-400 dark:text-white/40 text-pretty">
+          <p class="text-sm text-white/40 text-pretty">
             {{ t('privacy.cookieLinkText') }}
-            <NuxtLink :to="localePath('/cookie')" class="underline underline-offset-2 hover:text-ink dark:hover:text-white transition-colors">{{ t('privacy.cookieLinkLabel') }}</NuxtLink>.
+            <NuxtLink :to="localePath('/cookie')" class="underline underline-offset-2 hover:text-white transition-colors">{{ t('privacy.cookieLinkLabel') }}</NuxtLink>.
           </p>
         </Reveal>
 

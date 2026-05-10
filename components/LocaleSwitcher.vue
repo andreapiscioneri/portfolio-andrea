@@ -38,7 +38,7 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside))
       class="inline-flex min-h-[44px] items-center gap-2 rounded-full border px-3 py-2 text-xs uppercase tracking-[0.16em] transition-colors touch-manipulation"
       :class="ghost
         ? 'border-white/25 hover:bg-white/10 hover:text-paper'
-        : 'border-black/10 hover:bg-ink hover:text-paper dark:border-white/15 dark:hover:bg-paper dark:hover:text-ink'"
+        : 'border-white/15 hover:bg-paper hover:text-ink'"
       :aria-expanded="open"
       data-cursor="link"
       @click="open = !open"
@@ -59,14 +59,14 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside))
     <Transition name="ls">
       <ul
         v-if="open"
-        class="absolute right-0 top-full z-50 mt-2 min-w-[176px] overflow-hidden rounded-2xl border border-black/10 bg-paper p-1 text-sm shadow-2xl dark:border-white/15 dark:bg-ink-900"
+        class="absolute right-0 top-full z-50 mt-2 min-w-[176px] overflow-hidden rounded-2xl border border-white/15 bg-ink-900 p-1 text-sm shadow-2xl"
         role="listbox"
       >
         <li v-for="l in typedLocales" :key="l.code" role="option" :aria-selected="l.code === locale">
           <NuxtLink
             :to="switchLocalePath(l.code) || '/'"
-            class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-black/5 dark:hover:bg-white/10"
-            :class="l.code === locale ? 'font-medium' : 'text-ink-600 dark:text-white/70'"
+            class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-white/10"
+            :class="l.code === locale ? 'font-medium' : 'text-white/70'"
             @click="open = false"
           >
             <img
@@ -80,7 +80,7 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside))
             <span class="flex-1">{{ l.name }}</span>
             <span
               class="text-[10px] tracking-[0.1em]"
-              :class="l.code === locale ? 'text-ink dark:text-paper' : 'text-ink-400 dark:text-white/40'"
+              :class="l.code === locale ? 'text-paper' : 'text-white/40'"
             >
               {{ l.code.toUpperCase() }}
             </span>

@@ -144,7 +144,7 @@ useHead({
       <div class="grid gap-12 md:grid-cols-[1fr_2fr]">
         <div class="eyebrow"><span>{{ t('about.bioTitle') }}</span></div>
         <Reveal>
-          <div class="space-y-6 text-lg leading-relaxed text-ink-700 text-pretty dark:text-white/80">
+          <div class="space-y-6 text-lg leading-relaxed text-white/80 text-pretty">
             <p v-for="(p, i) in bio.it.split(/\n\n/)" :key="i">{{ p }}</p>
           </div>
         </Reveal>
@@ -152,12 +152,12 @@ useHead({
     </section>
 
     <!-- Roles / Headline -->
-    <section class="border-y border-black/5 bg-paper-200 py-10 md:py-14 dark:border-white/10 dark:bg-ink-900">
+    <section class="border-y border-white/10 bg-ink-900 py-10 md:py-14">
       <div class="container-x flex flex-wrap items-center gap-3">
         <span
           v-for="r in personal.roles"
           :key="r"
-          class="rounded-full border border-black/15 bg-paper/60 px-4 py-2 text-xs uppercase tracking-[0.16em] dark:border-white/15 dark:bg-ink-950/60"
+          class="rounded-full border border-white/15 bg-ink-950/60 px-4 py-2 text-xs uppercase tracking-[0.16em]"
         >
           {{ r }}
         </span>
@@ -170,19 +170,19 @@ useHead({
         <div class="eyebrow self-start"><span>{{ t('about.experienceTitle') }}</span></div>
         <div class="space-y-10">
           <Reveal v-for="(exp, i) in experiences" :key="i" :delay="i * 0.06">
-            <article class="relative rounded-3xl border border-black/5 bg-paper-200 p-8 md:p-10 dark:border-white/10 dark:bg-ink-900">
+            <article class="relative rounded-3xl border border-white/10 bg-ink-900 p-8 md:p-10">
               <div class="flex flex-wrap items-baseline justify-between gap-4">
                 <h3 class="font-display text-2xl leading-[1.05] tracking-[-0.02em] md:text-3xl">
                   {{ exp.role }}
                 </h3>
-                <span class="rounded-full border border-black/10 px-3 py-1 text-xs uppercase tracking-[0.18em] text-ink-500 dark:border-white/15 dark:text-white/60">
+                <span class="rounded-full border border-white/15 px-3 py-1 text-xs uppercase tracking-[0.18em] text-white/60">
                   {{ exp.period }}
                 </span>
               </div>
-              <p class="mt-2 text-sm text-ink-500 dark:text-white/60">
+              <p class="mt-2 text-sm text-white/60">
                 {{ exp.company }} — {{ exp.location }}
               </p>
-              <div class="mt-6 space-y-4 text-base text-ink-700 text-pretty dark:text-white/80">
+              <div class="mt-6 space-y-4 text-base text-white/80 text-pretty">
                 <p v-for="(par, j) in exp.description.split(/\n\n/)" :key="j">{{ par }}</p>
               </div>
             </article>
@@ -192,45 +192,45 @@ useHead({
     </section>
 
     <!-- Education -->
-    <section class="border-y border-black/5 bg-paper-200 py-20 md:py-28 dark:border-white/10 dark:bg-ink-900">
+    <section class="border-y border-white/10 bg-ink-900 py-20 md:py-28">
       <div class="container-x grid gap-12 md:grid-cols-[1fr_2fr]">
         <div class="eyebrow self-start"><span>{{ t('about.educationTitle') }}</span></div>
         <div class="space-y-10">
           <Reveal v-for="(edu, i) in educations" :key="i" :delay="i * 0.06">
-            <article class="relative rounded-3xl border border-black/5 bg-paper p-8 md:p-10 dark:border-white/10 dark:bg-ink-950">
+            <article class="relative rounded-3xl border border-white/10 bg-ink-950 p-8 md:p-10">
               <div class="flex flex-wrap items-baseline justify-between gap-4">
                 <h3 class="font-display text-2xl leading-[1.05] tracking-[-0.02em] md:text-3xl">
                   {{ edu.title }}
                 </h3>
-                <span class="rounded-full border border-black/10 px-3 py-1 text-xs uppercase tracking-[0.18em] text-ink-500 dark:border-white/15 dark:text-white/60">
+                <span class="rounded-full border border-white/15 px-3 py-1 text-xs uppercase tracking-[0.18em] text-white/60">
                   {{ edu.period }}
                 </span>
               </div>
-              <p class="mt-2 text-sm text-ink-500 dark:text-white/60">
+              <p class="mt-2 text-sm text-white/60">
                 {{ edu.institution }} — {{ edu.location }}
               </p>
               <div class="mt-4 inline-flex items-center gap-2 rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
                 <span class="h-1.5 w-1.5 rounded-full bg-accent" />
                 {{ t('about.gradeLabel') }}: {{ edu.grade }}
               </div>
-              <div v-if="edu.thesis" class="mt-4 text-sm text-ink-500 dark:text-white/60">
+              <div v-if="edu.thesis" class="mt-4 text-sm text-white/60">
                 <span class="font-medium">{{ t('about.thesisLabel') }}:</span> {{ edu.thesis }}
               </div>
-              <div class="mt-6 space-y-4 text-base text-ink-700 text-pretty dark:text-white/80">
+              <div class="mt-6 space-y-4 text-base text-white/80 text-pretty">
                 <div>
-                  <h4 class="mb-2 text-xs uppercase tracking-[0.18em] text-ink-500 dark:text-white/60">
+                  <h4 class="mb-2 text-xs uppercase tracking-[0.18em] text-white/60">
                     {{ t('about.technicalLabel') }}
                   </h4>
                   <p v-for="(par, j) in edu.technical.split(/\n\n/)" :key="`t${j}`" class="mb-3">{{ par }}</p>
                 </div>
                 <div>
-                  <h4 class="mb-2 text-xs uppercase tracking-[0.18em] text-ink-500 dark:text-white/60">
+                  <h4 class="mb-2 text-xs uppercase tracking-[0.18em] text-white/60">
                     {{ t('about.professionalLabel') }}
                   </h4>
                   <p v-for="(par, j) in edu.professional.split(/\n\n/)" :key="`p${j}`" class="mb-3">{{ par }}</p>
                 </div>
                 <div v-if="edu.activities && edu.activities.length">
-                  <h4 class="mb-3 text-xs uppercase tracking-[0.18em] text-ink-500 dark:text-white/60">
+                  <h4 class="mb-3 text-xs uppercase tracking-[0.18em] text-white/60">
                     {{ t('about.activitiesLabel') }}
                   </h4>
                   <ul class="space-y-3 border-l-2 border-accent/40 pl-5">
@@ -255,7 +255,7 @@ useHead({
             <li
               v-for="s in skills.strengths"
               :key="s"
-              class="rounded-full border border-black/15 px-3 py-1.5 text-xs uppercase tracking-[0.16em] dark:border-white/15"
+              class="rounded-full border border-white/15 px-3 py-1.5 text-xs uppercase tracking-[0.16em]"
             >
               {{ s }}
             </li>
@@ -268,7 +268,7 @@ useHead({
             <li
               v-for="s in skills.soft"
               :key="s"
-              class="rounded-full border border-black/15 px-3 py-1.5 text-xs uppercase tracking-[0.16em] dark:border-white/15"
+              class="rounded-full border border-white/15 px-3 py-1.5 text-xs uppercase tracking-[0.16em]"
             >
               {{ s }}
             </li>
@@ -281,10 +281,10 @@ useHead({
             <li
               v-for="l in skills.languages"
               :key="l.name"
-              class="flex items-center justify-between border-b border-black/5 pb-2 text-sm dark:border-white/10"
+              class="flex items-center justify-between border-b border-white/10 pb-2 text-sm"
             >
               <span>{{ l.name }}</span>
-              <span class="text-ink-500 dark:text-white/60">{{ l.level }}</span>
+              <span class="text-white/60">{{ l.level }}</span>
             </li>
           </ul>
           <h3 class="mt-10 font-display text-2xl leading-[1.1] tracking-[-0.02em]">{{ t('about.licensesTitle') }}</h3>
@@ -292,7 +292,7 @@ useHead({
             <span
               v-for="d in skills.drivingLicenses"
               :key="d"
-              class="rounded-full border border-black/15 px-3 py-1 text-xs font-mono dark:border-white/15"
+              class="rounded-full border border-white/15 px-3 py-1 text-xs font-mono"
             >
               {{ d }}
             </span>
@@ -307,9 +307,9 @@ useHead({
             <li v-for="s in skills.software" :key="s.name">
               <div class="flex items-center justify-between text-sm">
                 <span>{{ s.name }}</span>
-                <span class="tabular-nums text-ink-500 dark:text-white/50">{{ s.level }}%</span>
+                <span class="tabular-nums text-white/50">{{ s.level }}%</span>
               </div>
-              <div class="mt-2 h-[2px] w-full overflow-hidden bg-black/10 dark:bg-white/10">
+              <div class="mt-2 h-[2px] w-full overflow-hidden bg-white/10">
                 <div class="h-full bg-accent transition-[width] duration-1000" :style="{ width: `${s.level}%` }" />
               </div>
             </li>
@@ -321,10 +321,10 @@ useHead({
             <li v-for="s in skills.development" :key="s.name">
               <div class="flex items-center justify-between text-sm">
                 <span>{{ s.name }}</span>
-                <span class="tabular-nums text-ink-500 dark:text-white/50">{{ s.level }}%</span>
+                <span class="tabular-nums text-white/50">{{ s.level }}%</span>
               </div>
-              <div class="mt-2 h-[2px] w-full overflow-hidden bg-black/10 dark:bg-white/10">
-                <div class="h-full bg-ink transition-[width] duration-1000 dark:bg-paper" :style="{ width: `${s.level}%` }" />
+              <div class="mt-2 h-[2px] w-full overflow-hidden bg-white/10">
+                <div class="h-full bg-paper transition-[width] duration-1000" :style="{ width: `${s.level}%` }" />
               </div>
             </li>
           </ul>
@@ -332,51 +332,51 @@ useHead({
       </div>
 
       <Reveal :delay="0.2">
-        <div class="mt-16 rounded-3xl border border-black/5 bg-paper-200 p-8 text-base text-ink-700 text-pretty dark:border-white/10 dark:bg-ink-900 dark:text-white/80">
+        <div class="mt-16 rounded-3xl border border-white/10 bg-ink-900 p-8 text-base text-white/80 text-pretty">
           {{ skills.additional }}
         </div>
       </Reveal>
     </section>
 
     <!-- Social -->
-    <section class="border-t border-black/5 bg-paper-200 py-16 dark:border-white/10 dark:bg-ink-900">
+    <section class="border-t border-white/10 bg-ink-900 py-16">
       <div class="container-x grid gap-10 md:grid-cols-[1fr_2fr]">
         <div class="eyebrow"><span>{{ t('about.socialTitle') }}</span></div>
         <ul class="grid gap-4 md:grid-cols-2">
           <li>
-            <a :href="links.website" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-black/10 py-4 dark:border-white/10" data-cursor="link">
+            <a :href="links.website" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4" data-cursor="link">
               <span class="font-display text-xl">Sito personale</span>
-              <span class="text-ink-500 transition-transform group-hover:translate-x-1 dark:text-white/60">↗</span>
+              <span class="text-white/60 transition-transform group-hover:translate-x-1">↗</span>
             </a>
           </li>
           <li>
-            <a :href="links.behance" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-black/10 py-4 dark:border-white/10" data-cursor="link">
+            <a :href="links.behance" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4" data-cursor="link">
               <span class="font-display text-xl">Behance</span>
-              <span class="text-ink-500 transition-transform group-hover:translate-x-1 dark:text-white/60">↗</span>
+              <span class="text-white/60 transition-transform group-hover:translate-x-1">↗</span>
             </a>
           </li>
           <li>
-            <a :href="links.linkedin" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-black/10 py-4 dark:border-white/10" data-cursor="link">
+            <a :href="links.linkedin" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4" data-cursor="link">
               <span class="font-display text-xl">LinkedIn</span>
-              <span class="text-ink-500 transition-transform group-hover:translate-x-1 dark:text-white/60">↗</span>
+              <span class="text-white/60 transition-transform group-hover:translate-x-1">↗</span>
             </a>
           </li>
           <li>
-            <a :href="links.instagramDesign" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-black/10 py-4 dark:border-white/10" data-cursor="link">
+            <a :href="links.instagramDesign" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4" data-cursor="link">
               <span class="font-display text-xl truncate">Instagram · @andrea.piscioneri_design</span>
-              <span class="text-ink-500 transition-transform group-hover:translate-x-1 dark:text-white/60">↗</span>
+              <span class="text-white/60 transition-transform group-hover:translate-x-1">↗</span>
             </a>
           </li>
           <li>
-            <a :href="links.instagramPersonal" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-black/10 py-4 dark:border-white/10" data-cursor="link">
+            <a :href="links.instagramPersonal" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4" data-cursor="link">
               <span class="font-display text-xl truncate">Instagram · @andreapiscioneri</span>
-              <span class="text-ink-500 transition-transform group-hover:translate-x-1 dark:text-white/60">↗</span>
+              <span class="text-white/60 transition-transform group-hover:translate-x-1">↗</span>
             </a>
           </li>
           <li>
-            <a :href="links.facebook" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-black/10 py-4 dark:border-white/10" data-cursor="link">
+            <a :href="links.facebook" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4" data-cursor="link">
               <span class="font-display text-xl">Facebook</span>
-              <span class="text-ink-500 transition-transform group-hover:translate-x-1 dark:text-white/60">↗</span>
+              <span class="text-white/60 transition-transform group-hover:translate-x-1">↗</span>
             </a>
           </li>
         </ul>

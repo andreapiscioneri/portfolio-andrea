@@ -30,7 +30,7 @@ const browsers = computed(() => tm('cookie.browsers') as BrowserLink[])
       />
       <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/74 via-black/60 to-black/74" />
       <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_22%_20%,rgba(57,255,20,0.18),transparent_50%)]" />
-      <div class="pointer-events-none absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-paper dark:to-ink" />
+      <div class="pointer-events-none absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-ink" />
 
       <div class="container-x relative z-10">
         <div class="eyebrow mb-4 text-white/70"><span>/ {{ t('cookie.title') }}</span></div>
@@ -52,27 +52,27 @@ const browsers = computed(() => tm('cookie.browsers') as BrowserLink[])
         <Reveal>
           <div>
             <h2 class="font-display text-2xl tracking-[-0.02em] mb-4">{{ t('cookie.introTitle') }}</h2>
-            <p class="text-base leading-relaxed text-ink-600 dark:text-white/70 text-pretty">{{ t('cookie.introText') }}</p>
+            <p class="text-base leading-relaxed text-white/70 text-pretty">{{ t('cookie.introText') }}</p>
           </div>
         </Reveal>
 
         <Reveal :delay="0.05">
           <div>
             <h2 class="font-display text-2xl tracking-[-0.02em] mb-4">{{ t('cookie.usageTitle') }}</h2>
-            <p class="text-base leading-relaxed text-ink-600 dark:text-white/70 text-pretty">{{ t('cookie.usageText') }}</p>
+            <p class="text-base leading-relaxed text-white/70 text-pretty">{{ t('cookie.usageText') }}</p>
           </div>
         </Reveal>
 
         <Reveal :delay="0.05">
           <div>
             <h2 class="font-display text-2xl tracking-[-0.02em] mb-4">{{ t('cookie.technicalTitle') }}</h2>
-            <p class="mb-6 text-base leading-relaxed text-ink-600 dark:text-white/70 text-pretty">{{ t('cookie.technicalText') }}</p>
+            <p class="mb-6 text-base leading-relaxed text-white/70 text-pretty">{{ t('cookie.technicalText') }}</p>
 
             <!-- Cookie table — responsive -->
-            <div class="overflow-x-auto rounded-2xl border border-black/5 dark:border-white/10">
+            <div class="overflow-x-auto rounded-2xl border border-white/10">
               <table class="w-full min-w-[480px] text-sm">
                 <thead>
-                  <tr class="border-b border-black/5 bg-paper-200 dark:border-white/10 dark:bg-ink-900">
+                  <tr class="border-b border-white/10 bg-ink-900">
                     <th class="px-5 py-3 text-left font-medium eyebrow text-[10px]">{{ t('cookie.tableNameHeader') }}</th>
                     <th class="px-5 py-3 text-left font-medium eyebrow text-[10px]">{{ t('cookie.tablePurposeHeader') }}</th>
                     <th class="px-5 py-3 text-left font-medium eyebrow text-[10px]">{{ t('cookie.tableDurationHeader') }}</th>
@@ -82,11 +82,11 @@ const browsers = computed(() => tm('cookie.browsers') as BrowserLink[])
                   <tr
                     v-for="(row, i) in cookieRows"
                     :key="i"
-                    class="border-b border-black/5 last:border-0 dark:border-white/10"
+                    class="border-b border-white/10 last:border-0"
                   >
-                    <td class="px-5 py-4 font-mono text-xs text-ink dark:text-paper">{{ row.name }}</td>
-                    <td class="px-5 py-4 text-ink-600 dark:text-white/70">{{ rt(row.purpose) }}</td>
-                    <td class="px-5 py-4 text-ink-500 dark:text-white/50 whitespace-nowrap">{{ rt(row.duration) }}</td>
+                    <td class="px-5 py-4 font-mono text-xs text-paper">{{ row.name }}</td>
+                    <td class="px-5 py-4 text-white/70">{{ rt(row.purpose) }}</td>
+                    <td class="px-5 py-4 text-white/50 whitespace-nowrap">{{ rt(row.duration) }}</td>
                   </tr>
                 </tbody>
               </table>
@@ -95,23 +95,23 @@ const browsers = computed(() => tm('cookie.browsers') as BrowserLink[])
         </Reveal>
 
         <Reveal :delay="0.05">
-          <div class="rounded-3xl border border-black/5 bg-paper-200 p-8 md:p-10 dark:border-white/10 dark:bg-ink-900">
+          <div class="rounded-3xl border border-white/10 bg-ink-900 p-8 md:p-10">
             <h2 class="font-display text-xl tracking-[-0.02em] mb-3">{{ t('cookie.noTrackingTitle') }}</h2>
-            <p class="text-base text-ink-600 dark:text-white/70 text-pretty">{{ t('cookie.noTrackingText') }}</p>
+            <p class="text-base text-white/70 text-pretty">{{ t('cookie.noTrackingText') }}</p>
           </div>
         </Reveal>
 
         <Reveal :delay="0.05">
           <div>
             <h2 class="font-display text-2xl tracking-[-0.02em] mb-4">{{ t('cookie.thirdPartyTitle') }}</h2>
-            <p class="text-base leading-relaxed text-ink-600 dark:text-white/70 text-pretty">{{ t('cookie.thirdPartyText') }}</p>
+            <p class="text-base leading-relaxed text-white/70 text-pretty">{{ t('cookie.thirdPartyText') }}</p>
           </div>
         </Reveal>
 
         <Reveal :delay="0.05">
           <div>
             <h2 class="font-display text-2xl tracking-[-0.02em] mb-4">{{ t('cookie.manageTitle') }}</h2>
-            <p class="mb-5 text-base leading-relaxed text-ink-600 dark:text-white/70 text-pretty">{{ t('cookie.manageText') }}</p>
+            <p class="mb-5 text-base leading-relaxed text-white/70 text-pretty">{{ t('cookie.manageText') }}</p>
             <div class="flex flex-wrap gap-3">
               <a
                 v-for="b in browsers"
@@ -119,7 +119,7 @@ const browsers = computed(() => tm('cookie.browsers') as BrowserLink[])
                 :href="rt(b.url)"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="rounded-full border border-black/10 px-4 py-2 text-sm transition-colors hover:bg-ink hover:text-paper dark:border-white/15 dark:hover:bg-paper dark:hover:text-ink"
+                class="rounded-full border border-white/15 px-4 py-2 text-sm transition-colors hover:bg-paper hover:text-ink"
                 data-cursor="link"
               >
                 {{ b.name }} ↗
@@ -131,14 +131,14 @@ const browsers = computed(() => tm('cookie.browsers') as BrowserLink[])
         <Reveal :delay="0.05">
           <div>
             <h2 class="font-display text-2xl tracking-[-0.02em] mb-4">{{ t('cookie.contactTitle') }}</h2>
-            <p class="text-base text-ink-600 dark:text-white/70">{{ t('cookie.contactText') }}</p>
+            <p class="text-base text-white/70">{{ t('cookie.contactText') }}</p>
           </div>
         </Reveal>
 
         <Reveal :delay="0.05">
-          <p class="text-sm text-ink-400 dark:text-white/40 text-pretty">
+          <p class="text-sm text-white/40 text-pretty">
             {{ t('cookie.privacyLinkText') }}
-            <NuxtLink :to="localePath('/trattamento-dati')" class="underline underline-offset-2 hover:text-ink dark:hover:text-white transition-colors">{{ t('footer.dataProcessing') }}</NuxtLink>.
+            <NuxtLink :to="localePath('/trattamento-dati')" class="underline underline-offset-2 hover:text-white transition-colors">{{ t('footer.dataProcessing') }}</NuxtLink>.
           </p>
         </Reveal>
 

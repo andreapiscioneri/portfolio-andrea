@@ -157,14 +157,14 @@ const copyEmail = async () => {
       <div class="grid gap-10 md:grid-cols-[1.2fr_1fr] lg:gap-16 md:items-start">
         <!-- Form / mailto -->
         <Reveal>
-          <form class="space-y-6 rounded-3xl border border-black/5 bg-paper-200 p-8 md:p-10 dark:border-white/10 dark:bg-ink-900" @submit.prevent>
+          <form class="space-y-6 rounded-3xl border border-white/10 bg-ink-900 p-8 md:p-10" @submit.prevent>
             <label class="block">
               <span class="eyebrow mb-2">{{ t('contact.formName') }}</span>
               <input
                 v-model="form.name"
                 type="text"
                 required
-                class="mt-2 w-full rounded-xl border border-black/10 bg-paper px-5 py-4 text-base outline-none transition-colors focus:border-ink dark:border-white/15 dark:bg-ink-950 dark:focus:border-paper"
+                class="mt-2 w-full rounded-xl border border-white/15 bg-ink-950 px-5 py-4 text-base outline-none transition-colors focus:border-paper"
               />
             </label>
             <label class="block">
@@ -173,7 +173,7 @@ const copyEmail = async () => {
                 v-model="form.email"
                 type="email"
                 required
-                class="mt-2 w-full rounded-xl border border-black/10 bg-paper px-5 py-4 text-base outline-none transition-colors focus:border-ink dark:border-white/15 dark:bg-ink-950 dark:focus:border-paper"
+                class="mt-2 w-full rounded-xl border border-white/15 bg-ink-950 px-5 py-4 text-base outline-none transition-colors focus:border-paper"
               />
             </label>
             <label class="block">
@@ -182,7 +182,7 @@ const copyEmail = async () => {
                 v-model="form.message"
                 rows="5"
                 required
-                class="mt-2 w-full rounded-xl border border-black/10 bg-paper px-5 py-4 text-base outline-none transition-colors focus:border-ink dark:border-white/15 dark:bg-ink-950 dark:focus:border-paper"
+                class="mt-2 w-full rounded-xl border border-white/15 bg-ink-950 px-5 py-4 text-base outline-none transition-colors focus:border-paper"
               />
             </label>
             <div class="flex flex-wrap gap-3 pt-2">
@@ -198,31 +198,31 @@ const copyEmail = async () => {
 
         <!-- Info -->
         <Reveal :delay="0.1">
-          <div class="space-y-8 rounded-3xl border border-black/5 bg-paper-200 p-8 md:p-10 dark:border-white/10 dark:bg-ink-900">
-            <div class="border-b border-black/5 pb-8 dark:border-white/10">
+          <div class="space-y-8 rounded-3xl border border-white/10 bg-ink-900 p-8 md:p-10">
+            <div class="border-b border-white/10 pb-8">
               <div class="eyebrow mb-2">{{ t('contact.emailLabel') }}</div>
               <a :href="`mailto:${personal.email}`" class="break-all text-base font-medium link-hover" data-cursor="link">
                 {{ personal.email }}
               </a>
             </div>
-            <div class="border-b border-black/5 pb-8 dark:border-white/10">
+            <div class="border-b border-white/10 pb-8">
               <div class="eyebrow mb-2">{{ t('contact.phoneLabel') }}</div>
               <a :href="`tel:${personal.phoneRaw}`" class="text-base font-medium link-hover" data-cursor="link">
                 {{ personal.phone }}
               </a>
             </div>
-            <div class="border-b border-black/5 pb-8 dark:border-white/10">
+            <div class="border-b border-white/10 pb-8">
               <div class="eyebrow mb-2">{{ t('contact.locationLabel') }}</div>
               <p class="text-base font-medium">{{ personal.city }}, {{ personal.region }}</p>
-              <p class="mt-1 text-sm text-ink-500 dark:text-white/60">{{ personal.country }}</p>
+              <p class="mt-1 text-sm text-white/60">{{ personal.country }}</p>
             </div>
-            <div class="border-b border-black/5 pb-8 dark:border-white/10">
+            <div class="border-b border-white/10 pb-8">
               <div class="eyebrow mb-2">{{ t('contact.availableTitle') }}</div>
               <ul class="flex flex-wrap gap-2 mt-3">
                 <li
                   v-for="a in personal.availableFor"
                   :key="a"
-                  class="rounded-full border border-black/15 px-3 py-1.5 text-xs uppercase tracking-[0.16em] dark:border-white/15"
+                  class="rounded-full border border-white/15 px-3 py-1.5 text-xs uppercase tracking-[0.16em]"
                 >
                   {{ a }}
                 </li>

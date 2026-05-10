@@ -18,11 +18,11 @@ const href = computed(() => localePath(`/work/${props.project.slug}`))
 <template>
   <NuxtLink
     :to="href"
-    class="group relative block overflow-hidden rounded-3xl border border-black/5 bg-paper-200 dark:border-white/10 dark:bg-ink-900 transition-transform duration-700 ease-smooth"
+    class="group relative block overflow-hidden rounded-3xl border border-white/10 bg-ink-900 transition-transform duration-700 ease-smooth"
     data-cursor="link"
     data-cursor-label="↗"
   >
-    <div class="relative aspect-[4/3] overflow-hidden bg-ink/5 dark:bg-white/5">
+    <div class="relative aspect-[4/3] overflow-hidden bg-white/5">
       <NuxtImg
         :src="project.cover"
         :alt="project.title"
@@ -42,7 +42,7 @@ const href = computed(() => localePath(`/work/${props.project.slug}`))
         {{ t('common.selectedWorks') }}
       </span>
       <span
-        class="absolute right-4 top-4 rounded-full bg-paper/90 px-3 py-1 text-[0.65rem] font-medium uppercase tracking-[0.18em] text-ink shadow-sm dark:bg-ink-950/90 dark:text-paper"
+        class="absolute right-4 top-4 rounded-full bg-ink-950/90 px-3 py-1 text-[0.65rem] font-medium uppercase tracking-[0.18em] text-paper shadow-sm"
       >
         {{ project.year }}
       </span>
@@ -53,10 +53,10 @@ const href = computed(() => localePath(`/work/${props.project.slug}`))
       <h3 class="font-display text-[clamp(1.5rem,2.5vw,2.25rem)] leading-[1.05] tracking-[-0.02em] text-balance">
         {{ project.title }}
       </h3>
-      <p class="text-sm text-ink-500 dark:text-white/70 text-pretty line-clamp-3">
+      <p class="text-sm text-white/70 text-pretty line-clamp-3">
         {{ project.excerpt }}
       </p>
-      <div class="mt-3 flex items-center justify-between text-xs text-ink-500 dark:text-white/60">
+      <div class="mt-3 flex items-center justify-between text-xs text-white/60">
         <span>{{ project.client }}</span>
         <span class="flex items-center gap-2 transition-transform duration-500 ease-smooth group-hover:translate-x-1">
           {{ t('work.viewProject') }} <span aria-hidden="true">→</span>

@@ -109,7 +109,7 @@ useHead({
         <button
           type="button"
           class="rounded-full border px-4 py-2 text-xs uppercase tracking-[0.16em] transition-colors duration-300"
-          :class="selected === '__all' ? 'border-ink bg-ink text-paper dark:border-paper dark:bg-paper dark:text-ink' : 'border-black/15 text-ink-500 hover:bg-ink hover:text-paper dark:border-white/15 dark:text-white/60 dark:hover:bg-paper dark:hover:text-ink'"
+          :class="selected === '__all' ? 'border-paper bg-paper text-ink' : 'border-white/15 text-white/60 hover:bg-paper hover:text-ink'"
           data-cursor="link"
           @click="selected = '__all'"
         >
@@ -120,7 +120,7 @@ useHead({
           :key="c"
           type="button"
           class="rounded-full border px-4 py-2 text-xs uppercase tracking-[0.16em] transition-colors duration-300"
-          :class="selected === c ? 'border-ink bg-ink text-paper dark:border-paper dark:bg-paper dark:text-ink' : 'border-black/15 text-ink-500 hover:bg-ink hover:text-paper dark:border-white/15 dark:text-white/60 dark:hover:bg-paper dark:hover:text-ink'"
+          :class="selected === c ? 'border-paper bg-paper text-ink' : 'border-white/15 text-white/60 hover:bg-paper hover:text-ink'"
           data-cursor="link"
           @click="selected = c"
         >

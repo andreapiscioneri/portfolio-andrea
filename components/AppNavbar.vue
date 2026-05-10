@@ -55,7 +55,7 @@ const availableLocales = computed(() =>
           :class="scrolled || isOpen ? 'border-white/10' : 'border-white/20'"
           aria-hidden="true"
         >
-          <img src="/logo.png" alt="AP" class="h-5 w-5 object-contain dark:invert" />
+          <img src="/logo.png" alt="AP" class="h-5 w-5 object-contain invert" />
         </span>
         <span class="hidden text-sm font-medium sm:inline">Andrea Piscioneri</span>
       </NuxtLink>
