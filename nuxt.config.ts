@@ -10,6 +10,12 @@ export default defineNuxtConfig({
   features: { devLogs: false },
   ssr: true,
 
+  router: {
+    options: {
+      scrollBehaviorType: 'auto',
+    },
+  },
+
   modules: [
     '@nuxt/image',
     '@nuxtjs/i18n',
