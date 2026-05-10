@@ -119,7 +119,7 @@ const browsers = computed(() => tm('cookie.browsers') as BrowserLink[])
                 :href="rt(b.url)"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="rounded-full border border-white/15 px-4 py-2 text-sm transition-colors hover:bg-white/10"
+                class="rounded-full border border-white/15 px-4 py-2 text-sm transition-colors hover:text-accent hover:border-accent/50"
                 data-cursor="link"
               >
                 {{ b.name }} ↗
@@ -138,7 +138,7 @@ const browsers = computed(() => tm('cookie.browsers') as BrowserLink[])
         <Reveal :delay="0.05">
           <p class="text-sm text-white/40 text-pretty">
             {{ t('cookie.privacyLinkText') }}
-            <NuxtLink :to="localePath('/trattamento-dati')" class="underline underline-offset-2 hover:text-white transition-colors">{{ t('footer.dataProcessing') }}</NuxtLink>.
+            <NuxtLink :to="localePath('/trattamento-dati')" class="underline underline-offset-2 hover:text-accent transition-colors">{{ t('footer.dataProcessing') }}</NuxtLink>.
           </p>
         </Reveal>
 

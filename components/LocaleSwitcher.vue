@@ -37,8 +37,8 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside))
       type="button"
       class="inline-flex min-h-[44px] items-center gap-2 rounded-full border px-3 py-2 text-xs uppercase tracking-[0.16em] transition-colors touch-manipulation"
       :class="ghost
-        ? 'border-white/25 hover:bg-white/10 hover:text-paper'
-        : 'border-white/15 hover:bg-white/10'"
+        ? 'border-white/25 hover:text-accent hover:text-paper'
+        : 'border-white/15 hover:text-accent'"
       :aria-expanded="open"
       data-cursor="link"
       @click="open = !open"
@@ -65,7 +65,7 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside))
         <li v-for="l in typedLocales" :key="l.code" role="option" :aria-selected="l.code === locale">
           <NuxtLink
             :to="switchLocalePath(l.code) || '/'"
-            class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-white/10"
+            class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:text-accent"
             :class="l.code === locale ? 'font-medium' : 'text-white/70'"
             @click="open = false"
           >

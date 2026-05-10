@@ -253,7 +253,7 @@ useHead({
         <NuxtLink
           v-if="prev"
           :to="localePath(`/work/${prev.slug}`)"
-          class="group block rounded-3xl border border-white/10 bg-ink-900 p-8 transition-colors hover:bg-ink-800 hover:border-white/20"
+          class="group block rounded-3xl border border-white/10 bg-ink-900 p-8 transition-colors hover:border-accent/50 hover:text-accent"
           data-cursor="link"
         >
           <div class="eyebrow mb-3">← {{ t('project.prev') }}</div>
@@ -262,7 +262,7 @@ useHead({
         <NuxtLink
           v-if="next"
           :to="localePath(`/work/${next.slug}`)"
-          class="group block rounded-3xl border border-white/10 bg-ink-900 p-8 text-right transition-colors hover:bg-ink-800 hover:border-white/20"
+          class="group block rounded-3xl border border-white/10 bg-ink-900 p-8 text-right transition-colors hover:border-accent/50 hover:text-accent"
           data-cursor="link"
         >
           <div class="eyebrow mb-3 justify-end">{{ t('project.next') }} →</div>

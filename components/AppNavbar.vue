@@ -64,7 +64,7 @@ const availableLocales = computed(() =>
         <li v-for="link in navLinks" :key="link.to">
           <NuxtLink
             :to="link.to"
-            class="link-hover text-sm"
+            class="link-hover text-sm transition-colors"
             active-class="text-accent"
             exact-active-class="text-accent"
             data-cursor="link"
@@ -118,7 +118,7 @@ const availableLocales = computed(() =>
           <li v-for="link in navLinks" :key="link.to">
             <NuxtLink
               :to="link.to"
-              class="block rounded-2xl px-4 py-4 text-xl font-display transition-colors hover:bg-white/5"
+              class="block rounded-2xl px-4 py-4 text-xl font-display transition-colors hover:text-accent"
               exact-active-class="text-accent"
               active-class="text-accent"
             >

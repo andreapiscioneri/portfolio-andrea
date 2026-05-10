@@ -116,7 +116,7 @@ const rights = computed(() => tm('privacy.rights') as string[])
         <Reveal :delay="0.05">
           <p class="text-sm text-white/40 text-pretty">
             {{ t('privacy.cookieLinkText') }}
-            <NuxtLink :to="localePath('/cookie')" class="underline underline-offset-2 hover:text-white transition-colors">{{ t('privacy.cookieLinkLabel') }}</NuxtLink>.
+            <NuxtLink :to="localePath('/cookie')" class="underline underline-offset-2 hover:text-accent transition-colors">{{ t('privacy.cookieLinkLabel') }}</NuxtLink>.
           </p>
         </Reveal>
 

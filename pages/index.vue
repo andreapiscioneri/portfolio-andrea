@@ -218,7 +218,7 @@ const marqueeItems = [
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <Reveal v-for="(s, i) in services" :key="i" :delay="i * 0.06">
           <article
-            class="group relative h-full overflow-hidden rounded-3xl border border-white/10 bg-ink-900 p-8 transition-colors duration-700 hover:bg-ink-800 hover:border-white/20"
+            class="group relative h-full overflow-hidden rounded-3xl border border-white/10 bg-ink-900 p-8 transition-colors duration-700 hover:border-accent/50"
             data-cursor="link"
           >
             <div class="flex items-center justify-between">
