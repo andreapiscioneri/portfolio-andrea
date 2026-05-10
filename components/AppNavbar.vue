@@ -44,15 +44,15 @@ const availableLocales = computed(() =>
     class="fixed inset-x-0 top-0 z-50 transition-all duration-500 ease-smooth"
     :class="[
       scrolled || isOpen
-        ? 'bg-paper/80 backdrop-blur-xl dark:bg-ink-950/70 border-b border-black/5 dark:border-white/10'
+        ? 'bg-ink-950/80 backdrop-blur-xl border-b border-white/10'
         : 'bg-transparent border-b border-transparent text-paper',
     ]"
   >
     <nav class="container-x flex h-16 items-center justify-between md:h-20">
       <NuxtLink :to="localePath('/')" class="group relative flex items-center gap-3" data-cursor="link">
         <span
-          class="flex h-9 w-9 items-center justify-center rounded-full border bg-ink transition-colors duration-500 dark:bg-paper overflow-hidden"
-          :class="scrolled || isOpen ? 'border-black/10 dark:border-white/10' : 'border-white/20'"
+          class="flex h-9 w-9 items-center justify-center rounded-full border bg-paper overflow-hidden"
+          :class="scrolled || isOpen ? 'border-white/10' : 'border-white/20'"
           aria-hidden="true"
         >
           <img src="/logo.png" alt="AP" class="h-5 w-5 object-contain dark:invert" />
@@ -89,7 +89,7 @@ const availableLocales = computed(() =>
         <button
           type="button"
           class="inline-flex h-11 w-11 items-center justify-center rounded-full border md:hidden touch-manipulation transition-colors duration-500"
-          :class="scrolled || isOpen ? 'border-black/10 dark:border-white/15' : 'border-white/25'"
+          :class="scrolled || isOpen ? 'border-white/15' : 'border-white/25'"
           :aria-label="isOpen ? t('nav.close') : t('nav.menu')"
           @click="isOpen = !isOpen"
           data-cursor="link"
@@ -112,13 +112,13 @@ const availableLocales = computed(() =>
     <Transition name="mobile-menu">
       <div
         v-if="isOpen"
-        class="md:hidden origin-top overflow-hidden border-t border-black/5 bg-paper dark:border-white/10 dark:bg-ink-950"
+        class="md:hidden origin-top overflow-hidden border-t border-white/10 bg-ink-950"
       >
         <ul class="container-x flex flex-col gap-2 py-6">
           <li v-for="link in navLinks" :key="link.to">
             <NuxtLink
               :to="link.to"
-              class="block rounded-2xl px-4 py-4 text-xl font-display transition-colors hover:bg-black/5 dark:hover:bg-white/5"
+              class="block rounded-2xl px-4 py-4 text-xl font-display transition-colors hover:bg-white/5"
               exact-active-class="text-accent"
               active-class="text-accent"
             >
