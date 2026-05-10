@@ -80,14 +80,15 @@ const scrollTop = () => {
         </button>
       </div>
 
-      <!-- Giant wordmark -->
-      <div aria-hidden="true" class="pointer-events-none pb-4 -mb-6 overflow-hidden">
-        <span
-          class="block whitespace-nowrap text-center font-display text-[clamp(4rem,22vw,18rem)] leading-[0.9] tracking-[-0.04em] text-ink/5 dark:text-white/5 select-none"
-        >
-          Andrea Piscioneri
-        </span>
-      </div>
+    </div>
+
+    <!-- Giant wordmark — full width, outside container -->
+    <div aria-hidden="true" class="pointer-events-none w-full overflow-hidden pb-4 -mb-6">
+      <span
+        class="block whitespace-nowrap text-left font-display text-[clamp(1.5rem,10vw,14rem)] leading-[0.9] tracking-[-0.04em] text-ink/5 dark:text-white/5 select-none"
+      >
+        Andrea Piscioneri
+      </span>
     </div>
   </footer>
 </template>
