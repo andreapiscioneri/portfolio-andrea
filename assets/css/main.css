@@ -75,7 +75,7 @@
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-ink-500 dark:text-white/60;
+    @apply inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-white/60;
   }
 
   .btn {
@@ -83,11 +83,11 @@
   }
 
   .btn-primary {
-    @apply bg-ink text-paper border-ink hover:bg-paper hover:text-ink dark:bg-paper dark:text-ink dark:hover:bg-ink dark:hover:text-paper;
+    @apply bg-paper text-ink border-paper hover:bg-ink hover:text-paper;
   }
 
   .btn-ghost {
-    @apply border-black/15 text-ink hover:bg-ink hover:text-paper dark:border-white/20 dark:text-paper dark:hover:bg-paper dark:hover:text-ink;
+    @apply border-white/20 text-paper hover:bg-white/10;
   }
 
   .link-hover {

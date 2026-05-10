@@ -324,7 +324,7 @@ useHead({
                 <span class="tabular-nums text-white/50">{{ s.level }}%</span>
               </div>
               <div class="mt-2 h-[2px] w-full overflow-hidden bg-white/10">
-                <div class="h-full bg-paper transition-[width] duration-1000" :style="{ width: `${s.level}%` }" />
+                <div class="h-full bg-accent transition-[width] duration-1000" :style="{ width: `${s.level}%` }" />
               </div>
             </li>
           </ul>

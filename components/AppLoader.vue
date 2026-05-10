@@ -39,7 +39,7 @@ onMounted(() => {
           <img src="/logo.png" alt="Andrea Piscioneri" class="h-24 w-24 object-contain brightness-0 invert" />
         </div>
 
-        <div class="my-6 h-[1px] w-full bg-paper/15">
+        <div class="my-6 h-[1px] w-full bg-white/15">
           <div class="h-[1px] bg-accent transition-[width] duration-75 ease-linear" :style="{ width: `${progress}%` }" />
         </div>
 

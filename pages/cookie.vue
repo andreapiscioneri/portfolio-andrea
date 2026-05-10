@@ -119,7 +119,7 @@ const browsers = computed(() => tm('cookie.browsers') as BrowserLink[])
                 :href="rt(b.url)"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="rounded-full border border-white/15 px-4 py-2 text-sm transition-colors hover:bg-paper hover:text-ink"
+                class="rounded-full border border-white/15 px-4 py-2 text-sm transition-colors hover:bg-white/10"
                 data-cursor="link"
               >
                 {{ b.name }} ↗

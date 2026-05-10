@@ -81,7 +81,7 @@ const availableLocales = computed(() =>
           class="btn hidden text-xs md:inline-flex transition-colors duration-500"
           :class="scrolled || isOpen
             ? 'btn-primary'
-            : 'border-white/30 bg-white/10 text-paper hover:bg-paper hover:text-ink'"
+            : 'border-white/30 bg-white/10 text-paper hover:bg-white/20'"
           data-cursor="link"
         >
           {{ t('common.getInTouch') }}
