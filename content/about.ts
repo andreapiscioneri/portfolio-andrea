@@ -205,6 +205,6 @@ export const links = {
   behance: 'https://www.behance.net/andreapiscioneri',
   instagramDesign: 'https://www.instagram.com/andrea.piscioneri_design/',
   instagramPersonal: 'https://www.instagram.com/andreapiscioneri/',
-  linkedin: 'https://www.linkedin.com/in/andreapiscioneri',
+  linkedin: 'https://www.linkedin.com/in/andrea-piscioneri',
   facebook: 'https://it-it.facebook.com/andreapiscioneri',
 }
