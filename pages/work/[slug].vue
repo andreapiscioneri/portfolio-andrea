@@ -210,8 +210,8 @@ useHead({
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section class="container-x pb-16 md:pb-24">
+<!-- Gallery -->
+    <!-- <section class="container-x pb-16 md:pb-24">
       <div class="grid gap-4 md:gap-6 lg:gap-8">
         <Reveal v-for="(image, i) in detailGallery" :key="i" :delay="i * 0.05">
           <div class="relative w-full overflow-hidden rounded-3xl bg-ink-100 dark:bg-ink-900">
@@ -226,7 +226,7 @@ useHead({
           </div>
         </Reveal>
       </div>
-    </section>
+    </section> -->
 
     <!-- Highlights -->
     <section class="container-x pb-16 md:pb-24">
