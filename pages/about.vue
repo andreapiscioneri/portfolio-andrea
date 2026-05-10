@@ -344,37 +344,37 @@ useHead({
         <div class="eyebrow"><span>{{ t('about.socialTitle') }}</span></div>
         <ul class="grid gap-4 md:grid-cols-2">
           <li>
-            <a :href="links.website" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4" data-cursor="link">
+            <a :href="links.website" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4 transition-colors hover:text-accent" data-cursor="link">
               <span class="font-display text-xl">Sito personale</span>
               <span class="text-white/60 transition-transform group-hover:translate-x-1">↗</span>
             </a>
           </li>
           <li>
-            <a :href="links.behance" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4" data-cursor="link">
+            <a :href="links.behance" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4 transition-colors hover:text-accent" data-cursor="link">
               <span class="font-display text-xl">Behance</span>
               <span class="text-white/60 transition-transform group-hover:translate-x-1">↗</span>
             </a>
           </li>
           <li>
-            <a :href="links.linkedin" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4" data-cursor="link">
+            <a :href="links.linkedin" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4 transition-colors hover:text-accent" data-cursor="link">
               <span class="font-display text-xl">LinkedIn</span>
               <span class="text-white/60 transition-transform group-hover:translate-x-1">↗</span>
             </a>
           </li>
           <li>
-            <a :href="links.instagramDesign" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4" data-cursor="link">
+            <a :href="links.instagramDesign" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4 transition-colors hover:text-accent" data-cursor="link">
               <span class="font-display text-xl truncate">Instagram · @andrea.piscioneri_design</span>
               <span class="text-white/60 transition-transform group-hover:translate-x-1">↗</span>
             </a>
           </li>
           <li>
-            <a :href="links.instagramPersonal" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4" data-cursor="link">
+            <a :href="links.instagramPersonal" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4 transition-colors hover:text-accent" data-cursor="link">
               <span class="font-display text-xl truncate">Instagram · @andreapiscioneri</span>
               <span class="text-white/60 transition-transform group-hover:translate-x-1">↗</span>
             </a>
           </li>
           <li>
-            <a :href="links.facebook" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4" data-cursor="link">
+            <a :href="links.facebook" target="_blank" rel="noopener" class="group flex items-center justify-between border-b border-white/10 py-4 transition-colors hover:text-accent" data-cursor="link">
               <span class="font-display text-xl">Facebook</span>
               <span class="text-white/60 transition-transform group-hover:translate-x-1">↗</span>
             </a>
