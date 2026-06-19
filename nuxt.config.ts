@@ -148,7 +148,7 @@ export default defineNuxtConfig({
         'https://www.behance.net/andreapiscioneri',
         'https://www.instagram.com/andrea.piscioneri_design/',
         'https://www.instagram.com/andreapiscioneri/',
-        'https://it-it.facebook.com/andreapiscioneri',
+        'https://www.facebook.com/profile.php?id=100076286341248',
         'https://apdesign.altervista.org/',
       ],
     },
